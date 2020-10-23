@@ -149,9 +149,13 @@ items:
         href: ../standard/whats-new/whats-new-in-dotnet-standard.md
   - name: ツールと診断
     items:
+      - name: 概要
+        displayName: 'diagnostics,tools,tooling,productivity,instrumentation'
+        href: tools-and-productivity.md
       - name: .NET Core SDK
         items:
           - name: 概要
+            displayName: '.net sdk,software development kit,software dev kit,tool'
             href: ../core/sdk.md
           - name: エラー メッセージ
             items:
@@ -166,6 +170,7 @@ items:
       - name: .NET Core CLI
         items:
           - name: 概要
+            displayName: '.net cli,command-line interface,cli,tool'
             href: ../core/tools/index.md
           - name: リファレンス
             items:
@@ -255,23 +260,6 @@ items:
                     href: ../core/tools/dotnet-list-package.md
                   - name: dotnet remove package
                     href: ../core/tools/dotnet-remove-package.md
-          - name: グローバル ツールとローカル ツール
-            items:
-              - name: ツールを管理する
-                href: ../core/tools/global-tools.md
-              - name: ツールのトラブルシューティング
-                href: ../core/tools/troubleshoot-usage-issues.md
-              - name: CLI のツールを作成する
-                items:
-                  - name: 1 - ツールを作成する
-                    displayName: 'tools, tutorials, cli'
-                    href: ../core/tools/global-tools-how-to-create.md
-                  - name: 2 - グローバル ツールを使用する
-                    displayName: 'tools, tutorials, cli'
-                    href: ../core/tools/global-tools-how-to-use.md
-                  - name: 3 - ローカル ツールを使用する
-                    href: ../core/tools/local-tools-how-to-use.md
-                    displayName: 'tools, tutorials, cli'
           - name: global.json の概要
             href: ../core/tools/global-json.md
           - name: 製品利用統計情報
@@ -297,6 +285,17 @@ items:
               - name: 3 - テンプレート パックを作成する
                 href: ../core/tutorials/cli-templates-create-template-pack.md
                 displayName: 'tutorials, cli'
+      - name: 統合開発環境 (IDE)
+        items:
+          - name: Visual Studio
+            displayName: 'ide,integrated development environment,vs'
+            href: /visualstudio/windows/
+          - name: Visual Studio for Mac
+            displayName: 'ide,integrated development environment,vs for mac,macOS,Mac'
+            href: /visualstudio/mac/
+          - name: Visual Studio Code
+            displayName: 'ide,integrated development environment,code,vs code,oss ide,'
+            href: 'https://code.visualstudio.com/docs'
       - name: MSBuild とプロジェクト ファイル
         items:
           - name: プロジェクト SDK
@@ -317,21 +316,43 @@ items:
             href: ../core/tools/csproj.md
           - name: 依存関係管理
             href: ../core/tools/dependencies.md
-      - name: .NET Core の追加ツール
+      - name: グローバル ツールとローカル ツール
+        items:
+          - name: ツールを管理する
+            displayName: 'global tool,local tool'
+            href: ../core/tools/global-tools.md
+          - name: ツールのトラブルシューティング
+            displayName: 'global tool troubleshooting,local tool troubleshooting,'
+            href: ../core/tools/troubleshoot-usage-issues.md
+          - name: CLI のツールを作成する
+            items:
+              - name: 1 - ツールを作成する
+                displayName: 'tools,tutorials,cli,create global tool,create local tool'
+                href: ../core/tools/global-tools-how-to-create.md
+              - name: 2 - グローバル ツールを使用する
+                displayName: 'tools,tutorials,cli,understand global tool'
+                href: ../core/tools/global-tools-how-to-use.md
+              - name: 3 - ローカル ツールを使用する
+                href: ../core/tools/local-tools-how-to-use.md
+                displayName: 'tools,tutorials,cli,local tool'
+      - name: その他のツール
         items:
           - name: 概要
             href: ../core/additional-tools/index.md
-          - name: .NET Core アンインストール ツール
+          - name: .NET アンインストール ツール
             href: ../core/additional-tools/uninstall-tool.md
           - name: WCF Web サービス リファレンス プロバイダー
             href: ../core/additional-tools/wcf-web-service-reference-guide.md
-          - name: dotnet-svcutil
+          - name: WCF サービス ユーティリティ
+            displayName: dotnet-svcutil
             href: ../core/additional-tools/dotnet-svcutil-guide.md
-          - name: dotnet-svcutil.xmlserializer
+          - name: WCF サービスの XML シリアライザー
+            displayName: dotnet-svcutil.xmlserializer
             href: ../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
           - name: XML シリアライザー ジェネレーター
+            displayName: 'sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer'
             href: ../core/additional-tools/xml-serializer-generator.md
-      - name: 診断ツール
+      - name: 診断とインストルメンテーション
         items:
           - name: 概要
             href: ../core/diagnostics/index.md
