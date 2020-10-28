@@ -725,24 +725,20 @@ items:
         href: misc/using-libraries-from-partially-trusted-code.md
       - name: Assert メソッドの使用
         href: misc/using-the-assert-method.md
-  - name: コンソール アプリの作成
-    href: ../standard/building-console-apps.md
-  - name: Web Forms アプリでイベントを使用する
-    href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
-  - name: .NET Framework コード アナライザー
-    href: ../standard/analyzers/framework-analyzer.md
+  - name: コード分析
+    href: code-analyzers.md
   - name: 複数のプラットフォーム向けの開発
     items:
       - name: 概要
-        href: ../standard/cross-platform/index.md
+        href: cross-platform/index.md
         displayName: cross platform
       - name: ポータブル クラス ライブラリ
-        href: ../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md
+        href: cross-platform/portable-class-library.md
       - name: MVVM を利用した汎用性のあるクラス ライブラリの使用
-        href: ../standard/cross-platform/using-portable-class-library-with-model-view-view-model.md
+        href: cross-platform/using-portable-class-library-with-model-view-view-model.md
       - name: 複数のプラットフォームを対象とするライブラリのアプリ リソース
-        href: ../standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
+        href: cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
       - name: Microsoft Store アプリおよび Windows ランタイムのための .NET Framework サポート
-        href: ../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md
+        href: cross-platform/support-for-windows-store-apps-and-windows-runtime.md
       - name: Windows ランタイムに URI を渡す
-        href: ../standard/cross-platform/passing-a-uri-to-the-windows-runtime.md
+        href: cross-platform/passing-a-uri-to-the-windows-runtime.md
