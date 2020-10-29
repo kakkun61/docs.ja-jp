@@ -1524,6 +1524,8 @@ items:
             href: ../standard/attributes/retrieving-information-stored-in-attributes.md
       - name: 匿名型と組型の選択
         href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
+      - name: コンソール アプリの概念
+        href: ../standard/building-console-apps.md
   - name: 依存関係の挿入
     items:
       - name: 概要
@@ -1932,7 +1934,7 @@ items:
         href: ../core/testing/unit-testing-published-output.md
       - name: Visual Studio での .NET Core プロジェクトのライブ単体テスト
         href: /visualstudio/test/live-unit-testing-start
-  - name: Security
+  - name: セキュリティ
     href: ../standard/security/
   - name: 高度なトピック
     items:
