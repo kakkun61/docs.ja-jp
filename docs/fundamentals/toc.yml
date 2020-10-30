@@ -1560,6 +1560,8 @@ items:
         href: ../core/extensions/custom-logging-provider.md
       - name: 高パフォーマンスのログ
         href: ../core/extensions/high-performance-logging.md
+      - name: コンソール ログの書式設定
+        href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (汎用ホスト)
     href: ../core/extensions/generic-host.md
   - name: データ アクセス

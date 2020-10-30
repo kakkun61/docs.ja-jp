@@ -116,3 +116,5 @@
           href: ../../../../_csharplang/proposals/csharp-9.0/function-pointers.md
         - name: localsinit フラグの出力を抑制する
           href: ../../../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
+        - name: 制約のない型パラメーターの注釈
+          href: ../../../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md
