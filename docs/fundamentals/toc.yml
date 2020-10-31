@@ -172,7 +172,7 @@ items:
           - name: 概要
             displayName: '.net cli,command-line interface,cli,tool'
             href: ../core/tools/index.md
-          - name: リファレンス
+          - name: 関連項目
             items:
               - name: dotnet
                 href: ../core/tools/dotnet.md
@@ -1734,10 +1734,9 @@ items:
                     href: ../standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
                   - name: 'チュートリアル:BatchBlock および BatchedJoinBlock を使用した効率の向上'
                     href: ../standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
-              - name: TPL と他の非同期パターンの使用
-                href: ../standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md
+              - name: TPL と他の非同期パターンを使用する
                 items:
-                  - name: TPL と従来の .NET Framework 非同期プログラミング
+                  - name: TPL と従来の .NET 非同期プログラミング
                     href: ../standard/parallel-programming/tpl-and-traditional-async-programming.md
                   - name: '方法:タスクに EAP パターンをラップする'
                     href: ../standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
@@ -1936,7 +1935,7 @@ items:
         href: ../core/testing/unit-testing-published-output.md
       - name: Visual Studio での .NET Core プロジェクトのライブ単体テスト
         href: /visualstudio/test/live-unit-testing-start
-  - name: セキュリティ
+  - name: Security
     href: ../standard/security/
   - name: 高度なトピック
     items:
