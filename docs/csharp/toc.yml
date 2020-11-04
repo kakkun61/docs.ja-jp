@@ -46,6 +46,8 @@
               href: tutorials/intro-to-csharp/introduction-to-classes.md
             - name: オブジェクト指向プログラミング
               href: tutorials/intro-to-csharp/object-oriented-programming.md
+    - name: 最上位レベルのステートメントを調べる
+      href: tutorials/exploration/top-level-statements.md
     - name: C# 6 を詳しく学習する
       href: tutorials/exploration/csharp-6.yml
     - name: 文字列補間を詳しく学習する - 対話形式
