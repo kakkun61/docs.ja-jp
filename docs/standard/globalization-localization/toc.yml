@@ -12,16 +12,15 @@
     - name: カルチャを認識しない文字列操作
       href: culture-insensitive-string-operations.md
       items:
-        - name: カルチャを認識しない文字列操作の実行
+        - name: 概要
           href: performing-culture-insensitive-string-operations.md
-          items:
-            - name: 文字列比較
-              href: performing-culture-insensitive-string-comparisons.md
-            - name: 大文字と小文字の変更
-              href: performing-culture-insensitive-case-changes.md
-            - name: コレクション内の文字列操作
-              href: performing-culture-insensitive-string-operations-in-collections.md
-            - name: 配列内の文字列操作
-              href: performing-culture-insensitive-string-operations-in-arrays.md
+        - name: 文字列比較
+          href: performing-culture-insensitive-string-comparisons.md
+        - name: 大文字と小文字の変更
+          href: performing-culture-insensitive-case-changes.md
+        - name: コレクション内の文字列操作
+          href: performing-culture-insensitive-string-operations-in-collections.md
+        - name: 配列内の文字列操作
+          href: performing-culture-insensitive-string-operations-in-arrays.md
     - name: 推奨される国際対応アプリ開発手順
       href: best-practices-for-developing-world-ready-apps.md
