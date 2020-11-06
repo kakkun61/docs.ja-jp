@@ -1,34 +1,34 @@
 ---
 title: '方法: アセンブリの完全修飾名を検索する'
-description: この記事では、.NET Framework アセンブリまたは .NET Core アセンブリの完全修飾名を取得する方法について説明します。
+description: この記事では、.NET アセンブリの完全修飾名を取得する方法について説明します。
 ms.date: 08/20/2019
 helpviewer_keywords:
-- names [.NET Framework], fully qualified type names
-- names [.NET Framework], assemblies
-- assemblies [.NET Framework], names
+- names [.NET], fully qualified type names
+- names [.NET], assemblies
+- assemblies [.NET], names
 ms.assetid: 009dae23-e1f6-4a64-9a9a-32e4c34802b0
 dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: 346d50dc7f279ce46c9803ad60479d3111739c25
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 223def7d992f5fae64c95aa6886f20980184eddc
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378944"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687610"
 ---
-# <a name="how-to-find-an-assemblys-fully-qualified-name"></a><span data-ttu-id="14fa5-103">方法: アセンブリの完全修飾名を検索する</span><span class="sxs-lookup"><span data-stu-id="14fa5-103">How to: Find an assembly's fully qualified name</span></span>
+# <a name="how-to-find-an-assemblys-fully-qualified-name"></a><span data-ttu-id="2fb6e-103">方法: アセンブリの完全修飾名を検索する</span><span class="sxs-lookup"><span data-stu-id="2fb6e-103">How to: Find an assembly's fully qualified name</span></span>
 
-<span data-ttu-id="14fa5-104">グローバル アセンブリ キャッシュ内の .NET Framework アセンブリの完全修飾名を検出するには、グローバル アセンブリ キャッシュ ツール ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)) を使用します。</span><span class="sxs-lookup"><span data-stu-id="14fa5-104">To discover the fully qualified name of a .NET Framework assembly in the global assembly cache, use the Global Assembly Cache tool ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)).</span></span> <span data-ttu-id="14fa5-105">「[方法:グローバル アセンブリ キャッシュの内容を表示する](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="14fa5-105">See [How to: View the contents of the global assembly cache](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md).</span></span>
+<span data-ttu-id="2fb6e-104">グローバル アセンブリ キャッシュ内の .NET Framework アセンブリの完全修飾名を検出するには、グローバル アセンブリ キャッシュ ツール ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)) を使用します。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-104">To discover the fully qualified name of a .NET Framework assembly in the global assembly cache, use the Global Assembly Cache tool ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)).</span></span> <span data-ttu-id="2fb6e-105">「[方法:グローバル アセンブリ キャッシュの内容を表示する](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-105">See [How to: View the contents of the global assembly cache](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md).</span></span>
 
-<span data-ttu-id="14fa5-106">.NET Core アセンブリの場合、およびグローバル アセンブリ キャッシュにない .NET Framework アセンブリの場合、完全修飾アセンブリ名をいくつかの方法で取得できます。</span><span class="sxs-lookup"><span data-stu-id="14fa5-106">For .NET Core assemblies, and for .NET Framework assemblies that aren't in the global assembly cache, you can get the fully qualified assembly name in a number of ways:</span></span>
+<span data-ttu-id="2fb6e-106">.NET Core アセンブリの場合、およびグローバル アセンブリ キャッシュにない .NET Framework アセンブリの場合、完全修飾アセンブリ名をいくつかの方法で取得できます。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-106">For .NET Core assemblies, and for .NET Framework assemblies that aren't in the global assembly cache, you can get the fully qualified assembly name in a number of ways:</span></span>
 
-- <span data-ttu-id="14fa5-107">コードを使用しコンソールや変数に情報を出力したり、[Ildasm.exe (IL 逆アセンブラー)](../../framework/tools/ildasm-exe-il-disassembler.md) を使用して完全修飾名を含むアセンブリのメタデータを調べたりできます。</span><span class="sxs-lookup"><span data-stu-id="14fa5-107">You can use code to output the information to the console or to a variable, or you can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.</span></span>
+- <span data-ttu-id="2fb6e-107">コードを使用しコンソールや変数に情報を出力したり、[Ildasm.exe (IL 逆アセンブラー)](../../framework/tools/ildasm-exe-il-disassembler.md) を使用して完全修飾名を含むアセンブリのメタデータを調べたりできます。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-107">You can use code to output the information to the console or to a variable, or you can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.</span></span>
 
-- <span data-ttu-id="14fa5-108">アセンブリがアプリケーションによって既に読み込まれている場合、<xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> プロパティの値を取得して、完全修飾名を取得できます。</span><span class="sxs-lookup"><span data-stu-id="14fa5-108">If the assembly is already loaded by the application, you can retrieve the value of the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property to get the fully qualified name.</span></span> <span data-ttu-id="14fa5-109">アセンブリに定義されている <xref:System.Type> の <xref:System.Type.Assembly> プロパティを使用して、<xref:System.Reflection.Assembly> オブジェクトへの参照を取得できます。</span><span class="sxs-lookup"><span data-stu-id="14fa5-109">You can use the <xref:System.Type.Assembly> property of a <xref:System.Type> defined in that assembly to retrieve a reference to the <xref:System.Reflection.Assembly> object.</span></span> <span data-ttu-id="14fa5-110">具体的な例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="14fa5-110">The example provides an illustration.</span></span>
+- <span data-ttu-id="2fb6e-108">アセンブリがアプリケーションによって既に読み込まれている場合、<xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> プロパティの値を取得して、完全修飾名を取得できます。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-108">If the assembly is already loaded by the application, you can retrieve the value of the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property to get the fully qualified name.</span></span> <span data-ttu-id="2fb6e-109">アセンブリに定義されている <xref:System.Type> の <xref:System.Type.Assembly> プロパティを使用して、<xref:System.Reflection.Assembly> オブジェクトへの参照を取得できます。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-109">You can use the <xref:System.Type.Assembly> property of a <xref:System.Type> defined in that assembly to retrieve a reference to the <xref:System.Reflection.Assembly> object.</span></span> <span data-ttu-id="2fb6e-110">具体的な例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-110">The example provides an illustration.</span></span>
 
-- <span data-ttu-id="14fa5-111">アセンブリのファイル システム パスがわかっている場合は、`static` (C#) または `Shared` (Visual Basic) <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> メソッドを呼び出して、完全修飾アセンブリ名を取得できます。</span><span class="sxs-lookup"><span data-stu-id="14fa5-111">If you know the assembly's file system path, you can call the `static` (C#) or `Shared` (Visual Basic) <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> method to get the fully qualified assembly name.</span></span> <span data-ttu-id="14fa5-112">単純な例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="14fa5-112">The following is a simple example.</span></span>
+- <span data-ttu-id="2fb6e-111">アセンブリのファイル システム パスがわかっている場合は、`static` (C#) または `Shared` (Visual Basic) <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> メソッドを呼び出して、完全修飾アセンブリ名を取得できます。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-111">If you know the assembly's file system path, you can call the `static` (C#) or `Shared` (Visual Basic) <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> method to get the fully qualified assembly name.</span></span> <span data-ttu-id="2fb6e-112">単純な例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-112">The following is a simple example.</span></span>
 
   ```csharp
   using System;
@@ -57,13 +57,13 @@ ms.locfileid: "83378944"
   '   UtilityLibrary, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
   ```
 
-- <span data-ttu-id="14fa5-113">[Ildasm.exe (IL 逆アセンブラー)](../../framework/tools/ildasm-exe-il-disassembler.md) を使用して、アセンブリのメタデータを使用できます。これには完全修飾名が含まれています。</span><span class="sxs-lookup"><span data-stu-id="14fa5-113">You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.</span></span>
+- <span data-ttu-id="2fb6e-113">[Ildasm.exe (IL 逆アセンブラー)](../../framework/tools/ildasm-exe-il-disassembler.md) を使用して、アセンブリのメタデータを使用できます。これには完全修飾名が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-113">You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.</span></span>
 
-<span data-ttu-id="14fa5-114">バージョン、カルチャ、アセンブリ名などのアセンブリ属性の設定の詳細については、「[アセンブリ属性の設定](set-attributes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="14fa5-114">For more information about setting assembly attributes such as version, culture, and assembly name, see [Set assembly attributes](set-attributes.md).</span></span> <span data-ttu-id="14fa5-115">アセンブリに厳密な名前を指定する方法の詳細については、「[厳密な名前付きアセンブリの作成と使用](create-use-strong-named.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="14fa5-115">For more information about giving an assembly a strong name, see [Create and use strong-named assemblies](create-use-strong-named.md).</span></span>
+<span data-ttu-id="2fb6e-114">バージョン、カルチャ、アセンブリ名などのアセンブリ属性の設定の詳細については、「[アセンブリ属性の設定](set-attributes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-114">For more information about setting assembly attributes such as version, culture, and assembly name, see [Set assembly attributes](set-attributes.md).</span></span> <span data-ttu-id="2fb6e-115">アセンブリに厳密な名前を指定する方法の詳細については、「[厳密な名前付きアセンブリの作成と使用](create-use-strong-named.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-115">For more information about giving an assembly a strong name, see [Create and use strong-named assemblies](create-use-strong-named.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="14fa5-116">例</span><span class="sxs-lookup"><span data-stu-id="14fa5-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2fb6e-116">例</span><span class="sxs-lookup"><span data-stu-id="2fb6e-116">Example</span></span>
 
-<span data-ttu-id="14fa5-117">指定したクラスを含むアセンブリの完全修飾名をコンソールに表示する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="14fa5-117">The following example shows how to display the fully qualified name of an assembly containing a specified class to the console.</span></span> <span data-ttu-id="14fa5-118"><xref:System.Type.Assembly?displayProperty=nameWithType> プロパティを使用して、そのアセンブリで定義されている型からアセンブリへの参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="14fa5-118">It uses the <xref:System.Type.Assembly?displayProperty=nameWithType> property to retrieve a reference to an assembly from a type that's defined in that assembly.</span></span>
+<span data-ttu-id="2fb6e-117">指定したクラスを含むアセンブリの完全修飾名をコンソールに表示する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-117">The following example shows how to display the fully qualified name of an assembly containing a specified class to the console.</span></span> <span data-ttu-id="2fb6e-118"><xref:System.Type.Assembly?displayProperty=nameWithType> プロパティを使用して、そのアセンブリで定義されている型からアセンブリへの参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="2fb6e-118">It uses the <xref:System.Type.Assembly?displayProperty=nameWithType> property to retrieve a reference to an assembly from a type that's defined in that assembly.</span></span>
 
 ```cpp
 #using <System.dll>
@@ -119,10 +119,10 @@ Class asmname
 End Class
 ```
 
-## <a name="see-also"></a><span data-ttu-id="14fa5-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="14fa5-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2fb6e-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="2fb6e-119">See also</span></span>
 
-- [<span data-ttu-id="14fa5-120">アセンブリ名</span><span class="sxs-lookup"><span data-stu-id="14fa5-120">Assembly names</span></span>](names.md)
-- [<span data-ttu-id="14fa5-121">アセンブリを作成する</span><span class="sxs-lookup"><span data-stu-id="14fa5-121">Create assemblies</span></span>](create.md)
-- [<span data-ttu-id="14fa5-122">厳密な名前付きアセンブリの作成と使用</span><span class="sxs-lookup"><span data-stu-id="14fa5-122">Create and use strong-named assemblies</span></span>](create-use-strong-named.md)
-- [<span data-ttu-id="14fa5-123">グローバル アセンブリ キャッシュ</span><span class="sxs-lookup"><span data-stu-id="14fa5-123">Global assembly cache</span></span>](../../framework/app-domains/gac.md)
-- [<span data-ttu-id="14fa5-124">ランタイムがアセンブリを検索する方法</span><span class="sxs-lookup"><span data-stu-id="14fa5-124">How the runtime locates assemblies</span></span>](../../framework/deployment/how-the-runtime-locates-assemblies.md)
+- [<span data-ttu-id="2fb6e-120">アセンブリ名</span><span class="sxs-lookup"><span data-stu-id="2fb6e-120">Assembly names</span></span>](names.md)
+- [<span data-ttu-id="2fb6e-121">アセンブリを作成する</span><span class="sxs-lookup"><span data-stu-id="2fb6e-121">Create assemblies</span></span>](create.md)
+- [<span data-ttu-id="2fb6e-122">厳密な名前付きアセンブリの作成と使用</span><span class="sxs-lookup"><span data-stu-id="2fb6e-122">Create and use strong-named assemblies</span></span>](create-use-strong-named.md)
+- [<span data-ttu-id="2fb6e-123">グローバル アセンブリ キャッシュ</span><span class="sxs-lookup"><span data-stu-id="2fb6e-123">Global assembly cache</span></span>](../../framework/app-domains/gac.md)
+- [<span data-ttu-id="2fb6e-124">ランタイムがアセンブリを検索する方法</span><span class="sxs-lookup"><span data-stu-id="2fb6e-124">How the runtime locates assemblies</span></span>](../../framework/deployment/how-the-runtime-locates-assemblies.md)
