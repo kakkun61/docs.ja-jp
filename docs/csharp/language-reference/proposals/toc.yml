@@ -63,7 +63,7 @@
         - name: Null 許容参照型 - 提案
           href: ../../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
         - name: Null 許容参照型 - 仕様
-          href: ../../../../_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md
+          href: ../../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
         - name: 再帰的なパターン マッチング
           href: ../../../../_csharplang/proposals/csharp-8.0/patterns.md
         - name: 既定のインターフェイス メソッド
@@ -88,6 +88,8 @@
           href: ../../../../_csharplang/proposals/csharp-9.0/records.md
         - name: 最上位レベルのステートメント
           href: ../../../../_csharplang/proposals/csharp-9.0/top-level-statements.md
+        - name: Null 許容参照型 - 仕様
+          href: ../../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
         - name: パターン マッチングの拡張機能
           href: ../../../../_csharplang/proposals/csharp-9.0/patterns3.md
         - name: init 専用セッター
