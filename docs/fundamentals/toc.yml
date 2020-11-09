@@ -172,7 +172,7 @@ items:
           - name: 概要
             displayName: '.net cli,command-line interface,cli,tool'
             href: ../core/tools/index.md
-          - name: 関連項目
+          - name: リファレンス
             items:
               - name: dotnet
                 href: ../core/tools/dotnet.md
