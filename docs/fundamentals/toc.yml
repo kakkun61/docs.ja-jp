@@ -302,7 +302,7 @@ items:
             items:
               - name: 概要
                 href: ../core/project-sdk/overview.md
-              - name: 関連項目
+              - name: リファレンス
                 items:
                   - name: Microsoft.NET.Sdk
                     href: ../core/project-sdk/msbuild-props.md
@@ -1167,6 +1167,8 @@ items:
                         href: code-analysis/style-rules/ide0081.md
                       - name: IDE0100
                         href: code-analysis/style-rules/ide0100.md
+                      - name: IDE0110
+                        href: code-analysis/style-rules/ide0110.md
                   - name: その他の規則
                     items:
                       - name: IDE0076
@@ -1295,6 +1297,8 @@ items:
             href: ../standard/base-types/type-conversion.md
           - name: 型変換の表
             href: ../standard/base-types/conversion-tables.md
+          - name: 匿名型と組型の選択
+            href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
           - name: フレームワーク ライブラリ
             href: ../standard/framework-libraries.md
           - name: クラス ライブラリの概要
@@ -1385,6 +1389,19 @@ items:
         href: ../standard/numerics.md
       - name: 日付、時刻、およびタイム ゾーン
         href: ../standard/datetime/
+      - name: 属性
+        items:
+          - name: 概要
+            href: ../standard/attributes/index.md
+            displayName: attributes
+          - name: 属性を適用する
+            href: ../standard/attributes/applying-attributes.md
+          - name: カスタム属性を記述する
+            href: ../standard/attributes/writing-custom-attributes.md
+          - name: 属性に格納されている情報を取得する
+            href: ../standard/attributes/retrieving-information-stored-in-attributes.md
+  - name: ランタイム ライブラリ
+    items:
       - name: 数値、日付、その他の型の書式を設定する
         items:
           - name: 概要
@@ -1419,14 +1436,20 @@ items:
                 href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
               - name: グレゴリオ暦以外の暦の日付を表示する
                 href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
-      - name: 文字列の操作
+      - name: 文字列
         items:
           - name: .NET での文字エンコード
             href: ../standard/base-types/character-encoding-introduction.md
           - name: 文字エンコード クラスを使用する方法
             href: ../standard/base-types/character-encoding.md
-          - name: 文字列を使用するためのベスト プラクティス
-            href: ../standard/base-types/best-practices-strings.md
+          - name: ベスト プラクティス
+            items:
+              - name: 文字列の比較
+                href: ../standard/base-types/best-practices-strings.md
+              - name: 書式設定されたデータを表示および保持する
+                href: ../standard/base-types/best-practices-display-data.md
+          - name: .NET 5 以降での動作の変更 (Windows)
+            href: ../standard/base-types/string-comparison-net-5-plus.md
           - name: 基本的な文字列操作
             items:
               - name: 概要
@@ -1438,10 +1461,12 @@ items:
                 href: ../standard/base-types/trimming.md
               - name: 文字列を埋め込む
                 href: ../standard/base-types/padding.md
-              - name: 文字列を比較する
+              - name: 比較メソッド
                 href: ../standard/base-types/comparing.md
               - name: 大文字/小文字の変更
                 href: ../standard/base-types/changing-case.md
+              - name: 文字列の一部分を分離する
+                href: ../standard/base-types/divide-up-strings.md
               - name: StringBuilder クラスの使用
                 href: ../standard/base-types/stringbuilder.md
               - name: '方法:基本的な文字列操作を実行する'
@@ -1489,7 +1514,7 @@ items:
                     href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
                   - name: スレッド セーフ
                     href: ../standard/base-types/thread-safety-in-regular-expressions.md
-              - name: 例
+              - name: 使用例
                 items:
                   - name: HREF のスキャン
                     href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
@@ -1501,7 +1526,7 @@ items:
                     href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
                   - name: 文字列が有効な電子メール形式であるかどうかを検証する
                     href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
-      - name: 文字列の解析
+      - name: 文字列の解析 (変換)
         items:
           - name: 概要
             href: ../standard/base-types/parsing-strings.md
@@ -1511,59 +1536,213 @@ items:
             href: ../standard/base-types/parsing-datetime.md
           - name: その他の文字列の解析
             href: ../standard/base-types/parsing-other.md
-      - name: 属性
+      - name: 依存関係の挿入
         items:
           - name: 概要
-            href: ../standard/attributes/index.md
-            displayName: attributes
-          - name: 属性を適用する
-            href: ../standard/attributes/applying-attributes.md
-          - name: カスタム属性を記述する
-            href: ../standard/attributes/writing-custom-attributes.md
-          - name: 属性に格納されている情報を取得する
-            href: ../standard/attributes/retrieving-information-stored-in-attributes.md
-      - name: 匿名型と組型の選択
-        href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-      - name: コンソール アプリの概念
+            href: ../core/extensions/dependency-injection.md
+            displayName: 'dependency injection,di,ioc,ioc container,dependency container,inversion of control'
+          - name: 依存関係の挿入を使用する
+            href: ../core/extensions/dependency-injection-usage.md
+            displayName: 'use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control'
+          - name: 依存関係の挿入のガイドライン
+            href: ../core/extensions/dependency-injection-guidelines.md
+            displayName: 'dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control'
+      - name: 構成
+        items:
+          - name: 概要
+            href: ../core/extensions/configuration.md
+            displayName: 'configuration,config,configuration sources,config sources'
+          - name: 構成プロバイダー
+            href: ../core/extensions/configuration-providers.md
+            displayName: 'configuration providers,config providers'
+          - name: カスタム構成プロバイダーを実装する
+            href: ../core/extensions/custom-configuration-provider.md
+            displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
+          - name: オプションのパターン
+            href: ../core/extensions/options.md
+      - name: ログの記録
+        items:
+          - name: 概要
+            href: ../core/extensions/logging.md
+          - name: ログ プロバイダー
+            href: ../core/extensions/logging-providers.md
+          - name: カスタム ログ プロバイダーを実装する
+            href: ../core/extensions/custom-logging-provider.md
+          - name: 高パフォーマンスのログ
+            href: ../core/extensions/high-performance-logging.md
+          - name: コンソール ログの書式設定
+            href: ../core/extensions/console-log-formatter.md
+      - name: HostBuilder (汎用ホスト)
+        href: ../core/extensions/generic-host.md
+      - name: シリアル化
+        items:
+          - name: 概要
+            href: ../standard/serialization/index.md
+          - name: JSON シリアル化
+            items:
+              - name: 概要
+                href: ../standard/serialization/system-text-json-overview.md
+                displayName: json serialization
+              - name: JSON をシリアル化および逆シリアル化する方法
+                href: ../standard/serialization/system-text-json-how-to.md
+              - name: カスタム コンバーターを記述する方法
+                href: ../standard/serialization/system-text-json-converters-how-to.md
+              - name: Newtonsoft. Json から移行する方法
+                href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+          - name: バイナリ シリアル化
+            items:
+              - name: 概要
+                href: ../standard/serialization/binary-serialization.md
+                displayName: binary serialization
+              - name: BinaryFormatter セキュリティ ガイド
+                href: ../standard/serialization/binaryformatter-security-guide.md
+              - name: シリアル化の概念
+                href: ../standard/serialization/serialization-concepts.md
+              - name: 基本的なシリアル化
+                href: ../standard/serialization/basic-serialization.md
+              - name: 選択的シリアル化
+                href: ../standard/serialization/selective-serialization.md
+              - name: カスタムのシリアル化
+                href: ../standard/serialization/custom-serialization.md
+              - name: シリアル化プロセスの手順
+                href: ../standard/serialization/steps-in-the-serialization-process.md
+              - name: バージョン トレラントなシリアル化
+                href: ../standard/serialization/version-tolerant-serialization.md
+              - name: シリアル化のガイドライン
+                href: ../standard/serialization/serialization-guidelines.md
+              - name: '方法:シリアル化されたデータをチャンクする'
+                href: ../standard/serialization/how-to-chunk-serialized-data.md
+              - name: '方法:.NET 標準オブジェクトがシリアル化可能なのかどうかを判断する'
+                href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
+              - name: サンプル
+                href: ../standard/serialization/basic-serialization-technology-sample.md
+          - name: XML シリアル化および SOAP シリアル化
+            items:
+              - name: 概要
+                href: ../standard/serialization/xml-and-soap-serialization.md
+              - name: XML シリアル化の詳細
+                href: ../standard/serialization/introducing-xml-serialization.md
+              - name: 使用例
+                href: ../standard/serialization/examples-of-xml-serialization.md
+              - name: XML スキーマ定義ツール
+                href: ../standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md
+              - name: 属性を使用した XML シリアル化の制御
+                href: ../standard/serialization/controlling-xml-serialization-using-attributes.md
+              - name: XML シリアル化を制御する属性
+                href: ../standard/serialization/attributes-that-control-xml-serialization.md
+              - name: XML Web サービスを使用した XML シリアル化
+                href: ../standard/serialization/xml-serialization-with-xml-web-services.md
+              - name: エンコード済み SOAP シリアル化を制御する属性
+                href: ../standard/serialization/attributes-that-control-encoded-soap-serialization.md
+              - name: 方法
+                items:
+                  - name: オブジェクトをシリアル化する
+                    href: ../standard/serialization/how-to-serialize-an-object.md
+                  - name: オブジェクトを逆シリアル化する
+                    href: ../standard/serialization/how-to-deserialize-an-object.md
+                  - name: XML スキーマ定義ツールを使用してクラスと XML スキーマ ドキュメントを生成する
+                    href: ../standard/serialization/xml-schema-def-tool-gen.md
+                  - name: 派生クラスのシリアル化を制御する
+                    href: ../standard/serialization/how-to-control-serialization-of-derived-classes.md
+                  - name: XML ストリームの代替要素名を指定する
+                    href: ../standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md
+                  - name: XML 要素および XML 属性名を修飾する
+                    href: ../standard/serialization/how-to-qualify-xml-element-and-xml-attribute-names.md
+                  - name: オブジェクトを SOAP エンコード済み XML ストリームとしてシリアル化する
+                    href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
+                  - name: SOAP エンコード済み XML シリアル化をオーバーライドする
+                    href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
+              - name: XML シリアル化要素
+                items:
+                  - name: system.xml.serialization
+                    href: ../standard/serialization/system-xml-serialization-element.md
+                  - name: dateTimeSerialization
+                    href: ../standard/serialization/datetimeserialization-element.md
+                  - name: schemaImporterExtensions
+                    href: ../standard/serialization/schemaimporterextensions-element.md
+                  - name: schemaImporterExtensions の add 要素
+                    href: ../standard/serialization/add-element-for-schemaimporterextensions.md
+                  - name: xmlSerializer
+                    href: ../standard/serialization/xmlserializer-element.md
+              - name: ツール
+                items:
+                  - name: XML シリアライザー ジェネレーター ツール (Sgen.exe)
+                    href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
+                  - name: XML スキーマ定義ツール (Xsd.exe)
+                    href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
+      - name: ファイルおよびストリーム入出力
+        items:
+          - name: 概要
+            href: ../standard/io/index.md
+          - name: Windows システムのファイル パス形式
+            href: ../standard/io/file-path-formats.md
+          - name: 共通 I/O タスク
+            href: ../standard/io/common-i-o-tasks.md
+            items:
+              - name: '方法:ディレクトリをコピーする'
+                href: ../standard/io/how-to-copy-directories.md
+              - name: '方法:ディレクトリとファイルを列挙する'
+                href: ../standard/io/how-to-enumerate-directories-and-files.md
+              - name: '方法:新しく作成されたデータ ファイルに対して読み書きする'
+                href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
+              - name: '方法:ログ ファイルを開いて情報を追加する'
+                href: ../standard/io/how-to-open-and-append-to-a-log-file.md
+              - name: '方法:ファイルにテキストを書き込む'
+                href: ../standard/io/how-to-write-text-to-a-file.md
+              - name: '方法:ファイルからのテキストの読み取り'
+                href: ../standard/io/how-to-read-text-from-a-file.md
+              - name: '方法:文字列から文字を読み取る'
+                href: ../standard/io/how-to-read-characters-from-a-string.md
+              - name: '方法:文字列への文字の書き込み'
+                href: ../standard/io/how-to-write-characters-to-a-string.md
+              - name: '方法:アクセス制御リスト エントリを追加または削除する'
+                href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
+              - name: '方法:ファイルを圧縮して抽出する'
+                href: ../standard/io/how-to-compress-and-extract-files.md
+              - name: ストリームの構成
+                href: ../standard/io/composing-streams.md
+              - name: '方法:.NET Framework ストリームと Windows ランタイム ストリームの間で変換を行う'
+                href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
+          - name: 非同期ファイル I/O
+            href: ../standard/io/asynchronous-file-i-o.md
+          - name: I/O エラーの処理
+            href: ../standard/io/handling-io-errors.md
+          - name: 分離ストレージ
+            href: ../standard/io/isolated-storage.md
+            items:
+              - name: 分離のタイプ
+                href: ../standard/io/types-of-isolation.md
+              - name: '方法:分離ストレージでストアを取得する'
+                href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
+              - name: '方法:分離ストレージでストアを列挙する'
+                href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
+              - name: '方法:分離ストレージでストアを削除する'
+                href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
+              - name: '方法:分離ストレージの領域不足状態に備える'
+                href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
+              - name: '方法:分離ストレージでファイルおよびディレクトリを作成する'
+                href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
+              - name: '方法:分離ストレージ内で既存のファイルおよびディレクトリを検索する'
+                href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
+              - name: '方法:分離ストレージ内でファイルの読み取りと書き込みを行う'
+                href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
+              - name: '方法:分離ストレージでファイルおよびディレクトリを削除する'
+                href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
+          - name: パイプ
+            href: ../standard/io/pipe-operations.md
+            items:
+              - name: '方法:ローカルのプロセス間通信で匿名パイプを使用する'
+                href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
+              - name: '方法:ネットワークのプロセス間通信で名前付きパイプを使用する'
+                href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
+          - name: パイプライン
+            href: ../standard/io/pipelines.md
+          - name: バッファーを操作する
+            href: ../standard/io/buffers.md
+          - name: メモリ マップト ファイル
+            href: ../standard/io/memory-mapped-files.md
+      - name: System.Console クラス
         href: ../standard/building-console-apps.md
-  - name: 依存関係の挿入
-    items:
-      - name: 概要
-        href: ../core/extensions/dependency-injection.md
-        displayName: 'dependency injection,di,ioc,ioc container,dependency container,inversion of control'
-      - name: 依存関係の挿入を使用する
-        href: ../core/extensions/dependency-injection-usage.md
-        displayName: 'use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control'
-      - name: 依存関係の挿入のガイドライン
-        href: ../core/extensions/dependency-injection-guidelines.md
-        displayName: 'dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control'
-  - name: 構成
-    items:
-      - name: 概要
-        href: ../core/extensions/configuration.md
-        displayName: 'configuration,config,configuration sources,config sources'
-      - name: 構成プロバイダー
-        href: ../core/extensions/configuration-providers.md
-        displayName: 'configuration providers,config providers'
-      - name: カスタム構成プロバイダーを実装する
-        href: ../core/extensions/custom-configuration-provider.md
-        displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
-      - name: オプションのパターン
-        href: ../core/extensions/options.md
-  - name: ログの記録
-    items:
-      - name: 概要
-        href: ../core/extensions/logging.md
-      - name: ログ プロバイダー
-        href: ../core/extensions/logging-providers.md
-      - name: カスタム ログ プロバイダーを実装する
-        href: ../core/extensions/custom-logging-provider.md
-      - name: 高パフォーマンスのログ
-        href: ../core/extensions/high-performance-logging.md
-      - name: コンソール ログの書式設定
-        href: ../core/extensions/console-log-formatter.md
-  - name: HostBuilder (汎用ホスト)
-    href: ../core/extensions/generic-host.md
   - name: データ アクセス
     items:
       - name: LINQ
@@ -1572,77 +1751,8 @@ items:
         href: ../standard/data/xml/
       - name: Microsoft.Data.Sqlite
         href: ../standard/data/sqlite/
-  - name: ファイルおよびストリーム入出力
-    items:
-      - name: 概要
-        href: ../standard/io/index.md
-      - name: Windows システムのファイル パス形式
-        href: ../standard/io/file-path-formats.md
-      - name: 共通 I/O タスク
-        href: ../standard/io/common-i-o-tasks.md
-        items:
-          - name: '方法:ディレクトリをコピーする'
-            href: ../standard/io/how-to-copy-directories.md
-          - name: '方法:ディレクトリとファイルを列挙する'
-            href: ../standard/io/how-to-enumerate-directories-and-files.md
-          - name: '方法:新しく作成されたデータ ファイルに対して読み書きする'
-            href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
-          - name: '方法:ログ ファイルを開いて情報を追加する'
-            href: ../standard/io/how-to-open-and-append-to-a-log-file.md
-          - name: '方法:ファイルにテキストを書き込む'
-            href: ../standard/io/how-to-write-text-to-a-file.md
-          - name: '方法:ファイルからのテキストの読み取り'
-            href: ../standard/io/how-to-read-text-from-a-file.md
-          - name: '方法:文字列から文字を読み取る'
-            href: ../standard/io/how-to-read-characters-from-a-string.md
-          - name: '方法:文字列への文字の書き込み'
-            href: ../standard/io/how-to-write-characters-to-a-string.md
-          - name: '方法:アクセス制御リスト エントリを追加または削除する'
-            href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
-          - name: '方法:ファイルを圧縮して抽出する'
-            href: ../standard/io/how-to-compress-and-extract-files.md
-          - name: ストリームの構成
-            href: ../standard/io/composing-streams.md
-          - name: '方法:.NET Framework ストリームと Windows ランタイム ストリームの間で変換を行う'
-            href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
-      - name: 非同期ファイル I/O
-        href: ../standard/io/asynchronous-file-i-o.md
-      - name: I/O エラーの処理
-        href: ../standard/io/handling-io-errors.md
-      - name: 分離ストレージ
-        href: ../standard/io/isolated-storage.md
-        items:
-          - name: 分離のタイプ
-            href: ../standard/io/types-of-isolation.md
-          - name: '方法:分離ストレージでストアを取得する'
-            href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
-          - name: '方法:分離ストレージでストアを列挙する'
-            href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
-          - name: '方法:分離ストレージでストアを削除する'
-            href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
-          - name: '方法:分離ストレージの領域不足状態に備える'
-            href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
-          - name: '方法:分離ストレージでファイルおよびディレクトリを作成する'
-            href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
-          - name: '方法:分離ストレージ内で既存のファイルおよびディレクトリを検索する'
-            href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
-          - name: '方法:分離ストレージ内でファイルの読み取りと書き込みを行う'
-            href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
-          - name: '方法:分離ストレージでファイルおよびディレクトリを削除する'
-            href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
-      - name: パイプ
-        href: ../standard/io/pipe-operations.md
-        items:
-          - name: '方法:ローカルのプロセス間通信で匿名パイプを使用する'
-            href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
-          - name: '方法:ネットワークのプロセス間通信で名前付きパイプを使用する'
-            href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
-      - name: パイプライン
-        href: ../standard/io/pipelines.md
-      - name: バッファーを操作する
-        href: ../standard/io/buffers.md
-      - name: メモリ マップト ファイル
-        href: ../standard/io/memory-mapped-files.md
+      - name: Entity Framework Core
+        href: /ef/core/
   - name: 並列処理、コンカレンシー、および非同期
     items:
       - name: 概要
@@ -1680,7 +1790,7 @@ items:
                     href: ../standard/parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
                   - name: '方法:小さいループ本体を高速化する'
                     href: ../standard/parallel-programming/how-to-speed-up-small-loop-bodies.md
-                  - name: '方法:Parallel クラスを使用してファイル ディレクトリを反復処理する'
+                  - name: '方法: Parallel クラスを使用してファイル ディレクトリを反復処理する'
                     href: ../standard/parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
               - name: タスク ベースの非同期プログラミング
                 href: ../standard/parallel-programming/task-based-asynchronous-programming.md
@@ -1770,7 +1880,7 @@ items:
                 href: ../standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
               - name: '方法:PLINQ のマージ オプションを指定する'
                 href: ../standard/parallel-programming/how-to-specify-merge-options-in-plinq.md
-              - name: '方法:PLINQ を使用してファイル ディレクトリを反復処理する'
+              - name: '方法: PLINQ を使用してファイル ディレクトリを反復処理する'
                 href: ../standard/parallel-programming/how-to-iterate-file-directories-with-plinq.md
               - name: '方法:PLINQ クエリのパフォーマンスを測定する'
                 href: ../standard/parallel-programming/how-to-measure-plinq-query-performance.md
@@ -1793,104 +1903,8 @@ items:
             href: ../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
           - name: 関連項目
             href: ../standard/parallel-programming/for-further-reading-parallel-programming.md
-      - name: スレッド処理
+      - name: スレッド
         href: ../standard/threading/
-  - name: シリアル化
-    items:
-      - name: 概要
-        href: ../standard/serialization/index.md
-      - name: JSON シリアル化
-        items:
-          - name: 概要
-            href: ../standard/serialization/system-text-json-overview.md
-            displayName: json serialization
-          - name: JSON をシリアル化および逆シリアル化する方法
-            href: ../standard/serialization/system-text-json-how-to.md
-          - name: カスタム コンバーターを記述する方法
-            href: ../standard/serialization/system-text-json-converters-how-to.md
-          - name: Newtonsoft. Json から移行する方法
-            href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
-      - name: バイナリ シリアル化
-        items:
-          - name: 概要
-            href: ../standard/serialization/binary-serialization.md
-            displayName: binary serialization
-          - name: BinaryFormatter セキュリティ ガイド
-            href: ../standard/serialization/binaryformatter-security-guide.md
-          - name: シリアル化の概念
-            href: ../standard/serialization/serialization-concepts.md
-          - name: 基本的なシリアル化
-            href: ../standard/serialization/basic-serialization.md
-          - name: 選択的シリアル化
-            href: ../standard/serialization/selective-serialization.md
-          - name: カスタムのシリアル化
-            href: ../standard/serialization/custom-serialization.md
-          - name: シリアル化プロセスの手順
-            href: ../standard/serialization/steps-in-the-serialization-process.md
-          - name: バージョン トレラントなシリアル化
-            href: ../standard/serialization/version-tolerant-serialization.md
-          - name: シリアル化のガイドライン
-            href: ../standard/serialization/serialization-guidelines.md
-          - name: '方法:シリアル化されたデータをチャンクする'
-            href: ../standard/serialization/how-to-chunk-serialized-data.md
-          - name: '方法:.NET 標準オブジェクトがシリアル化可能なのかどうかを判断する'
-            href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
-          - name: サンプル
-            href: ../standard/serialization/basic-serialization-technology-sample.md
-      - name: XML シリアル化および SOAP シリアル化
-        items:
-          - name: 概要
-            href: ../standard/serialization/xml-and-soap-serialization.md
-          - name: XML シリアル化の詳細
-            href: ../standard/serialization/introducing-xml-serialization.md
-          - name: 例
-            href: ../standard/serialization/examples-of-xml-serialization.md
-          - name: XML スキーマ定義ツール
-            href: ../standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md
-          - name: 属性を使用した XML シリアル化の制御
-            href: ../standard/serialization/controlling-xml-serialization-using-attributes.md
-          - name: XML シリアル化を制御する属性
-            href: ../standard/serialization/attributes-that-control-xml-serialization.md
-          - name: XML Web サービスを使用した XML シリアル化
-            href: ../standard/serialization/xml-serialization-with-xml-web-services.md
-          - name: エンコード済み SOAP シリアル化を制御する属性
-            href: ../standard/serialization/attributes-that-control-encoded-soap-serialization.md
-          - name: 方法
-            items:
-              - name: オブジェクトをシリアル化する
-                href: ../standard/serialization/how-to-serialize-an-object.md
-              - name: オブジェクトを逆シリアル化する
-                href: ../standard/serialization/how-to-deserialize-an-object.md
-              - name: XML スキーマ定義ツールを使用してクラスと XML スキーマ ドキュメントを生成する
-                href: ../standard/serialization/xml-schema-def-tool-gen.md
-              - name: 派生クラスのシリアル化を制御する
-                href: ../standard/serialization/how-to-control-serialization-of-derived-classes.md
-              - name: XML ストリームの代替要素名を指定する
-                href: ../standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md
-              - name: XML 要素および XML 属性名を修飾する
-                href: ../standard/serialization/how-to-qualify-xml-element-and-xml-attribute-names.md
-              - name: オブジェクトを SOAP エンコード済み XML ストリームとしてシリアル化する
-                href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
-              - name: SOAP エンコード済み XML シリアル化をオーバーライドする
-                href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
-          - name: XML シリアル化要素
-            items:
-              - name: system.xml.serialization
-                href: ../standard/serialization/system-xml-serialization-element.md
-              - name: dateTimeSerialization
-                href: ../standard/serialization/datetimeserialization-element.md
-              - name: schemaImporterExtensions
-                href: ../standard/serialization/schemaimporterextensions-element.md
-              - name: schemaImporterExtensions の add 要素
-                href: ../standard/serialization/add-element-for-schemaimporterextensions.md
-              - name: xmlSerializer
-                href: ../standard/serialization/xmlserializer-element.md
-          - name: ツール
-            items:
-              - name: XML シリアライザー ジェネレーター ツール (Sgen.exe)
-                href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
-              - name: XML スキーマ定義ツール (Xsd.exe)
-                href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
   - name: テスト
     displayName: 'xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test, web test'
     items:

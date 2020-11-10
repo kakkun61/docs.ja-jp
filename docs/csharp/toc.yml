@@ -48,6 +48,8 @@
               href: tutorials/intro-to-csharp/object-oriented-programming.md
     - name: 最上位レベルのステートメントを調べる
       href: tutorials/exploration/top-level-statements.md
+    - name: オブジェクトのパターンを調べる
+      href: tutorials/exploration/patterns-objects.md
     - name: C# 6 を詳しく学習する
       href: tutorials/exploration/csharp-6.yml
     - name: 文字列補間を詳しく学習する - 対話形式
@@ -224,7 +226,7 @@
     - name: 記事のインデックス
       displayName: how to's
       href: how-to/index.md
-    - name: '`String.Split` を使用して文字列を解析する'
+    - name: 文字列を部分文字列に分割する
       href: how-to/parse-strings-using-split.md
     - name: 文字列を連結する
       href: how-to/concatenate-multiple-strings.md
@@ -234,7 +236,7 @@
       href: how-to/modify-string-contents.md
     - name: 文字列を比較する
       href: how-to/compare-strings.md
-    - name: パターン マッチング、is 演算子、as 演算子を使用して安全にキャストする
+    - name: パターン マッチングと is/as 演算子を使用して安全にキャストする
       href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
 - name: .NET Compiler Platform SDK (Roslyn API)
   items:
