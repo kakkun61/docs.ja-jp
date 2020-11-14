@@ -578,3 +578,6 @@ items:
               - name: .NET 開発者向けの Azure
                 tocHref: /dotnet/azure/
                 topicHref: /dotnet/azure/index
+          - name: .NET の IoT ライブラリ
+            tocHref: /dotnet/iot/
+            topicHref: /dotnet/iot/index

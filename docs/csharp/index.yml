@@ -6,12 +6,12 @@ metadata:
   description: C# プログラミングを学ぶ - ビギナー開発者、C# を初めて使用する開発者、および C# / .NET の上級開発者向け
   ms.topic: landing-page
   ms.date: 11/19/2019
-  ms.openlocfilehash: 7a9818ea24af237242ddd55afb53d691400ce008
-  ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+  ms.openlocfilehash: f31d24add06b958f6c5bc00baf4c09601616604e
+  ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/15/2020
-  ms.locfileid: "90537380"
+  ms.lasthandoff: 11/12/2020
+  ms.locfileid: "94556818"
 landingContent:
 - title: C# によるプログラミングの学習
   linkLists:
@@ -33,7 +33,7 @@ landingContent:
       url: https://aka.ms/dotnet3-csharp
   - linkListType: download
     links:
-    - text: .NET Core SDK をダウンロードする
+    - text: .NET SDK をダウンロードする
       url: https://dotnet.microsoft.com/download
 - title: C# の基礎
   linkLists:

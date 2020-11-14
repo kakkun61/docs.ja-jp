@@ -1,0 +1,26 @@
+- name: .NET の IoT ライブラリのドキュメント
+  href: index.yml
+- name: 概要
+  href: intro.md
+- name: クイック スタート (Sense HAT)
+  href: quickstarts/sensehat.md
+- name: チュートリアル
+  expanded: true
+  items:
+    - name: LED を点滅させる
+      href: tutorials/blink-led.md
+    - name: センサーから環境条件を読み取る
+      href: tutorials/temp-sensor.md
+    - name: LCD にテキストを表示する
+      href: tutorials/lcd-display.md
+    - name: アナログ デジタル コンバーターから値を読み取る
+      href: tutorials/adc.md
+- name: 攻略ガイド
+  expanded: true
+  items:
+    - name: デプロイ
+      href: deployment.md
+    - name: デバッグ
+      href: debugging.md
+- name: API リファレンス
+  href: /dotnet/api?view=iot-dotnet-1.1
