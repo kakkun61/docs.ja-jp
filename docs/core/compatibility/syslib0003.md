@@ -3,20 +3,20 @@ title: SYSLIB0003 警告
 description: コンパイル時の警告 SYSLIB0003 が生成される旧型式について説明します。
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: ca774f3e4b5132cf40c632f7c49d3f183f5d578f
-ms.sourcegitcommit: dfcbc096ad7908cd58a5f0aeabd2256f05266bac
+ms.openlocfilehash: a9f925904641a1aa4fd229c81ff680850e4f84bd
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92333134"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94439964"
 ---
-# <a name="syslib0003-code-access-security-is-not-supported"></a><span data-ttu-id="aa10b-103">SYSLIB0003: コード アクセス セキュリティはサポートされていません</span><span class="sxs-lookup"><span data-stu-id="aa10b-103">SYSLIB0003: Code access security is not supported</span></span>
+# <a name="syslib0003-code-access-security-is-not-supported"></a><span data-ttu-id="a8e0b-103">SYSLIB0003: コード アクセス セキュリティはサポートされていません</span><span class="sxs-lookup"><span data-stu-id="a8e0b-103">SYSLIB0003: Code access security is not supported</span></span>
 
-<span data-ttu-id="aa10b-104">[コード アクセス セキュリティ (CAS)](../../framework/data/adonet/code-access-security.md) は、サポートされていないレガシ テクノロジです。</span><span class="sxs-lookup"><span data-stu-id="aa10b-104">[Code access security (CAS)](../../framework/data/adonet/code-access-security.md) is an unsupported, legacy technology.</span></span> <span data-ttu-id="aa10b-105">CAS を有効にするためのインフラストラクチャは、.NET Framework 2.x から 4.x のみに存在しますが、非推奨であり、サービスやセキュリティの修正プログラムは提供されません。</span><span class="sxs-lookup"><span data-stu-id="aa10b-105">The infrastructure to enable CAS, which exists only in .NET Framework 2.x - 4.x, is deprecated and not receiving servicing or security fixes.</span></span>
+<span data-ttu-id="a8e0b-104">[コード アクセス セキュリティ (CAS)](../../framework/data/adonet/code-access-security.md) は、サポートされていないレガシ テクノロジです。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-104">[Code access security (CAS)](../../framework/data/adonet/code-access-security.md) is an unsupported, legacy technology.</span></span> <span data-ttu-id="a8e0b-105">CAS を有効にするためのインフラストラクチャは、.NET Framework 2.x から 4.x のみに存在しますが、非推奨であり、サービスやセキュリティの修正プログラムは提供されません。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-105">The infrastructure to enable CAS, which exists only in .NET Framework 2.x - 4.x, is deprecated and not receiving servicing or security fixes.</span></span>
 
-<span data-ttu-id="aa10b-106">その結果、.NET のほとんどのコード アクセス セキュリティ (CAS) 関連の型は、.NET 5.0 以降旧型式になりました。</span><span class="sxs-lookup"><span data-stu-id="aa10b-106">As a result, most code access security (CAS)-related types in .NET are obsolete, starting in .NET 5.0.</span></span> <span data-ttu-id="aa10b-107">これには、<xref:System.Security.Permissions.SecurityPermissionAttribute> などの CAS 属性、<xref:System.Net.SocketPermission> などの CAS アクセス許可オブジェクト、<xref:System.Security.Policy.EvidenceBase> 派生型、その他のサポート API が含まれます。</span><span class="sxs-lookup"><span data-stu-id="aa10b-107">This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission objects, such as <xref:System.Net.SocketPermission>, <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs.</span></span> <span data-ttu-id="aa10b-108">これらの API を使用すると、コンパイル時に警告 `SYSLIB0003` が生成されます。</span><span class="sxs-lookup"><span data-stu-id="aa10b-108">Using these APIs generates warning `SYSLIB0003` at compile time.</span></span>
+<span data-ttu-id="a8e0b-106">その結果、.NET のほとんどのコード アクセス セキュリティ (CAS) 関連の型は、.NET 5.0 以降旧型式になりました。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-106">As a result, most code access security (CAS)-related types in .NET are obsolete, starting in .NET 5.0.</span></span> <span data-ttu-id="a8e0b-107">これには、<xref:System.Security.Permissions.SecurityPermissionAttribute> などの CAS 属性、<xref:System.Net.SocketPermission> などの CAS アクセス許可オブジェクト、<xref:System.Security.Policy.EvidenceBase> 派生型、その他のサポート API が含まれます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-107">This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission objects, such as <xref:System.Net.SocketPermission>, <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs.</span></span> <span data-ttu-id="a8e0b-108">これらの API を使用すると、コンパイル時に警告 `SYSLIB0003` が生成されます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-108">Using these APIs generates warning `SYSLIB0003` at compile time.</span></span>
 
-<span data-ttu-id="aa10b-109">古い CAS API の完全な一覧は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="aa10b-109">The complete list of obsolete CAS APIs is as follows:</span></span>
+<span data-ttu-id="a8e0b-109">古い CAS API の完全な一覧は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-109">The complete list of obsolete CAS APIs is as follows:</span></span>
 
 - <xref:System.AppDomain.PermissionSet?displayProperty=fullName>
 - <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>
@@ -135,7 +135,7 @@ ms.locfileid: "92333134"
 - <xref:System.Security.Permissions.WebBrowserPermissionLevel?displayProperty=fullName>
 - <xref:System.Security.Permissions.ZoneIdentityPermission?displayProperty=fullName>
 - <xref:System.Security.Permissions.ZoneIdentityPermissionAttribute?displayProperty=fullName>
-- [<span data-ttu-id="aa10b-110">System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable\<StrongName>)</span><span class="sxs-lookup"><span data-stu-id="aa10b-110">System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable\<StrongName>)</span></span>](/dotnet/api/system.security.policy.applicationtrust.-ctor#System_Security_Policy_ApplicationTrust__ctor_System_Security_PermissionSet_System_Collections_Generic_IEnumerable_System_Security_Policy_StrongName__)
+- [<span data-ttu-id="a8e0b-110">System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable\<StrongName>)</span><span class="sxs-lookup"><span data-stu-id="a8e0b-110">System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable\<StrongName>)</span></span>](/dotnet/api/system.security.policy.applicationtrust.-ctor#System_Security_Policy_ApplicationTrust__ctor_System_Security_PermissionSet_System_Collections_Generic_IEnumerable_System_Security_Policy_StrongName__)
 - <xref:System.Security.Policy.ApplicationTrust.FullTrustAssemblies?displayProperty=fullName>
 - <xref:System.Security.Policy.FileCodeGroup?displayProperty=fullName>
 - <xref:System.Security.Policy.GacInstalled?displayProperty=fullName>
@@ -161,9 +161,9 @@ ms.locfileid: "92333134"
 - <xref:System.Web.AspNetHostingPermissionAttribute?displayProperty=fullName>
 - <xref:System.Xaml.Permissions.XamlLoadPermission?displayProperty=fullName>
 
-## <a name="workarounds"></a><span data-ttu-id="aa10b-111">回避策</span><span class="sxs-lookup"><span data-stu-id="aa10b-111">Workarounds</span></span>
+## <a name="workarounds"></a><span data-ttu-id="a8e0b-111">回避策</span><span class="sxs-lookup"><span data-stu-id="a8e0b-111">Workarounds</span></span>
 
-- <span data-ttu-id="aa10b-112">セキュリティのアクセス許可をアサートする場合は、アクセス許可をアサートする属性または呼び出しを削除します。</span><span class="sxs-lookup"><span data-stu-id="aa10b-112">If you're asserting any security permission, remove the attribute or call that asserts the permission.</span></span>
+- <span data-ttu-id="a8e0b-112">セキュリティのアクセス許可をアサートする場合は、アクセス許可をアサートする属性または呼び出しを削除します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-112">If you're asserting any security permission, remove the attribute or call that asserts the permission.</span></span>
 
   ```csharp
   // REMOVE the attribute below.
@@ -178,7 +178,7 @@ ms.locfileid: "92333134"
   }
   ```
 
-- <span data-ttu-id="aa10b-113">任意のアクセス許可を (`PermitOnly` を使用して) 拒否または制限する場合は、セキュリティ アドバイザーにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="aa10b-113">If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor.</span></span> <span data-ttu-id="aa10b-114">CAS の属性は .NET 5.0 以降のランタイムでは考慮されないため、CAS インフラストラクチャに誤って依存してこれらのメソッドへのアクセスを制限してしまうと、お使いのアプリケーションにセキュリティ ホールが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="aa10b-114">Because CAS attributes are not honored by the .NET 5.0+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.</span></span>
+- <span data-ttu-id="a8e0b-113">任意のアクセス許可を (`PermitOnly` を使用して) 拒否または制限する場合は、セキュリティ アドバイザーにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-113">If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor.</span></span> <span data-ttu-id="a8e0b-114">CAS の属性は .NET 5.0 以降のランタイムでは考慮されないため、CAS インフラストラクチャに誤って依存してこれらのメソッドへのアクセスを制限してしまうと、お使いのアプリケーションにセキュリティ ホールが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-114">Because CAS attributes are not honored by the .NET 5.0+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.</span></span>
 
   ```csharp
   // REVIEW the attribute below; could indicate security vulnerability.
@@ -193,7 +193,7 @@ ms.locfileid: "92333134"
   }
   ```
 
-- <span data-ttu-id="aa10b-115">(<xref:System.Security.Permissions.PrincipalPermission> を除く) アクセス許可を要求している場合は、要求を削除します。</span><span class="sxs-lookup"><span data-stu-id="aa10b-115">If you're demanding any permission (except <xref:System.Security.Permissions.PrincipalPermission>), remove the demand.</span></span> <span data-ttu-id="aa10b-116">すべての要求は実行時に成功します。</span><span class="sxs-lookup"><span data-stu-id="aa10b-116">All demands will succeed at run time.</span></span>
+- <span data-ttu-id="a8e0b-115">(<xref:System.Security.Permissions.PrincipalPermission> を除く) アクセス許可を要求している場合は、要求を削除します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-115">If you're demanding any permission (except <xref:System.Security.Permissions.PrincipalPermission>), remove the demand.</span></span> <span data-ttu-id="a8e0b-116">すべての要求は実行時に成功します。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-116">All demands will succeed at run time.</span></span>
 
   ```csharp
   // REMOVE the attribute below; it will always succeed.
@@ -208,8 +208,10 @@ ms.locfileid: "92333134"
   }
   ```
 
-- <span data-ttu-id="aa10b-117"><xref:System.Security.Permissions.PrincipalPermission> を要求している場合は、ガイダンス「[SYSLIB0002: PrincipalPermissionAttribute は旧型式](syslib0002.md#workarounds)」を確認してください。</span><span class="sxs-lookup"><span data-stu-id="aa10b-117">If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance for [SYSLIB0002: PrincipalPermissionAttribute is obsolete](syslib0002.md#workarounds).</span></span> <span data-ttu-id="aa10b-118">このガイダンスは、<xref:System.Security.Permissions.PrincipalPermission> と <xref:System.Security.Permissions.PrincipalPermissionAttribute> の両方に適用されます。</span><span class="sxs-lookup"><span data-stu-id="aa10b-118">That guidance applies for both <xref:System.Security.Permissions.PrincipalPermission> and <xref:System.Security.Permissions.PrincipalPermissionAttribute>.</span></span>
+- <span data-ttu-id="a8e0b-117"><xref:System.Security.Permissions.PrincipalPermission> を要求している場合は、ガイダンス「[SYSLIB0002: PrincipalPermissionAttribute は旧型式](syslib0002.md#workarounds)」を確認してください。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-117">If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance for [SYSLIB0002: PrincipalPermissionAttribute is obsolete](syslib0002.md#workarounds).</span></span> <span data-ttu-id="a8e0b-118">このガイダンスは、<xref:System.Security.Permissions.PrincipalPermission> と <xref:System.Security.Permissions.PrincipalPermissionAttribute> の両方に適用されます。</span><span class="sxs-lookup"><span data-stu-id="a8e0b-118">That guidance applies for both <xref:System.Security.Permissions.PrincipalPermission> and <xref:System.Security.Permissions.PrincipalPermissionAttribute>.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="aa10b-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="aa10b-119">See also</span></span>
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
 
-- [<span data-ttu-id="aa10b-120">SYSLIB0002: PrincipalPermissionAttribute は旧型式</span><span class="sxs-lookup"><span data-stu-id="aa10b-120">SYSLIB0002: PrincipalPermissionAttribute is obsolete</span></span>](syslib0002.md)
+## <a name="see-also"></a><span data-ttu-id="a8e0b-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="a8e0b-119">See also</span></span>
+
+- [<span data-ttu-id="a8e0b-120">SYSLIB0002: PrincipalPermissionAttribute は旧型式</span><span class="sxs-lookup"><span data-stu-id="a8e0b-120">SYSLIB0002: PrincipalPermissionAttribute is obsolete</span></span>](syslib0002.md)

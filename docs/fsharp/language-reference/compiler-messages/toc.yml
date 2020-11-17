@@ -13,3 +13,5 @@
       href: ./fs0008.md
     - name: FS0009 - 検証不可能なコードの可能性
       href: ./fs0009.md
+    - name: FS0025 - 不完全なパターン マッチング
+      href: ./fs0025.md
