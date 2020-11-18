@@ -2,40 +2,39 @@
 title: メンバーのデザインのガイドライン
 description: .NET のメンバーデザインガイドラインについて説明します。 メンバーには、メソッド、プロパティ、イベント、コンストラクター、およびフィールドが含まれます。
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - member design guidelines [.NET Framework], about member design guidelines
 - members [.NET Framework], design guidelines
 - class library design guidelines [.NET Framework], members
 - member design guidelines [.NET Framework]
 ms.assetid: 0ce93180-1d7b-4f8c-9306-f828b2d66b8f
-ms.openlocfilehash: a1f0c1d74e8bffa7cfef975c7dafb9fd01479470
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 512fc3b7fde93279995a67be2fc0b285ba235f16
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594492"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94820944"
 ---
-# <a name="member-design-guidelines"></a><span data-ttu-id="72acd-104">メンバーのデザインのガイドライン</span><span class="sxs-lookup"><span data-stu-id="72acd-104">Member Design Guidelines</span></span>
-<span data-ttu-id="72acd-105">メソッド、プロパティ、イベント、コンストラクター、およびフィールドは、総称してメンバーと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="72acd-105">Methods, properties, events, constructors, and fields are collectively referred to as members.</span></span> <span data-ttu-id="72acd-106">フレームワークのエンドユーザーに公開されるフレームワークの機能は、最終的にメンバーになります。</span><span class="sxs-lookup"><span data-stu-id="72acd-106">Members are ultimately the means by which framework functionality is exposed to the end users of a framework.</span></span>  
+# <a name="member-design-guidelines"></a><span data-ttu-id="15814-104">メンバーのデザインのガイドライン</span><span class="sxs-lookup"><span data-stu-id="15814-104">Member Design Guidelines</span></span>
+<span data-ttu-id="15814-105">メソッド、プロパティ、イベント、コンストラクター、およびフィールドは、総称してメンバーと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="15814-105">Methods, properties, events, constructors, and fields are collectively referred to as members.</span></span> <span data-ttu-id="15814-106">フレームワークのエンドユーザーに公開されるフレームワークの機能は、最終的にメンバーになります。</span><span class="sxs-lookup"><span data-stu-id="15814-106">Members are ultimately the means by which framework functionality is exposed to the end users of a framework.</span></span>  
   
- <span data-ttu-id="72acd-107">メンバーは、仮想または非仮想、具象または抽象、静的、またはインスタンスにすることができ、アクセシビリティの複数の異なるスコープを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="72acd-107">Members can be virtual or nonvirtual, concrete or abstract, static or instance, and can have several different scopes of accessibility.</span></span> <span data-ttu-id="72acd-108">これらはすべて、非常に優れた表現力を提供しますが、同時にフレームワークデザイナーの一部に注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="72acd-108">All this variety provides incredible expressiveness but at the same time requires care on the part of the framework designer.</span></span>  
+ <span data-ttu-id="15814-107">メンバーは、仮想または非仮想、具象または抽象、静的、またはインスタンスにすることができ、アクセシビリティの複数の異なるスコープを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="15814-107">Members can be virtual or nonvirtual, concrete or abstract, static or instance, and can have several different scopes of accessibility.</span></span> <span data-ttu-id="15814-108">これらはすべて、非常に優れた表現力を提供しますが、同時にフレームワークデザイナーの一部に注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="15814-108">All this variety provides incredible expressiveness but at the same time requires care on the part of the framework designer.</span></span>  
   
- <span data-ttu-id="72acd-109">この章では、任意の型のメンバーを設計する際に従う必要がある基本的なガイドラインについて説明します。</span><span class="sxs-lookup"><span data-stu-id="72acd-109">This chapter offers basic guidelines that should be followed when designing members of any type.</span></span>  
+ <span data-ttu-id="15814-109">この章では、任意の型のメンバーを設計する際に従う必要がある基本的なガイドラインについて説明します。</span><span class="sxs-lookup"><span data-stu-id="15814-109">This chapter offers basic guidelines that should be followed when designing members of any type.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="72acd-110">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="72acd-110">In This Section</span></span>  
- [<span data-ttu-id="72acd-111">メンバーのオーバーロード</span><span class="sxs-lookup"><span data-stu-id="72acd-111">Member Overloading</span></span>](member-overloading.md)  
- [<span data-ttu-id="72acd-112">プロパティのデザイン</span><span class="sxs-lookup"><span data-stu-id="72acd-112">Property Design</span></span>](property.md)  
- [<span data-ttu-id="72acd-113">コンストラクターのデザイン</span><span class="sxs-lookup"><span data-stu-id="72acd-113">Constructor Design</span></span>](constructor.md)  
- [<span data-ttu-id="72acd-114">イベントのデザイン</span><span class="sxs-lookup"><span data-stu-id="72acd-114">Event Design</span></span>](event.md)  
- [<span data-ttu-id="72acd-115">フィールドのデザイン</span><span class="sxs-lookup"><span data-stu-id="72acd-115">Field Design</span></span>](field.md)  
- [<span data-ttu-id="72acd-116">拡張メソッド</span><span class="sxs-lookup"><span data-stu-id="72acd-116">Extension Methods</span></span>](extension-methods.md)  
- [<span data-ttu-id="72acd-117">演算子のオーバーロード</span><span class="sxs-lookup"><span data-stu-id="72acd-117">Operator Overloads</span></span>](operator-overloads.md)  
- [<span data-ttu-id="72acd-118">パラメーターのデザイン</span><span class="sxs-lookup"><span data-stu-id="72acd-118">Parameter Design</span></span>](parameter-design.md)  
- <span data-ttu-id="72acd-119">*©2005、2009 Microsoft Corporation の部分。すべての権限が予約されています。*</span><span class="sxs-lookup"><span data-stu-id="72acd-119">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="15814-110">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="15814-110">In This Section</span></span>  
+ [<span data-ttu-id="15814-111">メンバーのオーバーロード</span><span class="sxs-lookup"><span data-stu-id="15814-111">Member Overloading</span></span>](member-overloading.md)  
+ [<span data-ttu-id="15814-112">プロパティのデザイン</span><span class="sxs-lookup"><span data-stu-id="15814-112">Property Design</span></span>](property.md)  
+ [<span data-ttu-id="15814-113">コンストラクターのデザイン</span><span class="sxs-lookup"><span data-stu-id="15814-113">Constructor Design</span></span>](constructor.md)  
+ [<span data-ttu-id="15814-114">イベントのデザイン</span><span class="sxs-lookup"><span data-stu-id="15814-114">Event Design</span></span>](event.md)  
+ [<span data-ttu-id="15814-115">フィールドのデザイン</span><span class="sxs-lookup"><span data-stu-id="15814-115">Field Design</span></span>](field.md)  
+ [<span data-ttu-id="15814-116">拡張メソッド</span><span class="sxs-lookup"><span data-stu-id="15814-116">Extension Methods</span></span>](extension-methods.md)  
+ [<span data-ttu-id="15814-117">演算子のオーバーロード</span><span class="sxs-lookup"><span data-stu-id="15814-117">Operator Overloads</span></span>](operator-overloads.md)  
+ [<span data-ttu-id="15814-118">パラメーターのデザイン</span><span class="sxs-lookup"><span data-stu-id="15814-118">Parameter Design</span></span>](parameter-design.md)  
+ <span data-ttu-id="15814-119">*©2005、2009 Microsoft Corporation の部分。すべての権限が予約されています。*</span><span class="sxs-lookup"><span data-stu-id="15814-119">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>  
   
- <span data-ttu-id="72acd-120">*2008 年 10 月 22 日に Microsoft Windows Development シリーズの一部として、Addison-Wesley Professional によって発行された、Krzysztof Cwalina および Brad Abrams による「[Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619)」 (フレームワーク デザイン ガイドライン: 再利用可能な .NET ライブラリの規則、用法、パターン、第 2 版) から Pearson Education, Inc. の許可を得て再印刷されています。*</span><span class="sxs-lookup"><span data-stu-id="72acd-120">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>  
+ <span data-ttu-id="15814-120">*2008 年 10 月 22 日に Microsoft Windows Development シリーズの一部として、Addison-Wesley Professional によって発行された、Krzysztof Cwalina および Brad Abrams による「[Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619)」 (フレームワーク デザイン ガイドライン: 再利用可能な .NET ライブラリの規則、用法、パターン、第 2 版) から Pearson Education, Inc. の許可を得て再印刷されています。*</span><span class="sxs-lookup"><span data-stu-id="15814-120">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="72acd-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="72acd-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="15814-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="15814-121">See also</span></span>
 
-- [<span data-ttu-id="72acd-122">フレームワークデザインのガイドライン</span><span class="sxs-lookup"><span data-stu-id="72acd-122">Framework Design Guidelines</span></span>](index.md)
+- [<span data-ttu-id="15814-122">フレームワークデザインのガイドライン</span><span class="sxs-lookup"><span data-stu-id="15814-122">Framework Design Guidelines</span></span>](index.md)
