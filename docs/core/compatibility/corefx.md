@@ -69,7 +69,7 @@ ms.locfileid: "92434936"
 
 [!INCLUDE [globalassemblycache-property-obsolete](../../../includes/core-changes/corefx/5.0/global-assembly-cache-apis-obsolete.md)]
 
-<span data-ttu-id="bccb8-195">\*\*_</span><span class="sxs-lookup"><span data-stu-id="bccb8-195">\*\*_</span></span>
+***
 
 [!INCLUDE [code-access-security-apis-obsolete](../../../includes/core-changes/corefx/5.0/code-access-security-apis-obsolete.md)]
 
@@ -239,4 +239,4 @@ ms.locfileid: "92434936"
 
 [!INCLUDE [startinfo-throws-exception](../../../includes/core-changes/corefx/1.0/startinfo-throws-exception.md)]
 
-<span data-ttu-id="bccb8-199">_\*\*</span><span class="sxs-lookup"><span data-stu-id="bccb8-199">_\*\*</span></span>
+***
