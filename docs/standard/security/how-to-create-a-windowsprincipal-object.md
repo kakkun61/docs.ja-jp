@@ -1,7 +1,6 @@
 ---
 title: '方法: WindowsPrincipal プロジェクトを作成する'
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -11,27 +10,27 @@ helpviewer_keywords:
 - security [.NET], principals
 - principal objects, creating
 ms.assetid: 56eb10ca-e61d-4ed2-af7a-555fc4c25a25
-ms.openlocfilehash: 6cf7153250d2574783515ea53cf99709499d36f9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: d4140470308a09774e5e4eee429c1e91b559d063
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556207"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819033"
 ---
-# <a name="how-to-create-a-windowsprincipal-object"></a><span data-ttu-id="fa882-102">方法: WindowsPrincipal プロジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="fa882-102">How to: Create a WindowsPrincipal Object</span></span>
+# <a name="how-to-create-a-windowsprincipal-object"></a><span data-ttu-id="dda56-102">方法: WindowsPrincipal プロジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="dda56-102">How to: Create a WindowsPrincipal Object</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="fa882-103">この記事は、Windows に適用されます。</span><span class="sxs-lookup"><span data-stu-id="fa882-103">This article applies to Windows.</span></span>
+> <span data-ttu-id="dda56-103">この記事は、Windows に適用されます。</span><span class="sxs-lookup"><span data-stu-id="dda56-103">This article applies to Windows.</span></span>
 >
-> <span data-ttu-id="fa882-104">ASP.NET Core の詳細については、「 [ASP.NET Core Security](/aspnet/core/security/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fa882-104">For information about ASP.NET Core, see [ASP.NET Core Security](/aspnet/core/security/).</span></span>
+> <span data-ttu-id="dda56-104">ASP.NET Core の詳細については、「 [ASP.NET Core Security](/aspnet/core/security/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dda56-104">For information about ASP.NET Core, see [ASP.NET Core Security](/aspnet/core/security/).</span></span>
 
-<span data-ttu-id="fa882-105">コードが役割ベースの検証を繰り返し実行する必要があるか、1 回だけ実行する必要があるかによって、<xref:System.Security.Principal.WindowsPrincipal> オブジェクトを作成する方法は 2 つあります。</span><span class="sxs-lookup"><span data-stu-id="fa882-105">There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal> object, depending on whether code must repeatedly perform role-based validation or must perform it only once.</span></span>  
+<span data-ttu-id="dda56-105">コードが役割ベースの検証を繰り返し実行する必要があるか、1 回だけ実行する必要があるかによって、<xref:System.Security.Principal.WindowsPrincipal> オブジェクトを作成する方法は 2 つあります。</span><span class="sxs-lookup"><span data-stu-id="dda56-105">There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal> object, depending on whether code must repeatedly perform role-based validation or must perform it only once.</span></span>  
   
-<span data-ttu-id="fa882-106">コードが役割ベースの検証を繰り返し実行する必要がある場合、次の最初の手順のほうが、生成されるオーバーヘッドが少なくなります。</span><span class="sxs-lookup"><span data-stu-id="fa882-106">If code must repeatedly perform role-based validation, the first of the following procedures produces less overhead.</span></span> <span data-ttu-id="fa882-107">コードが役割ベースの検証を 1 回だけ実行する必要がある場合、次の 2 番目の手順を使用して <xref:System.Security.Principal.WindowsPrincipal> オブジェクトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="fa882-107">When code needs to make role-based validations only once, you can create a <xref:System.Security.Principal.WindowsPrincipal> object by using the second of the following procedures.</span></span>  
+<span data-ttu-id="dda56-106">コードが役割ベースの検証を繰り返し実行する必要がある場合、次の最初の手順のほうが、生成されるオーバーヘッドが少なくなります。</span><span class="sxs-lookup"><span data-stu-id="dda56-106">If code must repeatedly perform role-based validation, the first of the following procedures produces less overhead.</span></span> <span data-ttu-id="dda56-107">コードが役割ベースの検証を 1 回だけ実行する必要がある場合、次の 2 番目の手順を使用して <xref:System.Security.Principal.WindowsPrincipal> オブジェクトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="dda56-107">When code needs to make role-based validations only once, you can create a <xref:System.Security.Principal.WindowsPrincipal> object by using the second of the following procedures.</span></span>  
   
-### <a name="to-create-a-windowsprincipal-object-for-repeated-validation"></a><span data-ttu-id="fa882-108">繰り返し検証で WindowsPrincipal オブジェクトを作成するには</span><span class="sxs-lookup"><span data-stu-id="fa882-108">To create a WindowsPrincipal object for repeated validation</span></span>  
+### <a name="to-create-a-windowsprincipal-object-for-repeated-validation"></a><span data-ttu-id="dda56-108">繰り返し検証で WindowsPrincipal オブジェクトを作成するには</span><span class="sxs-lookup"><span data-stu-id="dda56-108">To create a WindowsPrincipal object for repeated validation</span></span>  
   
-1. <span data-ttu-id="fa882-109">静的な <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> プロパティによって返される <xref:System.AppDomain> オブジェクトの <xref:System.AppDomain.SetPrincipalPolicy%2A> メソッドを呼び出し、新しいポリシーの内容を示す <xref:System.Security.Principal.PrincipalPolicy> 列挙値があるメソッドに渡します。</span><span class="sxs-lookup"><span data-stu-id="fa882-109">Call the <xref:System.AppDomain.SetPrincipalPolicy%2A> method on the <xref:System.AppDomain> object that is returned by the static <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> property, passing the method a <xref:System.Security.Principal.PrincipalPolicy> enumeration value that indicates what the new policy should be.</span></span> <span data-ttu-id="fa882-110">サポートされている値は、<xref:System.Security.Principal.PrincipalPolicy.NoPrincipal>、<xref:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal>、および <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal> です。</span><span class="sxs-lookup"><span data-stu-id="fa882-110">Supported values are <xref:System.Security.Principal.PrincipalPolicy.NoPrincipal>, <xref:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal>, and <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>.</span></span> <span data-ttu-id="fa882-111">次のコードは、このメソッドの呼び出しを示しています。</span><span class="sxs-lookup"><span data-stu-id="fa882-111">The following code demonstrates this method call.</span></span>  
+1. <span data-ttu-id="dda56-109">静的な <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> プロパティによって返される <xref:System.AppDomain> オブジェクトの <xref:System.AppDomain.SetPrincipalPolicy%2A> メソッドを呼び出し、新しいポリシーの内容を示す <xref:System.Security.Principal.PrincipalPolicy> 列挙値があるメソッドに渡します。</span><span class="sxs-lookup"><span data-stu-id="dda56-109">Call the <xref:System.AppDomain.SetPrincipalPolicy%2A> method on the <xref:System.AppDomain> object that is returned by the static <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> property, passing the method a <xref:System.Security.Principal.PrincipalPolicy> enumeration value that indicates what the new policy should be.</span></span> <span data-ttu-id="dda56-110">サポートされている値は、<xref:System.Security.Principal.PrincipalPolicy.NoPrincipal>、<xref:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal>、および <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal> です。</span><span class="sxs-lookup"><span data-stu-id="dda56-110">Supported values are <xref:System.Security.Principal.PrincipalPolicy.NoPrincipal>, <xref:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal>, and <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>.</span></span> <span data-ttu-id="dda56-111">次のコードは、このメソッドの呼び出しを示しています。</span><span class="sxs-lookup"><span data-stu-id="dda56-111">The following code demonstrates this method call.</span></span>  
   
     ```csharp  
     AppDomain.CurrentDomain.SetPrincipalPolicy(  
@@ -43,7 +42,7 @@ ms.locfileid: "90556207"
         PrincipalPolicy.WindowsPrincipal)  
     ```  
   
-2. <span data-ttu-id="fa882-112">ポリシーの設定により、静的な <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> プロパティを使用して、現在の Windows ユーザーをカプセル化するプリンシパルを取得します。</span><span class="sxs-lookup"><span data-stu-id="fa882-112">With the policy set, use the static <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to retrieve the principal that encapsulates the current Windows user.</span></span> <span data-ttu-id="fa882-113">プロパティの戻り値の型は <xref:System.Security.Principal.IPrincipal> であるため、結果を <xref:System.Security.Principal.WindowsPrincipal> 型にキャストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="fa882-113">Because the property return type is <xref:System.Security.Principal.IPrincipal>, you must cast the result to a <xref:System.Security.Principal.WindowsPrincipal> type.</span></span> <span data-ttu-id="fa882-114">次のコードは、新しい <xref:System.Security.Principal.WindowsPrincipal> オブジェクトを、現在のスレッドに関連付けられたプリンシパルの値に初期化します。</span><span class="sxs-lookup"><span data-stu-id="fa882-114">The following code initializes a new <xref:System.Security.Principal.WindowsPrincipal> object to the value of the principal associated with the current thread.</span></span>  
+2. <span data-ttu-id="dda56-112">ポリシーの設定により、静的な <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> プロパティを使用して、現在の Windows ユーザーをカプセル化するプリンシパルを取得します。</span><span class="sxs-lookup"><span data-stu-id="dda56-112">With the policy set, use the static <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to retrieve the principal that encapsulates the current Windows user.</span></span> <span data-ttu-id="dda56-113">プロパティの戻り値の型は <xref:System.Security.Principal.IPrincipal> であるため、結果を <xref:System.Security.Principal.WindowsPrincipal> 型にキャストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dda56-113">Because the property return type is <xref:System.Security.Principal.IPrincipal>, you must cast the result to a <xref:System.Security.Principal.WindowsPrincipal> type.</span></span> <span data-ttu-id="dda56-114">次のコードは、新しい <xref:System.Security.Principal.WindowsPrincipal> オブジェクトを、現在のスレッドに関連付けられたプリンシパルの値に初期化します。</span><span class="sxs-lookup"><span data-stu-id="dda56-114">The following code initializes a new <xref:System.Security.Principal.WindowsPrincipal> object to the value of the principal associated with the current thread.</span></span>  
   
     ```csharp  
     WindowsPrincipal myPrincipal =
@@ -55,11 +54,11 @@ ms.locfileid: "90556207"
         CType(Thread.CurrentPrincipal, WindowsPrincipal)
     ```  
   
-3. <span data-ttu-id="fa882-115">プリンシパル オブジェクトが作成されると、いくつかのメソッドのいずれかを使用して検証できます。</span><span class="sxs-lookup"><span data-stu-id="fa882-115">When the principal object has been created, you can use one of several methods to validate it.</span></span>  
+3. <span data-ttu-id="dda56-115">プリンシパル オブジェクトが作成されると、いくつかのメソッドのいずれかを使用して検証できます。</span><span class="sxs-lookup"><span data-stu-id="dda56-115">When the principal object has been created, you can use one of several methods to validate it.</span></span>  
   
-### <a name="to-create-a-windowsprincipal-object-for-a-single-validation"></a><span data-ttu-id="fa882-116">1 回の検証用に WindowsPrincipal オブジェクトを作成するには</span><span class="sxs-lookup"><span data-stu-id="fa882-116">To create a WindowsPrincipal object for a single validation</span></span>  
+### <a name="to-create-a-windowsprincipal-object-for-a-single-validation"></a><span data-ttu-id="dda56-116">1 回の検証用に WindowsPrincipal オブジェクトを作成するには</span><span class="sxs-lookup"><span data-stu-id="dda56-116">To create a WindowsPrincipal object for a single validation</span></span>  
   
-1. <span data-ttu-id="fa882-117">静的な <xref:System.Security.Principal.WindowsIdentity.GetCurrent%2A?displayProperty=nameWithType> メソッドを呼び出して新しい <xref:System.Security.Principal.WindowsIdentity> オブジェクトを初期化します。このメソッドは、現在の Windows アカウントに対してクエリを実行し、そのアカウントに関する情報を新規作成された ID オブジェクトに配置します。</span><span class="sxs-lookup"><span data-stu-id="fa882-117">Initialize a new <xref:System.Security.Principal.WindowsIdentity> object by calling the static <xref:System.Security.Principal.WindowsIdentity.GetCurrent%2A?displayProperty=nameWithType> method, which queries the current Windows account and places information about that account into the newly created identity object.</span></span> <span data-ttu-id="fa882-118">次のコードは、<xref:System.Security.Principal.WindowsIdentity> オブジェクトを新規作成し、これを現在の認証済みユーザーに初期化します。</span><span class="sxs-lookup"><span data-stu-id="fa882-118">The following code creates a new <xref:System.Security.Principal.WindowsIdentity> object and initializes it to the current authenticated user.</span></span>  
+1. <span data-ttu-id="dda56-117">静的な <xref:System.Security.Principal.WindowsIdentity.GetCurrent%2A?displayProperty=nameWithType> メソッドを呼び出して新しい <xref:System.Security.Principal.WindowsIdentity> オブジェクトを初期化します。このメソッドは、現在の Windows アカウントに対してクエリを実行し、そのアカウントに関する情報を新規作成された ID オブジェクトに配置します。</span><span class="sxs-lookup"><span data-stu-id="dda56-117">Initialize a new <xref:System.Security.Principal.WindowsIdentity> object by calling the static <xref:System.Security.Principal.WindowsIdentity.GetCurrent%2A?displayProperty=nameWithType> method, which queries the current Windows account and places information about that account into the newly created identity object.</span></span> <span data-ttu-id="dda56-118">次のコードは、<xref:System.Security.Principal.WindowsIdentity> オブジェクトを新規作成し、これを現在の認証済みユーザーに初期化します。</span><span class="sxs-lookup"><span data-stu-id="dda56-118">The following code creates a new <xref:System.Security.Principal.WindowsIdentity> object and initializes it to the current authenticated user.</span></span>  
   
     ```csharp  
     WindowsIdentity myIdentity = WindowsIdentity.GetCurrent();  
@@ -69,7 +68,7 @@ ms.locfileid: "90556207"
     Dim myIdentity As WindowsIdentity = WindowsIdentity.GetCurrent()  
     ```  
   
-2. <span data-ttu-id="fa882-119"><xref:System.Security.Principal.WindowsPrincipal> オブジェクトを新規作成し、これに前の手順で作成された <xref:System.Security.Principal.WindowsIdentity> オブジェクトの値を渡します。</span><span class="sxs-lookup"><span data-stu-id="fa882-119">Create a new <xref:System.Security.Principal.WindowsPrincipal> object and pass it the value of the <xref:System.Security.Principal.WindowsIdentity> object created in the preceding step.</span></span>  
+2. <span data-ttu-id="dda56-119"><xref:System.Security.Principal.WindowsPrincipal> オブジェクトを新規作成し、これに前の手順で作成された <xref:System.Security.Principal.WindowsIdentity> オブジェクトの値を渡します。</span><span class="sxs-lookup"><span data-stu-id="dda56-119">Create a new <xref:System.Security.Principal.WindowsPrincipal> object and pass it the value of the <xref:System.Security.Principal.WindowsIdentity> object created in the preceding step.</span></span>  
   
     ```csharp  
     WindowsPrincipal myPrincipal = new WindowsPrincipal(myIdentity);  
@@ -79,9 +78,9 @@ ms.locfileid: "90556207"
     Dim myPrincipal As New WindowsPrincipal(myIdentity)  
     ```  
   
-3. <span data-ttu-id="fa882-120">プリンシパル オブジェクトが作成されると、いくつかのメソッドのいずれかを使用して検証できます。</span><span class="sxs-lookup"><span data-stu-id="fa882-120">When the principal object has been created, you can use one of several methods to validate it.</span></span>  
+3. <span data-ttu-id="dda56-120">プリンシパル オブジェクトが作成されると、いくつかのメソッドのいずれかを使用して検証できます。</span><span class="sxs-lookup"><span data-stu-id="dda56-120">When the principal object has been created, you can use one of several methods to validate it.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="fa882-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="fa882-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dda56-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="dda56-121">See also</span></span>
 
-- [<span data-ttu-id="fa882-122">プリンシパル オブジェクトと ID オブジェクト</span><span class="sxs-lookup"><span data-stu-id="fa882-122">Principal and Identity Objects</span></span>](principal-and-identity-objects.md)
-- [<span data-ttu-id="fa882-123">ASP.NET Core のセキュリティ</span><span class="sxs-lookup"><span data-stu-id="fa882-123">ASP.NET Core Security</span></span>](/aspnet/core/security/)
+- [<span data-ttu-id="dda56-122">プリンシパル オブジェクトと ID オブジェクト</span><span class="sxs-lookup"><span data-stu-id="dda56-122">Principal and Identity Objects</span></span>](principal-and-identity-objects.md)
+- [<span data-ttu-id="dda56-123">ASP.NET Core のセキュリティ</span><span class="sxs-lookup"><span data-stu-id="dda56-123">ASP.NET Core Security</span></span>](/aspnet/core/security/)
