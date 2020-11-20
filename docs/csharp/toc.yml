@@ -46,6 +46,8 @@
               href: tutorials/intro-to-csharp/introduction-to-classes.md
             - name: オブジェクト指向プログラミング
               href: tutorials/intro-to-csharp/object-oriented-programming.md
+    - name: レコード型を調べる
+      href: tutorials/exploration/records.md
     - name: 最上位レベルのステートメントを調べる
       href: tutorials/exploration/top-level-statements.md
     - name: オブジェクトのパターンを調べる

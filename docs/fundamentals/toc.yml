@@ -180,7 +180,7 @@ items:
           - name: 概要
             displayName: '.net cli,command-line interface,cli,tool'
             href: ../core/tools/index.md
-          - name: リファレンス
+          - name: 関連項目
             items:
               - name: dotnet
                 href: ../core/tools/dotnet.md
@@ -312,7 +312,7 @@ items:
             items:
               - name: 概要
                 href: ../core/project-sdk/overview.md
-              - name: リファレンス
+              - name: 関連項目
                 items:
                   - name: Microsoft.NET.Sdk
                     href: ../core/project-sdk/msbuild-props.md
@@ -372,6 +372,8 @@ items:
             href: ../core/diagnostics/debug-linux-dumps.md
           - name: EventCounters
             href: ../core/diagnostics/event-counters.md
+          - name: EventPipe
+            href: ../core/diagnostics/eventpipe.md
           - name: ログとトレース
             href: ../core/diagnostics/logging-tracing.md
           - name: コンテナーでの診断の収集
@@ -1963,7 +1965,7 @@ items:
         href: ../core/testing/unit-testing-published-output.md
       - name: Visual Studio での .NET Core プロジェクトのライブ単体テスト
         href: /visualstudio/test/live-unit-testing-start
-  - name: Security
+  - name: セキュリティ
     href: ../standard/security/
   - name: 高度なトピック
     items:
