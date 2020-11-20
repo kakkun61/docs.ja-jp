@@ -1,55 +1,62 @@
 ---
-title: Ubuntu に .NET Core をインストールする - .NET Core
-description: Ubuntu に .NET Core SDK と .NET Core ランタイムをインストールするさまざまな方法を示します。
+title: Ubuntu に .NET をインストールする - .NET
+description: Ubuntu に .NET SDK と .NET ランタイムをインストールするさまざまな方法を示します。
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
-ms.openlocfilehash: 5c07de20110a1aecf2ec5cb9de88f204625e548d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 11/10/2020
+ms.openlocfilehash: 419bcf3ccd011cadba8f8c64e195d7dbdbf7e241
+ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538456"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94507031"
 ---
-# <a name="install-net-core-sdk-or-net-core-runtime-on-ubuntu"></a><span data-ttu-id="36b0f-103">Ubuntu に .NET Core SDK または .NET Core ランタイムをインストールする</span><span class="sxs-lookup"><span data-stu-id="36b0f-103">Install .NET Core SDK or .NET Core Runtime on Ubuntu</span></span>
+# <a name="install-the-net-sdk-or-the-net-runtime-on-ubuntu"></a><span data-ttu-id="6d84d-103">Ubuntu に .NET SDK または .NET ランタイムをインストールする</span><span class="sxs-lookup"><span data-stu-id="6d84d-103">Install the .NET SDK or the .NET Runtime on Ubuntu</span></span>
 
-<span data-ttu-id="36b0f-104">.NET Core は Ubuntu でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="36b0f-104">.NET Core is supported on Ubuntu.</span></span> <span data-ttu-id="36b0f-105">この記事では、Ubuntu に .NET Core をインストールする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="36b0f-105">This article describes how to install .NET Core on Ubuntu.</span></span> <span data-ttu-id="36b0f-106">Ubuntu のバージョンがサポート対象外である場合、.NET Core もそのバージョンでサポート対象外となります。</span><span class="sxs-lookup"><span data-stu-id="36b0f-106">When an Ubuntu version falls out of support, .NET Core is no longer supported with that version.</span></span> <span data-ttu-id="36b0f-107">ただし、サポートされていない場合でも、以下の手順はそれらのバージョンで実行される .NET Core の取得に役立つ場合があります。</span><span class="sxs-lookup"><span data-stu-id="36b0f-107">However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.</span></span>
+<span data-ttu-id="6d84d-104">.NET は Ubuntu でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="6d84d-104">.NET is supported on Ubuntu.</span></span> <span data-ttu-id="6d84d-105">この記事では、Ubuntu に .NET をインストールする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6d84d-105">This article describes how to install .NET on Ubuntu.</span></span> <span data-ttu-id="6d84d-106">Ubuntu のバージョンがサポート対象外である場合、.NET もそのバージョンでサポート対象外となります。</span><span class="sxs-lookup"><span data-stu-id="6d84d-106">When an Ubuntu version falls out of support, .NET is no longer supported with that version.</span></span> <span data-ttu-id="6d84d-107">ただし、サポート対象外の場合でも、これらの手順がそれらのバージョンで .NET を実行するのに役立つことがあります。</span><span class="sxs-lookup"><span data-stu-id="6d84d-107">However, these instructions may help you to get .NET running on those versions, even though it isn't supported.</span></span>
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
-## <a name="supported-distributions"></a><span data-ttu-id="36b0f-108">サポートされているディストリビューション</span><span class="sxs-lookup"><span data-stu-id="36b0f-108">Supported distributions</span></span>
+## <a name="supported-distributions"></a><span data-ttu-id="6d84d-108">サポートされているディストリビューション</span><span class="sxs-lookup"><span data-stu-id="6d84d-108">Supported distributions</span></span>
 
-<span data-ttu-id="36b0f-109">次の表は、現在サポートされている .NET Core リリースと、それらがサポートされている Ubuntu のバージョンの一覧です。</span><span class="sxs-lookup"><span data-stu-id="36b0f-109">The following table is a list of currently supported .NET Core releases and the versions of Ubuntu they're supported on.</span></span> <span data-ttu-id="36b0f-110">これらのバージョンは、[.NET Core のバージョンがサポート終了になる](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)か、[Ubuntu のバージョンがサポート終了になる](https://wiki.ubuntu.com/Releases)までサポートされます。</span><span class="sxs-lookup"><span data-stu-id="36b0f-110">These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).</span></span>
+<span data-ttu-id="6d84d-109">次の表は、現在サポートされている .NET リリースと、それらがサポートされている Ubuntu のバージョンの一覧です。</span><span class="sxs-lookup"><span data-stu-id="6d84d-109">The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on.</span></span> <span data-ttu-id="6d84d-110">これらのバージョンは、[.NET のバージョンがサポート終了になる](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)か、[Ubuntu のバージョンが期限切れになる](https://wiki.ubuntu.com/Releases)までサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6d84d-110">These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).</span></span>
 
-- <span data-ttu-id="36b0f-111">✔️ は、Ubuntu または .NET Core のバージョンがまだサポートされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="36b0f-111">A ✔️ indicates that the version of Ubuntu or .NET Core is still supported.</span></span>
-- <span data-ttu-id="36b0f-112">❌ は、Ubuntu または .NET Core のバージョンがその Ubuntu のリリースではサポートされていないことを示しています。</span><span class="sxs-lookup"><span data-stu-id="36b0f-112">A ❌ indicates that the version of Ubuntu or .NET Core isn't supported on that Ubuntu release.</span></span>
-- <span data-ttu-id="36b0f-113">Ubuntu のバージョンと .NET Core のバージョンの両方に ✔️ が付いている場合、その OS と .NET の組み合わせはサポートされています。</span><span class="sxs-lookup"><span data-stu-id="36b0f-113">When both a version of Ubuntu and a version of .NET Core have ✔️, that OS and .NET combination are supported.</span></span>
+- <span data-ttu-id="6d84d-111">✔️ は、Ubuntu または .NET のバージョンがまだサポートされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="6d84d-111">A ✔️ indicates that the version of Ubuntu or .NET is still supported.</span></span>
+- <span data-ttu-id="6d84d-112">❌ は、Ubuntu または .NET のバージョンがその Ubuntu のリリースではサポートされていないことを示しています。</span><span class="sxs-lookup"><span data-stu-id="6d84d-112">A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.</span></span>
+- <span data-ttu-id="6d84d-113">Ubuntu のバージョンと .NET のバージョンの両方に ✔️ が付いている場合、その OS と .NET の組み合わせはサポートされています。</span><span class="sxs-lookup"><span data-stu-id="6d84d-113">When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.</span></span>
 
-| <span data-ttu-id="36b0f-114">Ubuntu</span><span class="sxs-lookup"><span data-stu-id="36b0f-114">Ubuntu</span></span>                   | <span data-ttu-id="36b0f-115">.NET Core 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-115">.NET Core 2.1</span></span> | <span data-ttu-id="36b0f-116">.NET Core 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-116">.NET Core 3.1</span></span> | <span data-ttu-id="36b0f-117">.NET 5 Preview (手動インストールのみ)</span><span class="sxs-lookup"><span data-stu-id="36b0f-117">.NET 5 Preview (manual install only)</span></span> |
+| <span data-ttu-id="6d84d-114">Ubuntu</span><span class="sxs-lookup"><span data-stu-id="6d84d-114">Ubuntu</span></span>                   | <span data-ttu-id="6d84d-115">.NET Core 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-115">.NET Core 2.1</span></span> | <span data-ttu-id="6d84d-116">.NET Core 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-116">.NET Core 3.1</span></span> | <span data-ttu-id="6d84d-117">.NET 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-117">.NET 5.0</span></span> |
 |--------------------------|---------------|---------------|----------------|
-| <span data-ttu-id="36b0f-118">✔️ [20.04 (LTS)](#2004-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-118">✔️ [20.04 (LTS)](#2004-)</span></span> | <span data-ttu-id="36b0f-119">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-119">✔️ 2.1</span></span>        | <span data-ttu-id="36b0f-120">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-120">✔️ 3.1</span></span>        | <span data-ttu-id="36b0f-121">✔️ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-121">✔️ 5.0 Preview</span></span> |
-| <span data-ttu-id="36b0f-122">❌ [19.10](#1910-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-122">❌ [19.10](#1910-)</span></span>       | <span data-ttu-id="36b0f-123">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-123">✔️ 2.1</span></span>        | <span data-ttu-id="36b0f-124">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-124">✔️ 3.1</span></span>        | <span data-ttu-id="36b0f-125">✔️ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-125">✔️ 5.0 Preview</span></span> |
-| <span data-ttu-id="36b0f-126">❌ [19.04](#1904-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-126">❌ [19.04](#1904-)</span></span>       | <span data-ttu-id="36b0f-127">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-127">✔️ 2.1</span></span>        | <span data-ttu-id="36b0f-128">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-128">✔️ 3.1</span></span>        | <span data-ttu-id="36b0f-129">❌ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-129">❌ 5.0 Preview</span></span> |
-| <span data-ttu-id="36b0f-130">❌ [18.10](#1810-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-130">❌ [18.10](#1810-)</span></span>       | <span data-ttu-id="36b0f-131">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-131">✔️ 2.1</span></span>        | <span data-ttu-id="36b0f-132">❌ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-132">❌ 3.1</span></span>        | <span data-ttu-id="36b0f-133">❌ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-133">❌ 5.0 Preview</span></span> |
-| <span data-ttu-id="36b0f-134">✔️ [18.04 (LTS)](#1804-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-134">✔️ [18.04 (LTS)](#1804-)</span></span> | <span data-ttu-id="36b0f-135">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-135">✔️ 2.1</span></span>        | <span data-ttu-id="36b0f-136">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-136">✔️ 3.1</span></span>        | <span data-ttu-id="36b0f-137">✔️ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-137">✔️ 5.0 Preview</span></span> |
-| <span data-ttu-id="36b0f-138">❌ [17.10](#1710-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-138">❌ [17.10](#1710-)</span></span>       | <span data-ttu-id="36b0f-139">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-139">✔️ 2.1</span></span>        | <span data-ttu-id="36b0f-140">❌ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-140">❌ 3.1</span></span>        | <span data-ttu-id="36b0f-141">❌ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-141">❌ 5.0 Preview</span></span> |
-| <span data-ttu-id="36b0f-142">❌ [17.04](#1704-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-142">❌ [17.04](#1704-)</span></span>       | <span data-ttu-id="36b0f-143">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-143">✔️ 2.1</span></span>        | <span data-ttu-id="36b0f-144">❌ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-144">❌ 3.1</span></span>        | <span data-ttu-id="36b0f-145">❌ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-145">❌ 5.0 Preview</span></span> |
-| <span data-ttu-id="36b0f-146">❌ [16.10](#1610-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-146">❌ [16.10](#1610-)</span></span>       | <span data-ttu-id="36b0f-147">❌ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-147">❌ 2.1</span></span>        | <span data-ttu-id="36b0f-148">❌ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-148">❌ 3.1</span></span>        | <span data-ttu-id="36b0f-149">❌ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-149">❌ 5.0 Preview</span></span> |
-| <span data-ttu-id="36b0f-150">✔️ [16.04 (LTS)](#1604-)</span><span class="sxs-lookup"><span data-stu-id="36b0f-150">✔️ [16.04 (LTS)](#1604-)</span></span> | <span data-ttu-id="36b0f-151">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-151">✔️ 2.1</span></span>        | <span data-ttu-id="36b0f-152">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="36b0f-152">✔️ 3.1</span></span>        | <span data-ttu-id="36b0f-153">✔️ 5.0 Preview</span><span class="sxs-lookup"><span data-stu-id="36b0f-153">✔️ 5.0 Preview</span></span> |
+| <span data-ttu-id="6d84d-118">✔️ [20.10](#2010-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-118">✔️ [20.10](#2010-)</span></span>       | <span data-ttu-id="6d84d-119">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-119">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-120">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-120">✔️ 3.1</span></span>        | <span data-ttu-id="6d84d-121">✔️ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-121">✔️ 5.0</span></span> |
+| <span data-ttu-id="6d84d-122">✔️ [20.04 (LTS)](#2004-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-122">✔️ [20.04 (LTS)](#2004-)</span></span> | <span data-ttu-id="6d84d-123">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-123">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-124">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-124">✔️ 3.1</span></span>        | <span data-ttu-id="6d84d-125">✔️ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-125">✔️ 5.0</span></span> |
+| <span data-ttu-id="6d84d-126">❌ [19.10](#1910-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-126">❌ [19.10](#1910-)</span></span>       | <span data-ttu-id="6d84d-127">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-127">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-128">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-128">✔️ 3.1</span></span>        | <span data-ttu-id="6d84d-129">✔️ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-129">✔️ 5.0</span></span> |
+| <span data-ttu-id="6d84d-130">❌ [19.04](#1904-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-130">❌ [19.04](#1904-)</span></span>       | <span data-ttu-id="6d84d-131">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-131">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-132">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-132">✔️ 3.1</span></span>        | <span data-ttu-id="6d84d-133">❌ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-133">❌ 5.0</span></span> |
+| <span data-ttu-id="6d84d-134">❌ [18.10](#1810-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-134">❌ [18.10](#1810-)</span></span>       | <span data-ttu-id="6d84d-135">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-135">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-136">❌ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-136">❌ 3.1</span></span>        | <span data-ttu-id="6d84d-137">❌ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-137">❌ 5.0</span></span> |
+| <span data-ttu-id="6d84d-138">✔️ [18.04 (LTS)](#1804-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-138">✔️ [18.04 (LTS)](#1804-)</span></span> | <span data-ttu-id="6d84d-139">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-139">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-140">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-140">✔️ 3.1</span></span>        | <span data-ttu-id="6d84d-141">✔️ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-141">✔️ 5.0</span></span> |
+| <span data-ttu-id="6d84d-142">❌ [17.10](#1710-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-142">❌ [17.10](#1710-)</span></span>       | <span data-ttu-id="6d84d-143">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-143">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-144">❌ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-144">❌ 3.1</span></span>        | <span data-ttu-id="6d84d-145">❌ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-145">❌ 5.0</span></span> |
+| <span data-ttu-id="6d84d-146">❌ [17.04](#1704-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-146">❌ [17.04](#1704-)</span></span>       | <span data-ttu-id="6d84d-147">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-147">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-148">❌ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-148">❌ 3.1</span></span>        | <span data-ttu-id="6d84d-149">❌ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-149">❌ 5.0</span></span> |
+| <span data-ttu-id="6d84d-150">❌ [16.10](#1610-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-150">❌ [16.10](#1610-)</span></span>       | <span data-ttu-id="6d84d-151">❌ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-151">❌ 2.1</span></span>        | <span data-ttu-id="6d84d-152">❌ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-152">❌ 3.1</span></span>        | <span data-ttu-id="6d84d-153">❌ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-153">❌ 5.0</span></span> |
+| <span data-ttu-id="6d84d-154">✔️ [16.04 (LTS)](#1604-)</span><span class="sxs-lookup"><span data-stu-id="6d84d-154">✔️ [16.04 (LTS)](#1604-)</span></span> | <span data-ttu-id="6d84d-155">✔️ 2.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-155">✔️ 2.1</span></span>        | <span data-ttu-id="6d84d-156">✔️ 3.1</span><span class="sxs-lookup"><span data-stu-id="6d84d-156">✔️ 3.1</span></span>        | <span data-ttu-id="6d84d-157">✔️ 5.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-157">✔️ 5.0</span></span> |
 
-<span data-ttu-id="36b0f-154">次のバージョンの .NET Core は、サポート対象外となりました。</span><span class="sxs-lookup"><span data-stu-id="36b0f-154">The following versions of .NET Core are no longer supported.</span></span> <span data-ttu-id="36b0f-155">これらのダウンロードは、まだ公開されています。</span><span class="sxs-lookup"><span data-stu-id="36b0f-155">The downloads for these still remain published:</span></span>
+<span data-ttu-id="6d84d-158">次のバージョンの .NET は、サポート対象外となりました。</span><span class="sxs-lookup"><span data-stu-id="6d84d-158">The following versions of .NET are no longer supported.</span></span> <span data-ttu-id="6d84d-159">これらのダウンロードは、まだ公開されています。</span><span class="sxs-lookup"><span data-stu-id="6d84d-159">The downloads for these still remain published:</span></span>
 
-- <span data-ttu-id="36b0f-156">3.0</span><span class="sxs-lookup"><span data-stu-id="36b0f-156">3.0</span></span>
-- <span data-ttu-id="36b0f-157">2.2</span><span class="sxs-lookup"><span data-stu-id="36b0f-157">2.2</span></span>
-- <span data-ttu-id="36b0f-158">2.0</span><span class="sxs-lookup"><span data-stu-id="36b0f-158">2.0</span></span>
+- <span data-ttu-id="6d84d-160">3.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-160">3.0</span></span>
+- <span data-ttu-id="6d84d-161">2.2</span><span class="sxs-lookup"><span data-stu-id="6d84d-161">2.2</span></span>
+- <span data-ttu-id="6d84d-162">2.0</span><span class="sxs-lookup"><span data-stu-id="6d84d-162">2.0</span></span>
 
-## <a name="how-to-install-other-versions"></a><span data-ttu-id="36b0f-159">その他のバージョンをインストールする方法</span><span class="sxs-lookup"><span data-stu-id="36b0f-159">How to install other versions</span></span>
+## <a name="how-to-install-other-versions"></a><span data-ttu-id="6d84d-163">その他のバージョンをインストールする方法</span><span class="sxs-lookup"><span data-stu-id="6d84d-163">How to install other versions</span></span>
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
-## <a name="2004-"></a><span data-ttu-id="36b0f-160">20.04 ✔️</span><span class="sxs-lookup"><span data-stu-id="36b0f-160">20.04 ✔️</span></span>
+## <a name="2010-"></a><span data-ttu-id="6d84d-164">20.10 ✔️</span><span class="sxs-lookup"><span data-stu-id="6d84d-164">20.10 ✔️</span></span>
+
+<span data-ttu-id="6d84d-165">Ubuntu 20.10 用の .NET 5 および .NET Core 3.1 パッケージ フィードには、現在問題があります。</span><span class="sxs-lookup"><span data-stu-id="6d84d-165">.NET 5 and .NET Core 3.1 package feeds for Ubuntu 20.10 currently have an issue.</span></span> <span data-ttu-id="6d84d-166">この問題の詳細については、[GitHub イシュー dotnet/core#5549](https://github.com/dotnet/core/issues/5549)に関するページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="6d84d-166">For more information about the issue, see [GitHub issue dotnet/core#5549](https://github.com/dotnet/core/issues/5549).</span></span> <span data-ttu-id="6d84d-167">この記事は、イシューが解決されたときに更新されます。</span><span class="sxs-lookup"><span data-stu-id="6d84d-167">This article will be updated when the issue is resolved.</span></span>
+
+<span data-ttu-id="6d84d-168">Ubuntu 20.10 に .NET 5 または .NET Core 3.1 をインストールするには、[20.04](#2004-) 用の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="6d84d-168">To install .NET 5 or .NET Core 3.1 on Ubuntu 20.10, follow the instructions for [20.04](#2004-).</span></span>
+
+## <a name="2004-"></a><span data-ttu-id="6d84d-169">20.04 ✔️</span><span class="sxs-lookup"><span data-stu-id="6d84d-169">20.04 ✔️</span></span>
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -58,9 +65,9 @@ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## <a name="1910-"></a><span data-ttu-id="36b0f-161">19.10 ❌</span><span class="sxs-lookup"><span data-stu-id="36b0f-161">19.10 ❌</span></span>
+## <a name="1910-"></a><span data-ttu-id="6d84d-170">19.10 ❌</span><span class="sxs-lookup"><span data-stu-id="6d84d-170">19.10 ❌</span></span>
 
 [!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
@@ -73,7 +80,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
-## <a name="1904-"></a><span data-ttu-id="36b0f-162">19.04 ❌</span><span class="sxs-lookup"><span data-stu-id="36b0f-162">19.04 ❌</span></span>
+## <a name="1904-"></a><span data-ttu-id="6d84d-171">19.04 ❌</span><span class="sxs-lookup"><span data-stu-id="6d84d-171">19.04 ❌</span></span>
 
 [!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
@@ -86,7 +93,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
-## <a name="1810-"></a><span data-ttu-id="36b0f-163">18.10 ❌</span><span class="sxs-lookup"><span data-stu-id="36b0f-163">18.10 ❌</span></span>
+## <a name="1810-"></a><span data-ttu-id="6d84d-172">18.10 ❌</span><span class="sxs-lookup"><span data-stu-id="6d84d-172">18.10 ❌</span></span>
 
 [!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
@@ -99,7 +106,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
-## <a name="1804-"></a><span data-ttu-id="36b0f-164">18.04 ✔️</span><span class="sxs-lookup"><span data-stu-id="36b0f-164">18.04 ✔️</span></span>
+## <a name="1804-"></a><span data-ttu-id="6d84d-173">18.04 ✔️</span><span class="sxs-lookup"><span data-stu-id="6d84d-173">18.04 ✔️</span></span>
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -108,9 +115,9 @@ wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## <a name="1710-"></a><span data-ttu-id="36b0f-165">17.10 ❌</span><span class="sxs-lookup"><span data-stu-id="36b0f-165">17.10 ❌</span></span>
+## <a name="1710-"></a><span data-ttu-id="6d84d-174">17.10 ❌</span><span class="sxs-lookup"><span data-stu-id="6d84d-174">17.10 ❌</span></span>
 
 [!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
@@ -123,7 +130,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
-## <a name="1704-"></a><span data-ttu-id="36b0f-166">17.04 ❌</span><span class="sxs-lookup"><span data-stu-id="36b0f-166">17.04 ❌</span></span>
+## <a name="1704-"></a><span data-ttu-id="6d84d-175">17.04 ❌</span><span class="sxs-lookup"><span data-stu-id="6d84d-175">17.04 ❌</span></span>
 
 [!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
@@ -136,7 +143,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
-## <a name="1610-"></a><span data-ttu-id="36b0f-167">16.10 ❌</span><span class="sxs-lookup"><span data-stu-id="36b0f-167">16.10 ❌</span></span>
+## <a name="1610-"></a><span data-ttu-id="6d84d-176">16.10 ❌</span><span class="sxs-lookup"><span data-stu-id="6d84d-176">16.10 ❌</span></span>
 
 [!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
@@ -149,7 +156,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
-## <a name="1604-"></a><span data-ttu-id="36b0f-168">16.04 ✔️</span><span class="sxs-lookup"><span data-stu-id="36b0f-168">16.04 ✔️</span></span>
+## <a name="1604-"></a><span data-ttu-id="6d84d-177">16.04 ✔️</span><span class="sxs-lookup"><span data-stu-id="6d84d-177">16.04 ✔️</span></span>
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -158,26 +165,26 @@ wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## <a name="apt-update-sdk-or-runtime"></a><span data-ttu-id="36b0f-169">APT での SDK またはランタイムの更新</span><span class="sxs-lookup"><span data-stu-id="36b0f-169">APT update SDK or runtime</span></span>
+## <a name="apt-update-sdk-or-runtime"></a><span data-ttu-id="6d84d-178">APT での SDK またはランタイムの更新</span><span class="sxs-lookup"><span data-stu-id="6d84d-178">APT update SDK or runtime</span></span>
 
-<span data-ttu-id="36b0f-170">.NET Core で新しい修正プログラムのリリースを利用できる場合は、次のコマンドを使用して、APT で簡単にアップグレードすることができます。</span><span class="sxs-lookup"><span data-stu-id="36b0f-170">When a new patch release is available for .NET Core, you can simply upgrade it through APT with the following commands:</span></span>
+<span data-ttu-id="6d84d-179">.NET で新しい修正プログラムのリリースを利用できる場合は、次のコマンドを使用して、APT で簡単にアップグレードすることができます。</span><span class="sxs-lookup"><span data-stu-id="6d84d-179">When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:</span></span>
 
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-## <a name="apt-troubleshooting"></a><span data-ttu-id="36b0f-171">APT のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="36b0f-171">APT troubleshooting</span></span>
+## <a name="apt-troubleshooting"></a><span data-ttu-id="6d84d-180">APT のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="6d84d-180">APT troubleshooting</span></span>
 
-<span data-ttu-id="36b0f-172">このセクションでは、APT を使用して .NET Core をインストールするときに発生する可能性のある一般的なエラーについて説明します。</span><span class="sxs-lookup"><span data-stu-id="36b0f-172">This section provides information on common errors you may get while using APT to install .NET Core.</span></span>
+<span data-ttu-id="6d84d-181">このセクションでは、APT を使用して .NET をインストールするときに発生するおそれがある一般的なエラーについて説明します。</span><span class="sxs-lookup"><span data-stu-id="6d84d-181">This section provides information on common errors you may get while using APT to install .NET.</span></span>
 
-### <a name="unable-to-find-package"></a><span data-ttu-id="36b0f-173">パッケージが見つからない</span><span class="sxs-lookup"><span data-stu-id="36b0f-173">Unable to find package</span></span>
+### <a name="unable-to-find-package"></a><span data-ttu-id="6d84d-182">パッケージが見つからない</span><span class="sxs-lookup"><span data-stu-id="6d84d-182">Unable to find package</span></span>
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
-### <a name="unable-to-locate--some-packages-could-not-be-installed"></a><span data-ttu-id="36b0f-174">見つからない \\ 一部のパッケージをインストールできませんでした</span><span class="sxs-lookup"><span data-stu-id="36b0f-174">Unable to locate \\ Some packages could not be installed</span></span>
+### <a name="unable-to-locate--some-packages-could-not-be-installed"></a><span data-ttu-id="6d84d-183">見つからない \\ 一部のパッケージをインストールできませんでした</span><span class="sxs-lookup"><span data-stu-id="6d84d-183">Unable to locate \\ Some packages could not be installed</span></span>
 
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 
@@ -195,45 +202,45 @@ sudo apt-get update; \
   sudo apt-get install -y {dotnet-package}
 ```
 
-### <a name="failed-to-fetch"></a><span data-ttu-id="36b0f-175">フェッチできない</span><span class="sxs-lookup"><span data-stu-id="36b0f-175">Failed to fetch</span></span>
+### <a name="failed-to-fetch"></a><span data-ttu-id="6d84d-184">フェッチできない</span><span class="sxs-lookup"><span data-stu-id="6d84d-184">Failed to fetch</span></span>
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]
 
-## <a name="snap"></a><span data-ttu-id="36b0f-176">Snap</span><span class="sxs-lookup"><span data-stu-id="36b0f-176">Snap</span></span>
+## <a name="snap"></a><span data-ttu-id="6d84d-185">Snap</span><span class="sxs-lookup"><span data-stu-id="6d84d-185">Snap</span></span>
 
 [!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
 
-## <a name="dependencies"></a><span data-ttu-id="36b0f-177">依存関係</span><span class="sxs-lookup"><span data-stu-id="36b0f-177">Dependencies</span></span>
+## <a name="dependencies"></a><span data-ttu-id="6d84d-186">依存関係</span><span class="sxs-lookup"><span data-stu-id="6d84d-186">Dependencies</span></span>
 
-<span data-ttu-id="36b0f-178">パッケージ マネージャーを使用してインストールする場合、次のライブラリが自動的にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="36b0f-178">When you install with a package manager, these libraries are installed for you.</span></span> <span data-ttu-id="36b0f-179">ただし、手動で .NET Core をインストールする場合、または自己完結型アプリを公開する場合は、次のライブラリがインストールされていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="36b0f-179">But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:</span></span>
+<span data-ttu-id="6d84d-187">パッケージ マネージャーを使用してインストールする場合、次のライブラリが自動的にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="6d84d-187">When you install with a package manager, these libraries are installed for you.</span></span> <span data-ttu-id="6d84d-188">ただし、手動で .NET をインストールする場合、または自己完結型アプリを公開する場合は、次のライブラリがインストールされていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d84d-188">But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:</span></span>
 
-- <span data-ttu-id="36b0f-180">libc6</span><span class="sxs-lookup"><span data-stu-id="36b0f-180">libc6</span></span>
-- <span data-ttu-id="36b0f-181">libgcc1</span><span class="sxs-lookup"><span data-stu-id="36b0f-181">libgcc1</span></span>
-- <span data-ttu-id="36b0f-182">libgssapi-krb5-2</span><span class="sxs-lookup"><span data-stu-id="36b0f-182">libgssapi-krb5-2</span></span>
-- <span data-ttu-id="36b0f-183">libicu52 (14.x 用)</span><span class="sxs-lookup"><span data-stu-id="36b0f-183">libicu52 (for 14.x)</span></span>
-- <span data-ttu-id="36b0f-184">libicu55 (16.x 用)</span><span class="sxs-lookup"><span data-stu-id="36b0f-184">libicu55 (for 16.x)</span></span>
-- <span data-ttu-id="36b0f-185">libicu60 (18.x 用)</span><span class="sxs-lookup"><span data-stu-id="36b0f-185">libicu60 (for 18.x)</span></span>
-- <span data-ttu-id="36b0f-186">libicu66 (20.x 用)</span><span class="sxs-lookup"><span data-stu-id="36b0f-186">libicu66 (for 20.x)</span></span>
-- <span data-ttu-id="36b0f-187">libssl1.0.0 (14.x、16.x 用)</span><span class="sxs-lookup"><span data-stu-id="36b0f-187">libssl1.0.0 (for 14.x, 16.x)</span></span>
-- <span data-ttu-id="36b0f-188">libssl1.1 (18.x、20.x 用)</span><span class="sxs-lookup"><span data-stu-id="36b0f-188">libssl1.1 (for 18.x, 20.x)</span></span>
-- <span data-ttu-id="36b0f-189">libstdc++6</span><span class="sxs-lookup"><span data-stu-id="36b0f-189">libstdc++6</span></span>
-- <span data-ttu-id="36b0f-190">zlib1g</span><span class="sxs-lookup"><span data-stu-id="36b0f-190">zlib1g</span></span>
+- <span data-ttu-id="6d84d-189">libc6</span><span class="sxs-lookup"><span data-stu-id="6d84d-189">libc6</span></span>
+- <span data-ttu-id="6d84d-190">libgcc1</span><span class="sxs-lookup"><span data-stu-id="6d84d-190">libgcc1</span></span>
+- <span data-ttu-id="6d84d-191">libgssapi-krb5-2</span><span class="sxs-lookup"><span data-stu-id="6d84d-191">libgssapi-krb5-2</span></span>
+- <span data-ttu-id="6d84d-192">libicu52 (14.x 用)</span><span class="sxs-lookup"><span data-stu-id="6d84d-192">libicu52 (for 14.x)</span></span>
+- <span data-ttu-id="6d84d-193">libicu55 (16.x 用)</span><span class="sxs-lookup"><span data-stu-id="6d84d-193">libicu55 (for 16.x)</span></span>
+- <span data-ttu-id="6d84d-194">libicu60 (18.x 用)</span><span class="sxs-lookup"><span data-stu-id="6d84d-194">libicu60 (for 18.x)</span></span>
+- <span data-ttu-id="6d84d-195">libicu66 (20.x 用)</span><span class="sxs-lookup"><span data-stu-id="6d84d-195">libicu66 (for 20.x)</span></span>
+- <span data-ttu-id="6d84d-196">libssl1.0.0 (14.x、16.x 用)</span><span class="sxs-lookup"><span data-stu-id="6d84d-196">libssl1.0.0 (for 14.x, 16.x)</span></span>
+- <span data-ttu-id="6d84d-197">libssl1.1 (18.x、20.x 用)</span><span class="sxs-lookup"><span data-stu-id="6d84d-197">libssl1.1 (for 18.x, 20.x)</span></span>
+- <span data-ttu-id="6d84d-198">libstdc++6</span><span class="sxs-lookup"><span data-stu-id="6d84d-198">libstdc++6</span></span>
+- <span data-ttu-id="6d84d-199">zlib1g</span><span class="sxs-lookup"><span data-stu-id="6d84d-199">zlib1g</span></span>
 
-<span data-ttu-id="36b0f-191">*System.Drawing.Common* アセンブリを使用する .NET Core アプリの場合は、次の依存関係も必要です。</span><span class="sxs-lookup"><span data-stu-id="36b0f-191">For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:</span></span>
+<span data-ttu-id="6d84d-200">*System.Drawing.Common* アセンブリを使用する .NET アプリの場合は、次の依存関係も必要です。</span><span class="sxs-lookup"><span data-stu-id="6d84d-200">For .NET apps that use the *System.Drawing.Common* assembly, you also need the following dependency:</span></span>
 
-- <span data-ttu-id="36b0f-192">libgdiplus (バージョン 6.0.1 以降)</span><span class="sxs-lookup"><span data-stu-id="36b0f-192">libgdiplus (version 6.0.1 or later)</span></span>
+- <span data-ttu-id="6d84d-201">libgdiplus (バージョン 6.0.1 以降)</span><span class="sxs-lookup"><span data-stu-id="6d84d-201">libgdiplus (version 6.0.1 or later)</span></span>
 
   > [!WARNING]
-  > <span data-ttu-id="36b0f-193">最新バージョンの *libgdiplus* をインストールするには、システムに Mono リポジトリを追加します。</span><span class="sxs-lookup"><span data-stu-id="36b0f-193">You can install a recent version of *libgdiplus* by adding the Mono repository to your system.</span></span> <span data-ttu-id="36b0f-194">詳細については、「<https://www.mono-project.com/download/stable/>」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="36b0f-194">For more information, see <https://www.mono-project.com/download/stable/>.</span></span>
+  > <span data-ttu-id="6d84d-202">最新バージョンの *libgdiplus* をインストールするには、システムに Mono リポジトリを追加します。</span><span class="sxs-lookup"><span data-stu-id="6d84d-202">You can install a recent version of *libgdiplus* by adding the Mono repository to your system.</span></span> <span data-ttu-id="6d84d-203">詳細については、「<https://www.mono-project.com/download/stable/>」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6d84d-203">For more information, see <https://www.mono-project.com/download/stable/>.</span></span>
 
-## <a name="scripted-install"></a><span data-ttu-id="36b0f-195">スクリプトでのインストール</span><span class="sxs-lookup"><span data-stu-id="36b0f-195">Scripted install</span></span>
+## <a name="scripted-install"></a><span data-ttu-id="6d84d-204">スクリプトでのインストール</span><span class="sxs-lookup"><span data-stu-id="6d84d-204">Scripted install</span></span>
 
 [!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
 
-## <a name="manual-install"></a><span data-ttu-id="36b0f-196">手動インストール</span><span class="sxs-lookup"><span data-stu-id="36b0f-196">Manual install</span></span>
+## <a name="manual-install"></a><span data-ttu-id="6d84d-205">手動インストール</span><span class="sxs-lookup"><span data-stu-id="6d84d-205">Manual install</span></span>
 
 [!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
 
-## <a name="next-steps"></a><span data-ttu-id="36b0f-197">次の手順</span><span class="sxs-lookup"><span data-stu-id="36b0f-197">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="6d84d-206">次の手順</span><span class="sxs-lookup"><span data-stu-id="6d84d-206">Next steps</span></span>
 
-- [<span data-ttu-id="36b0f-198">チュートリアル: Visual Studio Code を使用して .NET Core SDK でコンソール アプリケーションを作成する</span><span class="sxs-lookup"><span data-stu-id="36b0f-198">Tutorial: Create a console application with .NET Core SDK using Visual Studio Code</span></span>](../tutorials/with-visual-studio-code.md)
+- [<span data-ttu-id="6d84d-207">チュートリアル: Visual Studio Code を使用して .NET SDK でコンソール アプリケーションを作成する</span><span class="sxs-lookup"><span data-stu-id="6d84d-207">Tutorial: Create a console application with .NET SDK using Visual Studio Code</span></span>](../tutorials/with-visual-studio-code.md)
