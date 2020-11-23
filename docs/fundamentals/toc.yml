@@ -376,6 +376,26 @@ items:
             href: ../core/diagnostics/eventpipe.md
           - name: ログとトレース
             href: ../core/diagnostics/logging-tracing.md
+          - name: ランタイム イベント
+            items:
+              - name: 概要
+                href: ../fundamentals/diagnostics/runtime-events.md
+              - name: 競合イベント
+                href: ../fundamentals/diagnostics/runtime-contention-events.md
+              - name: 例外イベント
+                href: ../fundamentals/diagnostics/runtime-exception-events.md
+              - name: ガベージ コレクション イベント
+                href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+              - name: 相互運用イベント
+                href: ../fundamentals/diagnostics/runtime-interop-events.md
+              - name: ローダーおよびバインダー イベント
+                href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+              - name: メソッド イベント
+                href: ../fundamentals/diagnostics/runtime-method-events.md
+              - name: ThreadPool イベント
+                href: ../fundamentals/diagnostics/runtime-thread-events.md
+              - name: 型システム イベント
+                href: ../fundamentals/diagnostics/runtime-type-events.md
           - name: コンテナーでの診断の収集
             href: ../core/diagnostics/diagnostics-in-containers.md
           - name: .NET Core CLI グローバル ツール
@@ -394,6 +414,8 @@ items:
                 href: ../core/diagnostics/dotnet-sos.md
           - name: .NET Core 診断チュートリアル
             items:
+              - name: PerfCollect を使用して Linux でパフォーマンス トレースを収集する
+                href: ../core/diagnostics/trace-perfcollect-lttng.md
               - name: EventCounters を使用してパフォーマンス メトリックを取得する
                 href: ../core/diagnostics/event-counter-perf.md
               - name: メモリ リークをデバッグする
@@ -1592,8 +1614,6 @@ items:
                 href: ../standard/serialization/how-to-chunk-serialized-data.md
               - name: '方法:.NET 標準オブジェクトがシリアル化可能なのかどうかを判断する'
                 href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
-              - name: サンプル
-                href: ../standard/serialization/basic-serialization-technology-sample.md
           - name: XML シリアル化および SOAP シリアル化
             items:
               - name: 概要
