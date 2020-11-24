@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470
 topic_type:
 - apiref
-ms.openlocfilehash: b20e18d5f4314a0ab1442ac7bd5c6514e4db85d5
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 365bc0dc73b04d3afd171c40f336432f77552b6d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83609483"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95690955"
 ---
-# <a name="notify_filter-enumeration"></a><span data-ttu-id="923e5-102">NOTIFY_FILTER 列挙体</span><span class="sxs-lookup"><span data-stu-id="923e5-102">NOTIFY_FILTER Enumeration</span></span>
-<span data-ttu-id="923e5-103">デバッガー関数のコールバックを識別します。</span><span class="sxs-lookup"><span data-stu-id="923e5-103">Identifies callbacks for debugger functions.</span></span> <span data-ttu-id="923e5-104">詳細については、 [INotifySource2:: SetNotifyFilter](inotifysource2-setnotifyfilter-method.md)メソッドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="923e5-104">For more information, see the [INotifySource2::SetNotifyFilter](inotifysource2-setnotifyfilter-method.md) method.</span></span>  
+# <a name="notify_filter-enumeration"></a><span data-ttu-id="ee721-102">NOTIFY_FILTER 列挙体</span><span class="sxs-lookup"><span data-stu-id="ee721-102">NOTIFY_FILTER Enumeration</span></span>
+
+<span data-ttu-id="ee721-103">デバッガー関数のコールバックを識別します。</span><span class="sxs-lookup"><span data-stu-id="ee721-103">Identifies callbacks for debugger functions.</span></span> <span data-ttu-id="ee721-104">詳細については、 [INotifySource2:: SetNotifyFilter](inotifysource2-setnotifyfilter-method.md) メソッドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ee721-104">For more information, see the [INotifySource2::SetNotifyFilter](inotifysource2-setnotifyfilter-method.md) method.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="923e5-105">構文</span><span class="sxs-lookup"><span data-stu-id="923e5-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ee721-105">構文</span><span class="sxs-lookup"><span data-stu-id="ee721-105">Syntax</span></span>  
   
 ```cpp  
 enum tagNOTIFY_FILTER  
@@ -39,21 +40,22 @@ enum tagNOTIFY_FILTER
 };  
 ```  
   
-## <a name="members"></a><span data-ttu-id="923e5-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="923e5-106">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="ee721-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="ee721-106">Members</span></span>  
   
-|<span data-ttu-id="923e5-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="923e5-107">Member</span></span>|<span data-ttu-id="923e5-108">説明</span><span class="sxs-lookup"><span data-stu-id="923e5-108">Description</span></span>|  
+|<span data-ttu-id="ee721-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="ee721-107">Member</span></span>|<span data-ttu-id="ee721-108">説明</span><span class="sxs-lookup"><span data-stu-id="ee721-108">Description</span></span>|  
 |------------|-----------------|  
-|`NOTIFY_FILTER_ONSYNCCALLOUT`|<span data-ttu-id="923e5-109">[INotifySink2:: OnSyncCallOut](inotifysink2-onsynccallout-method.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="923e5-109">Indicates that the [INotifySink2::OnSyncCallOut](inotifysink2-onsynccallout-method.md) method should be invoked.</span></span>|  
-|`NOTIFY_FILTER_ONSYNCCALLENTER`|<span data-ttu-id="923e5-110">[INotifySink2:: OnSyncCallEnter](inotifysink2-onsynccallenter-method.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="923e5-110">Indicates that the [INotifySink2::OnSyncCallEnter](inotifysink2-onsynccallenter-method.md) method should be invoked.</span></span>|  
-|`NOTIFY_FILTER_ONSYNCCALLEXIT`|<span data-ttu-id="923e5-111">[INotifySink2:: OnSyncCallExit](inotifysink2-onsynccallexit-method.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="923e5-111">Indicates that the [INotifySink2::OnSyncCallExit](inotifysink2-onsynccallexit-method.md) method should be invoked.</span></span>|  
-|`NOTIFY_FILTER_ONSYNCCALLRETURN`|<span data-ttu-id="923e5-112">[INotifySink2:: OnSyncCallReturn](inotifysink2-onsynccallreturn-method.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="923e5-112">Indicates that the [INotifySink2::OnSyncCallReturn](inotifysink2-onsynccallreturn-method.md) method should be invoked.</span></span>|  
-|`NOTIFY_FILTER_ALLSYNC`|<span data-ttu-id="923e5-113">すべての[INotifySink2](inotifysink2-interface.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="923e5-113">Indicates that all of the [INotifySink2](inotifysink2-interface.md) methods should be invoked.</span></span>|  
-|`NOTIFY_FILTER_ALL`|<span data-ttu-id="923e5-114">既存の通知と今後の通知をすべてアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="923e5-114">Activates all existing and future notifications.</span></span>|  
-|`NOTIFY_FILTER_NONE`|<span data-ttu-id="923e5-115">通知メソッドを呼び出さないことを示します。</span><span class="sxs-lookup"><span data-stu-id="923e5-115">Indicates that no notification methods should be invoked.</span></span>|  
+|`NOTIFY_FILTER_ONSYNCCALLOUT`|<span data-ttu-id="ee721-109">[INotifySink2:: OnSyncCallOut](inotifysink2-onsynccallout-method.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="ee721-109">Indicates that the [INotifySink2::OnSyncCallOut](inotifysink2-onsynccallout-method.md) method should be invoked.</span></span>|  
+|`NOTIFY_FILTER_ONSYNCCALLENTER`|<span data-ttu-id="ee721-110">[INotifySink2:: OnSyncCallEnter](inotifysink2-onsynccallenter-method.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="ee721-110">Indicates that the [INotifySink2::OnSyncCallEnter](inotifysink2-onsynccallenter-method.md) method should be invoked.</span></span>|  
+|`NOTIFY_FILTER_ONSYNCCALLEXIT`|<span data-ttu-id="ee721-111">[INotifySink2:: OnSyncCallExit](inotifysink2-onsynccallexit-method.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="ee721-111">Indicates that the [INotifySink2::OnSyncCallExit](inotifysink2-onsynccallexit-method.md) method should be invoked.</span></span>|  
+|`NOTIFY_FILTER_ONSYNCCALLRETURN`|<span data-ttu-id="ee721-112">[INotifySink2:: OnSyncCallReturn](inotifysink2-onsynccallreturn-method.md)メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="ee721-112">Indicates that the [INotifySink2::OnSyncCallReturn](inotifysink2-onsynccallreturn-method.md) method should be invoked.</span></span>|  
+|`NOTIFY_FILTER_ALLSYNC`|<span data-ttu-id="ee721-113">すべての [INotifySink2](inotifysink2-interface.md) メソッドを呼び出す必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="ee721-113">Indicates that all of the [INotifySink2](inotifysink2-interface.md) methods should be invoked.</span></span>|  
+|`NOTIFY_FILTER_ALL`|<span data-ttu-id="ee721-114">既存の通知と今後の通知をすべてアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="ee721-114">Activates all existing and future notifications.</span></span>|  
+|`NOTIFY_FILTER_NONE`|<span data-ttu-id="ee721-115">通知メソッドを呼び出さないことを示します。</span><span class="sxs-lookup"><span data-stu-id="ee721-115">Indicates that no notification methods should be invoked.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="923e5-116">要件</span><span class="sxs-lookup"><span data-stu-id="923e5-116">Requirements</span></span>  
- <span data-ttu-id="923e5-117">**ヘッダー:** ProtocolNotify2</span><span class="sxs-lookup"><span data-stu-id="923e5-117">**Header:** ProtocolNotify2.idl</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="923e5-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="923e5-118">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="ee721-116">要件</span><span class="sxs-lookup"><span data-stu-id="ee721-116">Requirements</span></span>  
 
-- [<span data-ttu-id="923e5-119">シンボル ストア診断列挙型</span><span class="sxs-lookup"><span data-stu-id="923e5-119">Diagnostics Symbol Store Enumerations</span></span>](diagnostics-symbol-store-enumerations.md)
+ <span data-ttu-id="ee721-117">**ヘッダー:** ProtocolNotify2</span><span class="sxs-lookup"><span data-stu-id="ee721-117">**Header:** ProtocolNotify2.idl</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="ee721-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="ee721-118">See also</span></span>
+
+- [<span data-ttu-id="ee721-119">シンボル ストア診断列挙型</span><span class="sxs-lookup"><span data-stu-id="ee721-119">Diagnostics Symbol Store Enumerations</span></span>](diagnostics-symbol-store-enumerations.md)

@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 6c399f37-1e38-4ca1-b70d-8ae41f7228b7
 topic_type:
 - apiref
-ms.openlocfilehash: b3bb1857075f857f62ec92ac6a2876a49655c70e
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 9965a468f788efead0477bb7574ef3bf156fd869
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421060"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95692476"
 ---
-# <a name="icorpublishprocessenumnext-method"></a><span data-ttu-id="893e3-102">ICorPublishProcessEnum::Next メソッド</span><span class="sxs-lookup"><span data-stu-id="893e3-102">ICorPublishProcessEnum::Next Method</span></span>
-<span data-ttu-id="893e3-103">現在のカーソル位置から開始して、指定した数のプロセスをコレクションから取得します。</span><span class="sxs-lookup"><span data-stu-id="893e3-103">Gets the specified number of processes from the collection, starting at the current cursor position.</span></span>  
+# <a name="icorpublishprocessenumnext-method"></a><span data-ttu-id="92bc0-102">ICorPublishProcessEnum::Next メソッド</span><span class="sxs-lookup"><span data-stu-id="92bc0-102">ICorPublishProcessEnum::Next Method</span></span>
+
+<span data-ttu-id="92bc0-103">現在のカーソル位置から開始して、指定した数のプロセスをコレクションから取得します。</span><span class="sxs-lookup"><span data-stu-id="92bc0-103">Gets the specified number of processes from the collection, starting at the current cursor position.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="893e3-104">構文</span><span class="sxs-lookup"><span data-stu-id="893e3-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="92bc0-104">構文</span><span class="sxs-lookup"><span data-stu-id="92bc0-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT Next (  
@@ -36,25 +37,27 @@ HRESULT Next (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="893e3-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="893e3-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="92bc0-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="92bc0-105">Parameters</span></span>  
+
  `celt`  
- <span data-ttu-id="893e3-106">から取得するプロセスの数。</span><span class="sxs-lookup"><span data-stu-id="893e3-106">[in] The number of processes to be retrieved.</span></span>  
+ <span data-ttu-id="92bc0-106">から取得するプロセスの数。</span><span class="sxs-lookup"><span data-stu-id="92bc0-106">[in] The number of processes to be retrieved.</span></span>  
   
  `objects`  
- <span data-ttu-id="893e3-107">入出力取得された[ICorPublishProcess](icorpublishprocess-interface.md)オブジェクトの配列へのポインター。それぞれがプロセスを表します。</span><span class="sxs-lookup"><span data-stu-id="893e3-107">[out] A pointer to the array of retrieved [ICorPublishProcess](icorpublishprocess-interface.md) objects, each of which represents a process.</span></span>  
+ <span data-ttu-id="92bc0-107">入出力取得された [ICorPublishProcess](icorpublishprocess-interface.md) オブジェクトの配列へのポインター。それぞれがプロセスを表します。</span><span class="sxs-lookup"><span data-stu-id="92bc0-107">[out] A pointer to the array of retrieved [ICorPublishProcess](icorpublishprocess-interface.md) objects, each of which represents a process.</span></span>  
   
  `pceltFetched`  
- <span data-ttu-id="893e3-108">入出力実際に返されたプロセスの数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="893e3-108">[out] Pointer to the number of processes actually returned.</span></span> <span data-ttu-id="893e3-109">が1の場合、この値は null `celt` になります。</span><span class="sxs-lookup"><span data-stu-id="893e3-109">This value may be null if `celt` is one.</span></span>  
+ <span data-ttu-id="92bc0-108">入出力実際に返されたプロセスの数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="92bc0-108">[out] Pointer to the number of processes actually returned.</span></span> <span data-ttu-id="92bc0-109">が1の場合、この値は null `celt` になります。</span><span class="sxs-lookup"><span data-stu-id="92bc0-109">This value may be null if `celt` is one.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="893e3-110">要件</span><span class="sxs-lookup"><span data-stu-id="893e3-110">Requirements</span></span>  
- <span data-ttu-id="893e3-111">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="893e3-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="893e3-112">**ヘッダー:** CorPub .idl、CorPub .h</span><span class="sxs-lookup"><span data-stu-id="893e3-112">**Header:** CorPub.idl, CorPub.h</span></span>  
-  
- <span data-ttu-id="893e3-113">**ライブラリ:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="893e3-113">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="893e3-114">**.NET Framework のバージョン:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="893e3-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="893e3-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="893e3-115">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="92bc0-110">要件</span><span class="sxs-lookup"><span data-stu-id="92bc0-110">Requirements</span></span>  
 
-- [<span data-ttu-id="893e3-116">ICorPublishProcessEnum インターフェイス</span><span class="sxs-lookup"><span data-stu-id="893e3-116">ICorPublishProcessEnum Interface</span></span>](icorpublishprocessenum-interface.md)
+ <span data-ttu-id="92bc0-111">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92bc0-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="92bc0-112">**ヘッダー:** CorPub .idl、CorPub .h</span><span class="sxs-lookup"><span data-stu-id="92bc0-112">**Header:** CorPub.idl, CorPub.h</span></span>  
+  
+ <span data-ttu-id="92bc0-113">**ライブラリ:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="92bc0-113">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="92bc0-114">**.NET Framework のバージョン:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="92bc0-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="92bc0-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="92bc0-115">See also</span></span>
+
+- [<span data-ttu-id="92bc0-116">ICorPublishProcessEnum インターフェイス</span><span class="sxs-lookup"><span data-stu-id="92bc0-116">ICorPublishProcessEnum Interface</span></span>](icorpublishprocessenum-interface.md)
