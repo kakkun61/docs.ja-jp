@@ -5,26 +5,28 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - auto-implemented properties [C#]
 - properties [C#], auto-implemented
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-ms.openlocfilehash: de9034772bad1f28e27abe01595309dd84ddc3e7
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 39e191ce3b113b483fe93d70a0cadf02a7bee915
+ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864567"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95099375"
 ---
-# <a name="how-to-implement-a-lightweight-class-with-auto-implemented-properties-c-programming-guide"></a><span data-ttu-id="9cf88-104">自動実装するプロパティを使用して簡易クラスを実装する方法 (C# プログラミング ガイド)</span><span class="sxs-lookup"><span data-stu-id="9cf88-104">How to implement a lightweight class with auto-implemented properties (C# Programming Guide)</span></span>
+# <a name="how-to-implement-a-lightweight-class-with-auto-implemented-properties-c-programming-guide"></a><span data-ttu-id="62eea-104">自動実装するプロパティを使用して簡易クラスを実装する方法 (C# プログラミング ガイド)</span><span class="sxs-lookup"><span data-stu-id="62eea-104">How to implement a lightweight class with auto-implemented properties (C# Programming Guide)</span></span>
 
-<span data-ttu-id="9cf88-105">この例では、一連の自動実装プロパティのカプセル化のみを行う、変更できない簡易クラスの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9cf88-105">This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties.</span></span> <span data-ttu-id="9cf88-106">参照型のセマンティクスを使用する必要がある場合は、構造体ではなく次のようなコンストラクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="9cf88-106">Use this kind of construct instead of a struct when you must use reference type semantics.</span></span>
+<span data-ttu-id="62eea-105">この例では、一連の自動実装プロパティのカプセル化のみを行う、変更できない簡易クラスの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="62eea-105">This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties.</span></span> <span data-ttu-id="62eea-106">参照型のセマンティクスを使用する必要がある場合は、構造体ではなく次のようなコンストラクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="62eea-106">Use this kind of construct instead of a struct when you must use reference type semantics.</span></span>
 
-<span data-ttu-id="9cf88-107">変更できないプロパティの作成方法は 2 つあります。</span><span class="sxs-lookup"><span data-stu-id="9cf88-107">You can make an immutable property in two ways:</span></span>
+<span data-ttu-id="62eea-107">変更できないプロパティの作成方法は 2 つあります。</span><span class="sxs-lookup"><span data-stu-id="62eea-107">You can make an immutable property in two ways:</span></span>
 
-- <span data-ttu-id="9cf88-108">[set](../../language-reference/keywords/set.md) アクセサーは、[private](../../language-reference/keywords/private.md) として宣言することができます。</span><span class="sxs-lookup"><span data-stu-id="9cf88-108">You can declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).</span></span>  <span data-ttu-id="9cf88-109">プロパティは型の中のみで設定可能で、コンシューマーは変更できません。</span><span class="sxs-lookup"><span data-stu-id="9cf88-109">The property is only settable within the type, but it is immutable to consumers.</span></span>
+- <span data-ttu-id="62eea-108">[set](../../language-reference/keywords/set.md) アクセサーは、[private](../../language-reference/keywords/private.md) として宣言することができます。</span><span class="sxs-lookup"><span data-stu-id="62eea-108">You can declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).</span></span>  <span data-ttu-id="62eea-109">プロパティは型の中のみで設定可能で、コンシューマーは変更できません。</span><span class="sxs-lookup"><span data-stu-id="62eea-109">The property is only settable within the type, but it is immutable to consumers.</span></span>
 
-  <span data-ttu-id="9cf88-110">`set` アクセサーを private で宣言した場合、オブジェクト初期化子を使用してプロパティを初期化することはできません。</span><span class="sxs-lookup"><span data-stu-id="9cf88-110">When you declare a private `set` accessor, you cannot use an object initializer to initialize the property.</span></span> <span data-ttu-id="9cf88-111">コンストラクターまたはファクトリ メソッドを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9cf88-111">You must use a constructor or a factory method.</span></span>
-- <span data-ttu-id="9cf88-112">[get](../../language-reference/keywords/get.md) アクセサーのみを宣言し、その型のコンストラクターを除くすべての場所でプロパティを変更できないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="9cf88-112">You can declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.</span></span>
+  <span data-ttu-id="62eea-110">`set` アクセサーを private で宣言した場合、オブジェクト初期化子を使用してプロパティを初期化することはできません。</span><span class="sxs-lookup"><span data-stu-id="62eea-110">When you declare a private `set` accessor, you cannot use an object initializer to initialize the property.</span></span> <span data-ttu-id="62eea-111">コンストラクターまたはファクトリ メソッドを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="62eea-111">You must use a constructor or a factory method.</span></span>
+- <span data-ttu-id="62eea-112">[get](../../language-reference/keywords/get.md) アクセサーのみを宣言し、その型のコンストラクターを除くすべての場所でプロパティを変更できないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="62eea-112">You can declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.</span></span>
 
-<span data-ttu-id="9cf88-113">次の例では、get アクセサーのみを持つプロパティが、get と private set を持つプロパティとどのように異なるかを示しています。</span><span class="sxs-lookup"><span data-stu-id="9cf88-113">The following example shows how a property with only get accessor differs than one with get and private set.</span></span>
+<span data-ttu-id="62eea-113">次の例では、get アクセサーのみを持つプロパティが、get と private set を持つプロパティとどのように異なるかを示しています。</span><span class="sxs-lookup"><span data-stu-id="62eea-113">The following example shows how a property with only get accessor differs than one with get and private set.</span></span>
 
 ```csharp
 class Contact
@@ -47,9 +49,9 @@ class Contact
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="9cf88-114">例</span><span class="sxs-lookup"><span data-stu-id="9cf88-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="62eea-114">例</span><span class="sxs-lookup"><span data-stu-id="62eea-114">Example</span></span>
 
-<span data-ttu-id="9cf88-115">次の例は、自動実装プロパティを持つ変更できないクラスを実装する 2 つの方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9cf88-115">The following example shows two ways to implement an immutable class that has auto-implemented properties.</span></span> <span data-ttu-id="9cf88-116">それぞれの方法では、プロパティの 1 つを private `set` で、1 つを `get` のみで宣言します。</span><span class="sxs-lookup"><span data-stu-id="9cf88-116">Each way declares one of the properties with a private `set` and one of the properties with a `get` only.</span></span>  <span data-ttu-id="9cf88-117">最初のクラスはプロパティの初期化にコンストラクターのみを使用しますが、2 番目のクラスは、コンストラクターを呼び出す静的ファクトリ メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="9cf88-117">The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.</span></span>
+<span data-ttu-id="62eea-115">次の例は、自動実装プロパティを持つ変更できないクラスを実装する 2 つの方法を示します。</span><span class="sxs-lookup"><span data-stu-id="62eea-115">The following example shows two ways to implement an immutable class that has auto-implemented properties.</span></span> <span data-ttu-id="62eea-116">それぞれの方法では、プロパティの 1 つを private `set` で、1 つを `get` のみで宣言します。</span><span class="sxs-lookup"><span data-stu-id="62eea-116">Each way declares one of the properties with a private `set` and one of the properties with a `get` only.</span></span>  <span data-ttu-id="62eea-117">最初のクラスはプロパティの初期化にコンストラクターのみを使用しますが、2 番目のクラスは、コンストラクターを呼び出す静的ファクトリ メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="62eea-117">The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.</span></span>
 
 ```csharp
 // This class is immutable. After an object is created,
@@ -144,10 +146,10 @@ public class Program
 */
 ```
 
-<span data-ttu-id="9cf88-118">コンパイラによって、各自動実装プロパティにバッキング フィールドが作成されます。</span><span class="sxs-lookup"><span data-stu-id="9cf88-118">The compiler creates backing fields for each auto-implemented property.</span></span> <span data-ttu-id="9cf88-119">このフィールドは、ソース コードから直接アクセスできません。</span><span class="sxs-lookup"><span data-stu-id="9cf88-119">The fields are not accessible directly from source code.</span></span>
+<span data-ttu-id="62eea-118">コンパイラによって、各自動実装プロパティにバッキング フィールドが作成されます。</span><span class="sxs-lookup"><span data-stu-id="62eea-118">The compiler creates backing fields for each auto-implemented property.</span></span> <span data-ttu-id="62eea-119">このフィールドは、ソース コードから直接アクセスできません。</span><span class="sxs-lookup"><span data-stu-id="62eea-119">The fields are not accessible directly from source code.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9cf88-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="9cf88-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="62eea-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="62eea-120">See also</span></span>
 
-- [<span data-ttu-id="9cf88-121">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9cf88-121">Properties</span></span>](./properties.md)
-- [<span data-ttu-id="9cf88-122">struct</span><span class="sxs-lookup"><span data-stu-id="9cf88-122">struct</span></span>](../../language-reference/builtin-types/struct.md)
-- [<span data-ttu-id="9cf88-123">オブジェクト初期化子とコレクション初期化子</span><span class="sxs-lookup"><span data-stu-id="9cf88-123">Object and Collection Initializers</span></span>](./object-and-collection-initializers.md)
+- [<span data-ttu-id="62eea-121">プロパティ</span><span class="sxs-lookup"><span data-stu-id="62eea-121">Properties</span></span>](./properties.md)
+- [<span data-ttu-id="62eea-122">struct</span><span class="sxs-lookup"><span data-stu-id="62eea-122">struct</span></span>](../../language-reference/builtin-types/struct.md)
+- [<span data-ttu-id="62eea-123">オブジェクト初期化子とコレクション初期化子</span><span class="sxs-lookup"><span data-stu-id="62eea-123">Object and Collection Initializers</span></span>](./object-and-collection-initializers.md)
