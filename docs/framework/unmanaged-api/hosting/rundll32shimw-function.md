@@ -14,19 +14,20 @@ helpviewer_keywords:
 ms.assetid: 9ea07b57-96e2-44df-8711-8fe6c119087f
 topic_type:
 - apiref
-ms.openlocfilehash: 90304eb94e6f53d3132c97f5ababdc45f6053d7c
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: dd053134792b80a006849e465bc0025cf77a9ad8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84006572"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729955"
 ---
-# <a name="rundll32shimw-function"></a><span data-ttu-id="cf557-102">RunDll32ShimW 関数</span><span class="sxs-lookup"><span data-stu-id="cf557-102">RunDll32ShimW Function</span></span>
-<span data-ttu-id="cf557-103">指定されたコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="cf557-103">Executes the specified command.</span></span>  
+# <a name="rundll32shimw-function"></a><span data-ttu-id="869d7-102">RunDll32ShimW 関数</span><span class="sxs-lookup"><span data-stu-id="869d7-102">RunDll32ShimW Function</span></span>
+
+<span data-ttu-id="869d7-103">指定されたコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="869d7-103">Executes the specified command.</span></span>  
   
- <span data-ttu-id="cf557-104">この関数は .NET Framework 4 で非推奨とされました。</span><span class="sxs-lookup"><span data-stu-id="cf557-104">This function has been deprecated in the .NET Framework 4.</span></span>  
+ <span data-ttu-id="869d7-104">この関数は .NET Framework 4 で非推奨とされました。</span><span class="sxs-lookup"><span data-stu-id="869d7-104">This function has been deprecated in the .NET Framework 4.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="cf557-105">構文</span><span class="sxs-lookup"><span data-stu-id="cf557-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="869d7-105">構文</span><span class="sxs-lookup"><span data-stu-id="869d7-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT RunDll32ShimW (  
@@ -37,28 +38,30 @@ HRESULT RunDll32ShimW (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="cf557-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cf557-106">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="869d7-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="869d7-106">Parameters</span></span>  
+
  `hwnd`  
- <span data-ttu-id="cf557-107">からコマンドの出力が表示されるウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="cf557-107">[in] A handle to a window in which the command output will be displayed.</span></span>  
+ <span data-ttu-id="869d7-107">からコマンドの出力が表示されるウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="869d7-107">[in] A handle to a window in which the command output will be displayed.</span></span>  
   
  `hinst`  
- <span data-ttu-id="cf557-108">からコマンドが格納されているライブラリへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="cf557-108">[in] A handle to the library that contains the command.</span></span>  
+ <span data-ttu-id="869d7-108">からコマンドが格納されているライブラリへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="869d7-108">[in] A handle to the library that contains the command.</span></span>  
   
  `lpszCmdLine`  
- <span data-ttu-id="cf557-109">から実行するコマンドを指定する文字列です。</span><span class="sxs-lookup"><span data-stu-id="cf557-109">[in] A string that specifies the command to be executed.</span></span>  
+ <span data-ttu-id="869d7-109">から実行するコマンドを指定する文字列です。</span><span class="sxs-lookup"><span data-stu-id="869d7-109">[in] A string that specifies the command to be executed.</span></span>  
   
  `nCmdShow`  
- <span data-ttu-id="cf557-110">から出力ウィンドウの表示モードを指定する整数。</span><span class="sxs-lookup"><span data-stu-id="cf557-110">[in] An integer that specifies the display mode for the output window.</span></span>  
+ <span data-ttu-id="869d7-110">から出力ウィンドウの表示モードを指定する整数。</span><span class="sxs-lookup"><span data-stu-id="869d7-110">[in] An integer that specifies the display mode for the output window.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="cf557-111">必要条件</span><span class="sxs-lookup"><span data-stu-id="cf557-111">Requirements</span></span>  
- <span data-ttu-id="cf557-112">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cf557-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="cf557-113">**ヘッダー:** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="cf557-113">**Header:** MSCorEE.h</span></span>  
-  
- <span data-ttu-id="cf557-114">**ライブラリ:** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="cf557-114">**Library:** MSCorEE.dll</span></span>  
-  
- <span data-ttu-id="cf557-115">**.NET Framework のバージョン:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="cf557-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="cf557-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="cf557-116">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="869d7-111">要件</span><span class="sxs-lookup"><span data-stu-id="869d7-111">Requirements</span></span>  
 
-- [<span data-ttu-id="cf557-117">非推奨の CLR ホスト関数</span><span class="sxs-lookup"><span data-stu-id="cf557-117">Deprecated CLR Hosting Functions</span></span>](deprecated-clr-hosting-functions.md)
+ <span data-ttu-id="869d7-112">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="869d7-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="869d7-113">**ヘッダー:** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="869d7-113">**Header:** MSCorEE.h</span></span>  
+  
+ <span data-ttu-id="869d7-114">**ライブラリ:** MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="869d7-114">**Library:** MSCorEE.dll</span></span>  
+  
+ <span data-ttu-id="869d7-115">**.NET Framework のバージョン:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="869d7-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="869d7-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="869d7-116">See also</span></span>
+
+- [<span data-ttu-id="869d7-117">非推奨の CLR ホスト関数</span><span class="sxs-lookup"><span data-stu-id="869d7-117">Deprecated CLR Hosting Functions</span></span>](deprecated-clr-hosting-functions.md)
