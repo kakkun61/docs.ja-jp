@@ -15,22 +15,23 @@ helpviewer_keywords:
 ms.assetid: 3002f051-7aaa-4669-9314-cbc65b3a1772
 topic_type:
 - apiref
-ms.openlocfilehash: 631da8936873b57040f1c60e8db6867ea2eed2c8
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 958d36ee4d51d2975139acb9997cc19fb51a00c3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617049"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698456"
 ---
-# <a name="icatalogservicesautodone-method"></a><span data-ttu-id="29cc1-102">ICatalogServices::Autodone メソッド</span><span class="sxs-lookup"><span data-stu-id="29cc1-102">ICatalogServices::Autodone Method</span></span>
-<span data-ttu-id="29cc1-103">このメソッドは、.NET Framework インフラストラクチャをサポートします。独自に作成したコードから直接使用するためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="29cc1-103">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
+# <a name="icatalogservicesautodone-method"></a><span data-ttu-id="5419b-102">ICatalogServices::Autodone メソッド</span><span class="sxs-lookup"><span data-stu-id="5419b-102">ICatalogServices::Autodone Method</span></span>
+
+<span data-ttu-id="5419b-103">このメソッドは、.NET Framework インフラストラクチャをサポートします。独自に作成したコードから直接使用するためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="5419b-103">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="29cc1-104">構文</span><span class="sxs-lookup"><span data-stu-id="29cc1-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="5419b-104">構文</span><span class="sxs-lookup"><span data-stu-id="5419b-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT Autodone ( );  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="29cc1-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="29cc1-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5419b-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="5419b-105">See also</span></span>
 
-- [<span data-ttu-id="29cc1-106">ホスト インターフェイス</span><span class="sxs-lookup"><span data-stu-id="29cc1-106">Hosting Interfaces</span></span>](hosting-interfaces.md)
+- [<span data-ttu-id="5419b-106">ホスト インターフェイス</span><span class="sxs-lookup"><span data-stu-id="5419b-106">Hosting Interfaces</span></span>](hosting-interfaces.md)
