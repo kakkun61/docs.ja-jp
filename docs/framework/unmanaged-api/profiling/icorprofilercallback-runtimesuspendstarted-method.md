@@ -15,41 +15,45 @@ helpviewer_keywords:
 ms.assetid: c8461cac-e31b-4efa-ad2c-26598173eb96
 topic_type:
 - apiref
-ms.openlocfilehash: cc01254d9604ce39c964c7d78059ef4087483c77
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b778088f53a3c49def95d715f5fefcb26af81489
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503225"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731983"
 ---
-# <a name="icorprofilercallbackruntimesuspendstarted-method"></a><span data-ttu-id="3c084-102">ICorProfilerCallback::RuntimeSuspendStarted メソッド</span><span class="sxs-lookup"><span data-stu-id="3c084-102">ICorProfilerCallback::RuntimeSuspendStarted Method</span></span>
-<span data-ttu-id="3c084-103">ランタイムがすべてのランタイムスレッドを中断しようとしていることをプロファイラーに通知します。</span><span class="sxs-lookup"><span data-stu-id="3c084-103">Notifies the profiler that the runtime is about to suspend all runtime threads.</span></span>  
+# <a name="icorprofilercallbackruntimesuspendstarted-method"></a><span data-ttu-id="40317-102">ICorProfilerCallback::RuntimeSuspendStarted メソッド</span><span class="sxs-lookup"><span data-stu-id="40317-102">ICorProfilerCallback::RuntimeSuspendStarted Method</span></span>
+
+<span data-ttu-id="40317-103">ランタイムがすべてのランタイムスレッドを中断しようとしていることをプロファイラーに通知します。</span><span class="sxs-lookup"><span data-stu-id="40317-103">Notifies the profiler that the runtime is about to suspend all runtime threads.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3c084-104">構文</span><span class="sxs-lookup"><span data-stu-id="3c084-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="40317-104">構文</span><span class="sxs-lookup"><span data-stu-id="40317-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT RuntimeSuspendStarted(  
     [in] COR_PRF_SUSPEND_REASON suspendReason);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="3c084-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3c084-105">Parameters</span></span>  
- `suspendReason`  
- <span data-ttu-id="3c084-106">から中断の理由を示す[COR_PRF_SUSPEND_REASON](cor-prf-suspend-reason-enumeration.md)列挙体の値。</span><span class="sxs-lookup"><span data-stu-id="3c084-106">[in] A value of the [COR_PRF_SUSPEND_REASON](cor-prf-suspend-reason-enumeration.md) enumeration that indicates the reason for the suspension.</span></span>  
-  
-## <a name="remarks"></a><span data-ttu-id="3c084-107">解説</span><span class="sxs-lookup"><span data-stu-id="3c084-107">Remarks</span></span>  
- <span data-ttu-id="3c084-108">アンマネージコード内のすべてのランタイムスレッドは、ランタイムを再入力しようとするまで実行を継続できます。</span><span class="sxs-lookup"><span data-stu-id="3c084-108">All runtime threads that are in unmanaged code are allowed to continue running until they try to re-enter the runtime.</span></span> <span data-ttu-id="3c084-109">その時点で、ランタイムが再開されるまで中断されます。</span><span class="sxs-lookup"><span data-stu-id="3c084-109">At that point they will also be suspended until the runtime resumes.</span></span> <span data-ttu-id="3c084-110">これは、ランタイムに入る新しいスレッドにも当てはまります。</span><span class="sxs-lookup"><span data-stu-id="3c084-110">This also applies to new threads that enter the runtime.</span></span> <span data-ttu-id="3c084-111">ランタイム内のすべてのスレッドは、割り込み可能なコードに既に存在する場合は直ちに中断されます。または、割り込み可能なコードになると中断するように求められます。</span><span class="sxs-lookup"><span data-stu-id="3c084-111">All threads in the runtime are either suspended immediately if they are already in interruptible code, or they are asked to suspend when they reach interruptible code.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="3c084-112">要件</span><span class="sxs-lookup"><span data-stu-id="3c084-112">Requirements</span></span>  
- <span data-ttu-id="3c084-113">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3c084-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="3c084-114">**ヘッダー** : CorProf.idl、CorProf.h</span><span class="sxs-lookup"><span data-stu-id="3c084-114">**Header:** CorProf.idl, CorProf.h</span></span>  
-  
- <span data-ttu-id="3c084-115">**ライブラリ:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3c084-115">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="3c084-116">**.NET Framework のバージョン:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3c084-116">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="3c084-117">関連項目</span><span class="sxs-lookup"><span data-stu-id="3c084-117">See also</span></span>
+## <a name="parameters"></a><span data-ttu-id="40317-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="40317-105">Parameters</span></span>  
 
-- [<span data-ttu-id="3c084-118">ICorProfilerCallback インターフェイス</span><span class="sxs-lookup"><span data-stu-id="3c084-118">ICorProfilerCallback Interface</span></span>](icorprofilercallback-interface.md)
-- [<span data-ttu-id="3c084-119">RuntimeSuspendAborted メソッド</span><span class="sxs-lookup"><span data-stu-id="3c084-119">RuntimeSuspendAborted Method</span></span>](icorprofilercallback-runtimesuspendaborted-method.md)
-- [<span data-ttu-id="3c084-120">RuntimeSuspendFinished メソッド</span><span class="sxs-lookup"><span data-stu-id="3c084-120">RuntimeSuspendFinished Method</span></span>](icorprofilercallback-runtimesuspendfinished-method.md)
+ `suspendReason`  
+ <span data-ttu-id="40317-106">から中断の理由を示す [COR_PRF_SUSPEND_REASON](cor-prf-suspend-reason-enumeration.md) 列挙体の値。</span><span class="sxs-lookup"><span data-stu-id="40317-106">[in] A value of the [COR_PRF_SUSPEND_REASON](cor-prf-suspend-reason-enumeration.md) enumeration that indicates the reason for the suspension.</span></span>  
+  
+## <a name="remarks"></a><span data-ttu-id="40317-107">注釈</span><span class="sxs-lookup"><span data-stu-id="40317-107">Remarks</span></span>  
+
+ <span data-ttu-id="40317-108">アンマネージコード内のすべてのランタイムスレッドは、ランタイムを再入力しようとするまで実行を継続できます。</span><span class="sxs-lookup"><span data-stu-id="40317-108">All runtime threads that are in unmanaged code are allowed to continue running until they try to re-enter the runtime.</span></span> <span data-ttu-id="40317-109">その時点で、ランタイムが再開されるまで中断されます。</span><span class="sxs-lookup"><span data-stu-id="40317-109">At that point they will also be suspended until the runtime resumes.</span></span> <span data-ttu-id="40317-110">これは、ランタイムに入る新しいスレッドにも当てはまります。</span><span class="sxs-lookup"><span data-stu-id="40317-110">This also applies to new threads that enter the runtime.</span></span> <span data-ttu-id="40317-111">ランタイム内のすべてのスレッドは、割り込み可能なコードに既に存在する場合は直ちに中断されます。または、割り込み可能なコードになると中断するように求められます。</span><span class="sxs-lookup"><span data-stu-id="40317-111">All threads in the runtime are either suspended immediately if they are already in interruptible code, or they are asked to suspend when they reach interruptible code.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="40317-112">要件</span><span class="sxs-lookup"><span data-stu-id="40317-112">Requirements</span></span>  
+
+ <span data-ttu-id="40317-113">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40317-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="40317-114">**ヘッダー** : CorProf.idl、CorProf.h</span><span class="sxs-lookup"><span data-stu-id="40317-114">**Header:** CorProf.idl, CorProf.h</span></span>  
+  
+ <span data-ttu-id="40317-115">**ライブラリ:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="40317-115">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="40317-116">**.NET Framework のバージョン:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="40317-116">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="40317-117">関連項目</span><span class="sxs-lookup"><span data-stu-id="40317-117">See also</span></span>
+
+- [<span data-ttu-id="40317-118">ICorProfilerCallback インターフェイス</span><span class="sxs-lookup"><span data-stu-id="40317-118">ICorProfilerCallback Interface</span></span>](icorprofilercallback-interface.md)
+- [<span data-ttu-id="40317-119">RuntimeSuspendAborted メソッド</span><span class="sxs-lookup"><span data-stu-id="40317-119">RuntimeSuspendAborted Method</span></span>](icorprofilercallback-runtimesuspendaborted-method.md)
+- [<span data-ttu-id="40317-120">RuntimeSuspendFinished メソッド</span><span class="sxs-lookup"><span data-stu-id="40317-120">RuntimeSuspendFinished Method</span></span>](icorprofilercallback-runtimesuspendfinished-method.md)
