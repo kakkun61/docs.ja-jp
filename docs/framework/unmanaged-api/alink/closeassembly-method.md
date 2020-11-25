@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: f66a43bc-a5c5-4190-acbe-63fd27640634
 topic_type:
 - apiref
-ms.openlocfilehash: 70dca19075d8c896408ec78f89549b0c539280de
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 4e8aeef3520c4d5c9735b2c8975ac1e39470ba93
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446580"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95717021"
 ---
-# <a name="closeassembly-method"></a><span data-ttu-id="f8aa6-102">CloseAssembly メソッド</span><span class="sxs-lookup"><span data-stu-id="f8aa6-102">CloseAssembly Method</span></span>
-<span data-ttu-id="f8aa6-103">アセンブリ操作を終了します。</span><span class="sxs-lookup"><span data-stu-id="f8aa6-103">Finalizes assembly operations.</span></span> <span data-ttu-id="f8aa6-104">新しいアセンブリまたは非バインドモジュールを開始する前に、このメソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="f8aa6-104">Call this method before beginning a new assembly or unbound module.</span></span>  
+# <a name="closeassembly-method"></a><span data-ttu-id="77112-102">CloseAssembly メソッド</span><span class="sxs-lookup"><span data-stu-id="77112-102">CloseAssembly Method</span></span>
+
+<span data-ttu-id="77112-103">アセンブリ操作を終了します。</span><span class="sxs-lookup"><span data-stu-id="77112-103">Finalizes assembly operations.</span></span> <span data-ttu-id="77112-104">新しいアセンブリまたは非バインドモジュールを開始する前に、このメソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="77112-104">Call this method before beginning a new assembly or unbound module.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="f8aa6-105">構文</span><span class="sxs-lookup"><span data-stu-id="f8aa6-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="77112-105">構文</span><span class="sxs-lookup"><span data-stu-id="77112-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT CloseAssembly(  
@@ -33,18 +34,21 @@ HRESULT CloseAssembly(
 ) PURE;  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="f8aa6-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f8aa6-106">Parameters</span></span>  
- `AssemblyID`  
- <span data-ttu-id="f8aa6-107">アセンブリの ID。</span><span class="sxs-lookup"><span data-stu-id="f8aa6-107">ID of the assembly.</span></span>  
-  
-## <a name="return-value"></a><span data-ttu-id="f8aa6-108">戻り値</span><span class="sxs-lookup"><span data-stu-id="f8aa6-108">Return Value</span></span>  
- <span data-ttu-id="f8aa6-109">メソッドが成功した場合は S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="f8aa6-109">Returns S_OK if the method succeeds.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="f8aa6-110">要件</span><span class="sxs-lookup"><span data-stu-id="f8aa6-110">Requirements</span></span>  
- <span data-ttu-id="f8aa6-111">Alink. h が必要です。</span><span class="sxs-lookup"><span data-stu-id="f8aa6-111">Requires alink.h.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="f8aa6-112">参照</span><span class="sxs-lookup"><span data-stu-id="f8aa6-112">See also</span></span>
+## <a name="parameters"></a><span data-ttu-id="77112-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="77112-106">Parameters</span></span>  
 
-- [<span data-ttu-id="f8aa6-113">IALink インターフェイス</span><span class="sxs-lookup"><span data-stu-id="f8aa6-113">IALink Interface</span></span>](ialink-interface.md)
-- [<span data-ttu-id="f8aa6-114">IALink2 インターフェイス</span><span class="sxs-lookup"><span data-stu-id="f8aa6-114">IALink2 Interface</span></span>](ialink2-interface.md)
-- [<span data-ttu-id="f8aa6-115">ALink API</span><span class="sxs-lookup"><span data-stu-id="f8aa6-115">ALink API</span></span>](index.md)
+ `AssemblyID`  
+ <span data-ttu-id="77112-107">アセンブリの ID。</span><span class="sxs-lookup"><span data-stu-id="77112-107">ID of the assembly.</span></span>  
+  
+## <a name="return-value"></a><span data-ttu-id="77112-108">戻り値</span><span class="sxs-lookup"><span data-stu-id="77112-108">Return Value</span></span>  
+
+ <span data-ttu-id="77112-109">メソッドが成功した場合は S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="77112-109">Returns S_OK if the method succeeds.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="77112-110">要件</span><span class="sxs-lookup"><span data-stu-id="77112-110">Requirements</span></span>  
+
+ <span data-ttu-id="77112-111">Alink. h が必要です。</span><span class="sxs-lookup"><span data-stu-id="77112-111">Requires alink.h.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="77112-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="77112-112">See also</span></span>
+
+- [<span data-ttu-id="77112-113">IALink インターフェイス</span><span class="sxs-lookup"><span data-stu-id="77112-113">IALink Interface</span></span>](ialink-interface.md)
+- [<span data-ttu-id="77112-114">IALink2 インターフェイス</span><span class="sxs-lookup"><span data-stu-id="77112-114">IALink2 Interface</span></span>](ialink2-interface.md)
+- [<span data-ttu-id="77112-115">ALink API</span><span class="sxs-lookup"><span data-stu-id="77112-115">ALink API</span></span>](index.md)

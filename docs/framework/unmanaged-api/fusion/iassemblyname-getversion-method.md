@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 42230928-2c33-41fd-9519-d96efef6c7af
 topic_type:
 - apiref
-ms.openlocfilehash: c0a43dc1640bdaa0ae104832eb4d1f8eb15b0392
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 6f37979c7a4873a7751db0296dc7d485c3444561
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134330"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95715902"
 ---
-# <a name="iassemblynamegetversion-method"></a><span data-ttu-id="92d90-102">IAssemblyName::GetVersion メソッド</span><span class="sxs-lookup"><span data-stu-id="92d90-102">IAssemblyName::GetVersion Method</span></span>
-<span data-ttu-id="92d90-103">この[IAssemblyName](iassemblyname-interface.md)オブジェクトによって参照されるアセンブリのバージョン情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="92d90-103">Gets the version information for the assembly referenced by this [IAssemblyName](iassemblyname-interface.md) object.</span></span>  
+# <a name="iassemblynamegetversion-method"></a><span data-ttu-id="1df17-102">IAssemblyName::GetVersion メソッド</span><span class="sxs-lookup"><span data-stu-id="1df17-102">IAssemblyName::GetVersion Method</span></span>
+
+<span data-ttu-id="1df17-103">この [IAssemblyName](iassemblyname-interface.md) オブジェクトによって参照されるアセンブリのバージョン情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="1df17-103">Gets the version information for the assembly referenced by this [IAssemblyName](iassemblyname-interface.md) object.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="92d90-104">構文</span><span class="sxs-lookup"><span data-stu-id="92d90-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="1df17-104">構文</span><span class="sxs-lookup"><span data-stu-id="1df17-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetVersion (  
@@ -34,20 +35,22 @@ HRESULT GetVersion (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="92d90-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="92d90-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="1df17-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1df17-105">Parameters</span></span>  
+
  `pdwVersionHi`  
- <span data-ttu-id="92d90-106">入出力バージョンの上位32ビット。</span><span class="sxs-lookup"><span data-stu-id="92d90-106">[out] The high 32 bits of the version.</span></span>  
+ <span data-ttu-id="1df17-106">入出力バージョンの上位32ビット。</span><span class="sxs-lookup"><span data-stu-id="1df17-106">[out] The high 32 bits of the version.</span></span>  
   
  `pdwVersionLow`  
- <span data-ttu-id="92d90-107">入出力バージョンの下位32ビット。</span><span class="sxs-lookup"><span data-stu-id="92d90-107">[out] The low 32 bits of the version.</span></span>  
+ <span data-ttu-id="1df17-107">入出力バージョンの下位32ビット。</span><span class="sxs-lookup"><span data-stu-id="1df17-107">[out] The low 32 bits of the version.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="92d90-108">［要件］</span><span class="sxs-lookup"><span data-stu-id="92d90-108">Requirements</span></span>  
- <span data-ttu-id="92d90-109">**:** 「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92d90-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="92d90-110">**ヘッダー:** Fusion. h</span><span class="sxs-lookup"><span data-stu-id="92d90-110">**Header:** Fusion.h</span></span>  
-  
- <span data-ttu-id="92d90-111">**.NET Framework のバージョン:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="92d90-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="92d90-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="92d90-112">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="1df17-108">要件</span><span class="sxs-lookup"><span data-stu-id="1df17-108">Requirements</span></span>  
 
-- [<span data-ttu-id="92d90-113">IAssemblyName インターフェイス</span><span class="sxs-lookup"><span data-stu-id="92d90-113">IAssemblyName Interface</span></span>](iassemblyname-interface.md)
+ <span data-ttu-id="1df17-109">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1df17-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="1df17-110">**ヘッダー:** Fusion. h</span><span class="sxs-lookup"><span data-stu-id="1df17-110">**Header:** Fusion.h</span></span>  
+  
+ <span data-ttu-id="1df17-111">**.NET Framework のバージョン:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1df17-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="1df17-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="1df17-112">See also</span></span>
+
+- [<span data-ttu-id="1df17-113">IAssemblyName インターフェイス</span><span class="sxs-lookup"><span data-stu-id="1df17-113">IAssemblyName Interface</span></span>](iassemblyname-interface.md)
