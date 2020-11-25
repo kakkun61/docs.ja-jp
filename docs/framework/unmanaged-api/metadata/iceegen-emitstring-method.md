@@ -15,19 +15,20 @@ helpviewer_keywords:
 ms.assetid: ad2710a7-edb8-4493-8619-3fce235e3334
 topic_type:
 - apiref
-ms.openlocfilehash: e7c58e6cdbe0d3c8513721a40eaa3fdfcec6ce2e
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: b9c907868df31da8d995c6a6b86db258d395335d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008860"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95715447"
 ---
-# <a name="iceegenemitstring-method"></a><span data-ttu-id="305ec-102">ICeeGen::EmitString メソッド</span><span class="sxs-lookup"><span data-stu-id="305ec-102">ICeeGen::EmitString Method</span></span>
-<span data-ttu-id="305ec-103">指定した文字列をコードベースに出力します。</span><span class="sxs-lookup"><span data-stu-id="305ec-103">Emits the specified string into the code base.</span></span>  
+# <a name="iceegenemitstring-method"></a><span data-ttu-id="af1d0-102">ICeeGen::EmitString メソッド</span><span class="sxs-lookup"><span data-stu-id="af1d0-102">ICeeGen::EmitString Method</span></span>
+
+<span data-ttu-id="af1d0-103">指定した文字列をコードベースに出力します。</span><span class="sxs-lookup"><span data-stu-id="af1d0-103">Emits the specified string into the code base.</span></span>  
   
- <span data-ttu-id="305ec-104">このメソッドは互換性のために残されています。使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="305ec-104">This method is obsolete and should not be used.</span></span>  
+ <span data-ttu-id="af1d0-104">このメソッドは互換性のために残されています。使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="af1d0-104">This method is obsolete and should not be used.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="305ec-105">構文</span><span class="sxs-lookup"><span data-stu-id="305ec-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="af1d0-105">構文</span><span class="sxs-lookup"><span data-stu-id="af1d0-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT EmitString (  
@@ -36,22 +37,24 @@ HRESULT EmitString (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="305ec-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="305ec-106">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="af1d0-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="af1d0-106">Parameters</span></span>  
+
  `lpString`  
- <span data-ttu-id="305ec-107">から出力する文字列。</span><span class="sxs-lookup"><span data-stu-id="305ec-107">[in] The string to emit.</span></span>  
+ <span data-ttu-id="af1d0-107">から出力する文字列。</span><span class="sxs-lookup"><span data-stu-id="af1d0-107">[in] The string to emit.</span></span>  
   
  `RVA`  
- <span data-ttu-id="305ec-108">入出力出力された文字列の相対仮想アドレス。</span><span class="sxs-lookup"><span data-stu-id="305ec-108">[out] The relative virtual address of the emitted string.</span></span>  
+ <span data-ttu-id="af1d0-108">入出力出力された文字列の相対仮想アドレス。</span><span class="sxs-lookup"><span data-stu-id="af1d0-108">[out] The relative virtual address of the emitted string.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="305ec-109">必要条件</span><span class="sxs-lookup"><span data-stu-id="305ec-109">Requirements</span></span>  
- <span data-ttu-id="305ec-110">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="305ec-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="305ec-111">**ヘッダー:** Cor</span><span class="sxs-lookup"><span data-stu-id="305ec-111">**Header:** Cor.h</span></span>  
-  
- <span data-ttu-id="305ec-112">**ライブラリ:** Mscoree.dll のリソースとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="305ec-112">**Library:** Used as a resource in MsCorEE.dll</span></span>  
-  
- <span data-ttu-id="305ec-113">**.NET Framework のバージョン:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="305ec-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="305ec-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="305ec-114">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="af1d0-109">要件</span><span class="sxs-lookup"><span data-stu-id="af1d0-109">Requirements</span></span>  
 
-- [<span data-ttu-id="305ec-115">ICeeGen インターフェイス</span><span class="sxs-lookup"><span data-stu-id="305ec-115">ICeeGen Interface</span></span>](iceegen-interface.md)
+ <span data-ttu-id="af1d0-110">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="af1d0-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="af1d0-111">**ヘッダー:** Cor</span><span class="sxs-lookup"><span data-stu-id="af1d0-111">**Header:** Cor.h</span></span>  
+  
+ <span data-ttu-id="af1d0-112">**ライブラリ:** MsCorEE.dll のリソースとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="af1d0-112">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+  
+ <span data-ttu-id="af1d0-113">**.NET Framework のバージョン:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="af1d0-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="af1d0-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="af1d0-114">See also</span></span>
+
+- [<span data-ttu-id="af1d0-115">ICeeGen インターフェイス</span><span class="sxs-lookup"><span data-stu-id="af1d0-115">ICeeGen Interface</span></span>](iceegen-interface.md)
