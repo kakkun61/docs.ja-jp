@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
 topic_type:
 - apiref
-ms.openlocfilehash: f789105751ae2d498740ab60f326f9c0597483b2
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 30a522fbf96aebaa96f33f4a1dc381683f183871
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73099211"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726419"
 ---
-# <a name="cor_pub_enumprocess-enumeration"></a><span data-ttu-id="d02b5-102">COR_PUB_ENUMPROCESS 列挙型</span><span class="sxs-lookup"><span data-stu-id="d02b5-102">COR_PUB_ENUMPROCESS Enumeration</span></span>
-<span data-ttu-id="d02b5-103">列挙するプロセスの型を識別します。</span><span class="sxs-lookup"><span data-stu-id="d02b5-103">Identifies the type of process to be enumerated.</span></span>  
+# <a name="cor_pub_enumprocess-enumeration"></a><span data-ttu-id="2805c-102">COR_PUB_ENUMPROCESS 列挙型</span><span class="sxs-lookup"><span data-stu-id="2805c-102">COR_PUB_ENUMPROCESS Enumeration</span></span>
+
+<span data-ttu-id="2805c-103">列挙するプロセスの型を識別します。</span><span class="sxs-lookup"><span data-stu-id="2805c-103">Identifies the type of process to be enumerated.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="d02b5-104">構文</span><span class="sxs-lookup"><span data-stu-id="d02b5-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="2805c-104">構文</span><span class="sxs-lookup"><span data-stu-id="2805c-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum {  
@@ -32,24 +33,26 @@ typedef enum {
 } COR_PUB_ENUMPROCESS;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="d02b5-105">メンバー</span><span class="sxs-lookup"><span data-stu-id="d02b5-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="2805c-105">メンバー</span><span class="sxs-lookup"><span data-stu-id="2805c-105">Members</span></span>  
   
-|<span data-ttu-id="d02b5-106">メンバー名</span><span class="sxs-lookup"><span data-stu-id="d02b5-106">Member name</span></span>|<span data-ttu-id="d02b5-107">説明</span><span class="sxs-lookup"><span data-stu-id="d02b5-107">Description</span></span>|  
+|<span data-ttu-id="2805c-106">メンバー名</span><span class="sxs-lookup"><span data-stu-id="2805c-106">Member name</span></span>|<span data-ttu-id="2805c-107">説明</span><span class="sxs-lookup"><span data-stu-id="2805c-107">Description</span></span>|  
 |-----------------|-----------------|  
-|`COR_PUB_MANAGEDONLY`|<span data-ttu-id="d02b5-108">マネージプロセス。</span><span class="sxs-lookup"><span data-stu-id="d02b5-108">A managed process.</span></span>|  
+|`COR_PUB_MANAGEDONLY`|<span data-ttu-id="2805c-108">マネージプロセス。</span><span class="sxs-lookup"><span data-stu-id="2805c-108">A managed process.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="d02b5-109">Remarks</span><span class="sxs-lookup"><span data-stu-id="d02b5-109">Remarks</span></span>  
- <span data-ttu-id="d02b5-110">アンマネージデバッグ API の現在のバージョンは、マネージプロセスのみを列挙します。</span><span class="sxs-lookup"><span data-stu-id="d02b5-110">The current version of the unmanaged debugging API enumerates only managed processes.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="d02b5-111">［要件］</span><span class="sxs-lookup"><span data-stu-id="d02b5-111">Requirements</span></span>  
- <span data-ttu-id="d02b5-112">**:** 「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d02b5-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="d02b5-113">**ヘッダー:** CorPub .idl、CorPub .h</span><span class="sxs-lookup"><span data-stu-id="d02b5-113">**Header:** CorPub.idl, CorPub.h</span></span>  
-  
- <span data-ttu-id="d02b5-114">**ライブラリ:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="d02b5-114">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="d02b5-115">**.NET Framework のバージョン:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d02b5-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="d02b5-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="d02b5-116">See also</span></span>
+## <a name="remarks"></a><span data-ttu-id="2805c-109">注釈</span><span class="sxs-lookup"><span data-stu-id="2805c-109">Remarks</span></span>  
 
-- [<span data-ttu-id="d02b5-117">列挙型のデバッグ</span><span class="sxs-lookup"><span data-stu-id="d02b5-117">Debugging Enumerations</span></span>](debugging-enumerations.md)
+ <span data-ttu-id="2805c-110">アンマネージデバッグ API の現在のバージョンは、マネージプロセスのみを列挙します。</span><span class="sxs-lookup"><span data-stu-id="2805c-110">The current version of the unmanaged debugging API enumerates only managed processes.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="2805c-111">要件</span><span class="sxs-lookup"><span data-stu-id="2805c-111">Requirements</span></span>  
+
+ <span data-ttu-id="2805c-112">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2805c-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="2805c-113">**ヘッダー:** CorPub .idl、CorPub .h</span><span class="sxs-lookup"><span data-stu-id="2805c-113">**Header:** CorPub.idl, CorPub.h</span></span>  
+  
+ <span data-ttu-id="2805c-114">**ライブラリ:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="2805c-114">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="2805c-115">**.NET Framework のバージョン:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2805c-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="2805c-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="2805c-116">See also</span></span>
+
+- [<span data-ttu-id="2805c-117">列挙体のデバッグ</span><span class="sxs-lookup"><span data-stu-id="2805c-117">Debugging Enumerations</span></span>](debugging-enumerations.md)
