@@ -2,17 +2,18 @@
 title: ICorDebugVariableSymbol::SetValue メソッド
 ms.date: 03/30/2017
 ms.assetid: 4609418d-71fa-44bc-9618-4d529d25cabb
-ms.openlocfilehash: 38afd355938ec1beb1dbfd33de36116d25b07b4e
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 3ef9b9b9a095d6d6026ffc38873661355d660488
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83397075"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95707842"
 ---
-# <a name="icordebugvariablesymbolsetvalue-method"></a><span data-ttu-id="b9afc-102">ICorDebugVariableSymbol::SetValue メソッド</span><span class="sxs-lookup"><span data-stu-id="b9afc-102">ICorDebugVariableSymbol::SetValue Method</span></span>
-<span data-ttu-id="b9afc-103">バイト配列の値を変数に代入します。</span><span class="sxs-lookup"><span data-stu-id="b9afc-103">Assigns the value of a byte array to a variable.</span></span>  
+# <a name="icordebugvariablesymbolsetvalue-method"></a><span data-ttu-id="f24aa-102">ICorDebugVariableSymbol::SetValue メソッド</span><span class="sxs-lookup"><span data-stu-id="f24aa-102">ICorDebugVariableSymbol::SetValue Method</span></span>
+
+<span data-ttu-id="f24aa-103">バイト配列の値を変数に代入します。</span><span class="sxs-lookup"><span data-stu-id="f24aa-103">Assigns the value of a byte array to a variable.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b9afc-104">構文</span><span class="sxs-lookup"><span data-stu-id="b9afc-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="f24aa-104">構文</span><span class="sxs-lookup"><span data-stu-id="f24aa-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT SetValue(  
@@ -25,40 +26,42 @@ HRESULT SetValue(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="b9afc-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b9afc-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="f24aa-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f24aa-105">Parameters</span></span>  
+
  `offset`  
- <span data-ttu-id="b9afc-106">[in] 値を設定する変数内の開始オフセットです。</span><span class="sxs-lookup"><span data-stu-id="b9afc-106">[in] The starting offset in the variable at which to set the value.</span></span> <span data-ttu-id="b9afc-107">このパラメーターは、オブジェクトのメンバー フィールドに書き込む際に使用されます。</span><span class="sxs-lookup"><span data-stu-id="b9afc-107">This parameter is used when writing to member fields in an object.</span></span>  
+ <span data-ttu-id="f24aa-106">[in] 値を設定する変数内の開始オフセットです。</span><span class="sxs-lookup"><span data-stu-id="f24aa-106">[in] The starting offset in the variable at which to set the value.</span></span> <span data-ttu-id="f24aa-107">このパラメーターは、オブジェクトのメンバー フィールドに書き込む際に使用されます。</span><span class="sxs-lookup"><span data-stu-id="f24aa-107">This parameter is used when writing to member fields in an object.</span></span>  
   
  `threadID`  
- <span data-ttu-id="b9afc-108">[in] 新しい値を反映させるためにコンテキストを更新する必要があるスレッドのスレッド ID。</span><span class="sxs-lookup"><span data-stu-id="b9afc-108">[in] The thread identifier of the thread whose context must be updated to reflect the new value.</span></span>  
+ <span data-ttu-id="f24aa-108">[in] 新しい値を反映させるためにコンテキストを更新する必要があるスレッドのスレッド ID。</span><span class="sxs-lookup"><span data-stu-id="f24aa-108">[in] The thread identifier of the thread whose context must be updated to reflect the new value.</span></span>  
   
  `cbContext`  
- <span data-ttu-id="b9afc-109">[in] スレッド コンテキストのバイト単位のサイズ。</span><span class="sxs-lookup"><span data-stu-id="b9afc-109">[in] The size in bytes of the thread context.</span></span>  
+ <span data-ttu-id="f24aa-109">[in] スレッド コンテキストのバイト単位のサイズ。</span><span class="sxs-lookup"><span data-stu-id="f24aa-109">[in] The size in bytes of the thread context.</span></span>  
   
  `context`  
- <span data-ttu-id="b9afc-110">[in] 値の書き込みに使用されるスレッド コンテキスト。</span><span class="sxs-lookup"><span data-stu-id="b9afc-110">[in] The thread context used to write the value.</span></span>  
+ <span data-ttu-id="f24aa-110">[in] 値の書き込みに使用されるスレッド コンテキスト。</span><span class="sxs-lookup"><span data-stu-id="f24aa-110">[in] The thread context used to write the value.</span></span>  
   
  `cbValue`  
- <span data-ttu-id="b9afc-111">[in] `pValue` バッファーのバイト単位のサイズ。</span><span class="sxs-lookup"><span data-stu-id="b9afc-111">[in] The size in bytes of the `pValue` buffer.</span></span>  
+ <span data-ttu-id="f24aa-111">[in] `pValue` バッファーのバイト単位のサイズ。</span><span class="sxs-lookup"><span data-stu-id="f24aa-111">[in] The size in bytes of the `pValue` buffer.</span></span>  
   
  `pValue`  
- <span data-ttu-id="b9afc-112">[in] 設定する値が含まれるバッファー。</span><span class="sxs-lookup"><span data-stu-id="b9afc-112">[in] The buffer that contains the value to set.</span></span>  
+ <span data-ttu-id="f24aa-112">[in] 設定する値が含まれるバッファー。</span><span class="sxs-lookup"><span data-stu-id="f24aa-112">[in] The buffer that contains the value to set.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="b9afc-113">解説</span><span class="sxs-lookup"><span data-stu-id="b9afc-113">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="f24aa-113">注釈</span><span class="sxs-lookup"><span data-stu-id="f24aa-113">Remarks</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="b9afc-114">このメソッドは .NET ネイティブでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="b9afc-114">This method is available with .NET Native only.</span></span>  
+> <span data-ttu-id="f24aa-114">このメソッドは .NET ネイティブでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="f24aa-114">This method is available with .NET Native only.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="b9afc-115">要件</span><span class="sxs-lookup"><span data-stu-id="b9afc-115">Requirements</span></span>  
- <span data-ttu-id="b9afc-116">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b9afc-116">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="b9afc-117">**ヘッダー:** CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="b9afc-117">**Header:** CorDebug.idl, CorDebug.h</span></span>  
-  
- <span data-ttu-id="b9afc-118">**ライブラリ:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="b9afc-118">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="b9afc-119">**.NET Framework のバージョン:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b9afc-119">**.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="b9afc-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="b9afc-120">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="f24aa-115">要件</span><span class="sxs-lookup"><span data-stu-id="f24aa-115">Requirements</span></span>  
 
-- [<span data-ttu-id="b9afc-121">ICorDebugVariableSymbol インターフェイス</span><span class="sxs-lookup"><span data-stu-id="b9afc-121">ICorDebugVariableSymbol Interface</span></span>](icordebugvariablesymbol-interface.md)
-- [<span data-ttu-id="b9afc-122">デバッグのインターフェイス</span><span class="sxs-lookup"><span data-stu-id="b9afc-122">Debugging Interfaces</span></span>](debugging-interfaces.md)
+ <span data-ttu-id="f24aa-116">**:**「[システム要件](../../get-started/system-requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f24aa-116">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="f24aa-117">**ヘッダー:** CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="f24aa-117">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+  
+ <span data-ttu-id="f24aa-118">**ライブラリ:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="f24aa-118">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="f24aa-119">**.NET Framework のバージョン:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]</span><span class="sxs-lookup"><span data-stu-id="f24aa-119">**.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="f24aa-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="f24aa-120">See also</span></span>
+
+- [<span data-ttu-id="f24aa-121">ICorDebugVariableSymbol インターフェイス</span><span class="sxs-lookup"><span data-stu-id="f24aa-121">ICorDebugVariableSymbol Interface</span></span>](icordebugvariablesymbol-interface.md)
+- [<span data-ttu-id="f24aa-122">デバッグのインターフェイス</span><span class="sxs-lookup"><span data-stu-id="f24aa-122">Debugging Interfaces</span></span>](debugging-interfaces.md)
