@@ -15,16 +15,17 @@ helpviewer_keywords:
 ms.assetid: 26c1bf4b-75ff-4c32-872c-3078ccdde04f
 topic_type:
 - apiref
-ms.openlocfilehash: 279c69bd38b5492d00b43e371ebec27997882857
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: a58d309c3bc19c09a9a46bff019d04cf7ba2082d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76788790"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722974"
 ---
-# <a name="icordebugeditandcontinuesnapshotsetilmap-method"></a><span data-ttu-id="4eb51-102">ICorDebugEditAndContinueSnapshot::SetILMap メソッド</span><span class="sxs-lookup"><span data-stu-id="4eb51-102">ICorDebugEditAndContinueSnapshot::SetILMap Method</span></span>
-<span data-ttu-id="4eb51-103">`SetILMap` は互換性のために残されています。</span><span class="sxs-lookup"><span data-stu-id="4eb51-103">`SetILMap` is obsolete.</span></span> <span data-ttu-id="4eb51-104">このメソッドを呼び出さないでください。</span><span class="sxs-lookup"><span data-stu-id="4eb51-104">Do not call this method.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="4eb51-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="4eb51-105">See also</span></span>
+# <a name="icordebugeditandcontinuesnapshotsetilmap-method"></a><span data-ttu-id="e668f-102">ICorDebugEditAndContinueSnapshot::SetILMap メソッド</span><span class="sxs-lookup"><span data-stu-id="e668f-102">ICorDebugEditAndContinueSnapshot::SetILMap Method</span></span>
 
-- [<span data-ttu-id="4eb51-106">デバッグ インターフェイス</span><span class="sxs-lookup"><span data-stu-id="4eb51-106">Debugging Interfaces</span></span>](debugging-interfaces.md)
+<span data-ttu-id="e668f-103">`SetILMap` は互換性のために残されています。</span><span class="sxs-lookup"><span data-stu-id="e668f-103">`SetILMap` is obsolete.</span></span> <span data-ttu-id="e668f-104">このメソッドは呼び出さないでください。</span><span class="sxs-lookup"><span data-stu-id="e668f-104">Do not call this method.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="e668f-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="e668f-105">See also</span></span>
+
+- [<span data-ttu-id="e668f-106">デバッグのインターフェイス</span><span class="sxs-lookup"><span data-stu-id="e668f-106">Debugging Interfaces</span></span>](debugging-interfaces.md)

@@ -15,16 +15,17 @@ helpviewer_keywords:
 ms.assetid: 7235c225-cb6e-49e9-a95b-09a646579841
 topic_type:
 - apiref
-ms.openlocfilehash: f678f98d7b40f5f4c0db8773f7f6a0aa81aa1b91
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 6c654cfb2b2680987b2801a37f3d87352968431d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76783016"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722961"
 ---
-# <a name="icordebugeditandcontinuesnapshotsetpebytes-method"></a><span data-ttu-id="2bf76-102">ICorDebugEditAndContinueSnapshot::SetPEBytes メソッド</span><span class="sxs-lookup"><span data-stu-id="2bf76-102">ICorDebugEditAndContinueSnapshot::SetPEBytes Method</span></span>
-<span data-ttu-id="2bf76-103">`SetPEBytes` は互換性のために残されています。</span><span class="sxs-lookup"><span data-stu-id="2bf76-103">`SetPEBytes` is obsolete.</span></span> <span data-ttu-id="2bf76-104">このメソッドを呼び出さないでください。</span><span class="sxs-lookup"><span data-stu-id="2bf76-104">Do not call this method.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="2bf76-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="2bf76-105">See also</span></span>
+# <a name="icordebugeditandcontinuesnapshotsetpebytes-method"></a><span data-ttu-id="73cd8-102">ICorDebugEditAndContinueSnapshot::SetPEBytes メソッド</span><span class="sxs-lookup"><span data-stu-id="73cd8-102">ICorDebugEditAndContinueSnapshot::SetPEBytes Method</span></span>
 
-- [<span data-ttu-id="2bf76-106">デバッグ インターフェイス</span><span class="sxs-lookup"><span data-stu-id="2bf76-106">Debugging Interfaces</span></span>](debugging-interfaces.md)
+<span data-ttu-id="73cd8-103">`SetPEBytes` は互換性のために残されています。</span><span class="sxs-lookup"><span data-stu-id="73cd8-103">`SetPEBytes` is obsolete.</span></span> <span data-ttu-id="73cd8-104">このメソッドは呼び出さないでください。</span><span class="sxs-lookup"><span data-stu-id="73cd8-104">Do not call this method.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="73cd8-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="73cd8-105">See also</span></span>
+
+- [<span data-ttu-id="73cd8-106">デバッグのインターフェイス</span><span class="sxs-lookup"><span data-stu-id="73cd8-106">Debugging Interfaces</span></span>](debugging-interfaces.md)
