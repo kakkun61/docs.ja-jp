@@ -8,30 +8,33 @@ helpviewer_keywords:
 - UI Automation, clients for managed code
 - managed code, UI Automation clients
 ms.assetid: e1ed1197-3e9e-4e78-8845-92e82787faed
-ms.openlocfilehash: b7c3e425312652fb37ed8e2203d0a0155fea25b9
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 95ac13409156b553962aee5ea4f5ca717375c133
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163918"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241981"
 ---
-# <a name="ui-automation-clients-for-managed-code"></a><span data-ttu-id="576ef-103">マネージド コードの UI オートメーション クライアント</span><span class="sxs-lookup"><span data-stu-id="576ef-103">UI Automation Clients for Managed Code</span></span>
+# <a name="ui-automation-clients-for-managed-code"></a><span data-ttu-id="f7cb3-103">マネージド コードの UI オートメーション クライアント</span><span class="sxs-lookup"><span data-stu-id="f7cb3-103">UI Automation Clients for Managed Code</span></span>
+
 > [!NOTE]
-> <span data-ttu-id="576ef-104">このドキュメントは、[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 名前空間で定義されているマネージド <xref:System.Windows.Automation> クラスを使用する .NET Framework 開発者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="576ef-104">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="576ef-105">[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]の最新情報については、「 [Windows Automation API: UI オートメーション](/windows/win32/winauto/entry-uiauto-win32)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="576ef-105">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).</span></span>  
+> <span data-ttu-id="f7cb3-104">このドキュメントは、[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 名前空間で定義されているマネージド <xref:System.Windows.Automation> クラスを使用する .NET Framework 開発者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="f7cb3-104">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="f7cb3-105">[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]の最新情報については、「 [Windows Automation API: UI オートメーション](/windows/win32/winauto/entry-uiauto-win32)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f7cb3-105">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).</span></span>  
   
- <span data-ttu-id="576ef-106">このセクションには、UI オートメーション クライアントの概要と、クライアントの開発に役立つハウツーに関するトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="576ef-106">This section contains overviews and how-to topics to help you develop UI Automation clients.</span></span>  
+ <span data-ttu-id="f7cb3-106">このセクションには、UI オートメーション クライアントの概要と、クライアントの開発に役立つハウツーに関するトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f7cb3-106">This section contains overviews and how-to topics to help you develop UI Automation clients.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="576ef-107">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="576ef-107">In This Section</span></span>  
- [<span data-ttu-id="576ef-108">UI オートメーションおよび画面の拡大縮小</span><span class="sxs-lookup"><span data-stu-id="576ef-108">UI Automation and Screen Scaling</span></span>](ui-automation-and-screen-scaling.md)  
- [<span data-ttu-id="576ef-109">UI オートメーションによる標準コントロールのサポート</span><span class="sxs-lookup"><span data-stu-id="576ef-109">UI Automation Support for Standard Controls</span></span>](ui-automation-support-for-standard-controls.md)  
- [<span data-ttu-id="576ef-110">クライアントの UI オートメーション イベント</span><span class="sxs-lookup"><span data-stu-id="576ef-110">UI Automation Events for Clients</span></span>](ui-automation-events-for-clients.md)  
- [<span data-ttu-id="576ef-111">UI オートメーション クライアントにおけるキャッシュ</span><span class="sxs-lookup"><span data-stu-id="576ef-111">Caching in UI Automation Clients</span></span>](caching-in-ui-automation-clients.md)  
- [<span data-ttu-id="576ef-112">クライアントの UI オートメーション プロパティ</span><span class="sxs-lookup"><span data-stu-id="576ef-112">UI Automation Properties for Clients</span></span>](ui-automation-properties-for-clients.md)  
- [<span data-ttu-id="576ef-113">UI オートメーション クライアントのコントロール パターン マッピング</span><span class="sxs-lookup"><span data-stu-id="576ef-113">Control Pattern Mapping for UI Automation Clients</span></span>](control-pattern-mapping-for-ui-automation-clients.md)  
- [<span data-ttu-id="576ef-114">クライアントの UI オートメーション コントロール パターン</span><span class="sxs-lookup"><span data-stu-id="576ef-114">UI Automation Control Patterns for Clients</span></span>](ui-automation-control-patterns-for-clients.md)  
- [<span data-ttu-id="576ef-115">UI オートメーション要素の取得</span><span class="sxs-lookup"><span data-stu-id="576ef-115">Obtaining UI Automation Elements</span></span>](obtaining-ui-automation-elements.md)  
- [<span data-ttu-id="576ef-116">UI オートメーション スレッド処理の問題点</span><span class="sxs-lookup"><span data-stu-id="576ef-116">UI Automation Threading Issues</span></span>](ui-automation-threading-issues.md)  
- [<span data-ttu-id="576ef-117">方法トピック</span><span class="sxs-lookup"><span data-stu-id="576ef-117">How-to Topics</span></span>](ui-automation-clients-for-managed-code-how-to-topics.md)  
+## <a name="in-this-section"></a><span data-ttu-id="f7cb3-107">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="f7cb3-107">In This Section</span></span>  
+
+ [<span data-ttu-id="f7cb3-108">UI オートメーションおよび画面の拡大縮小</span><span class="sxs-lookup"><span data-stu-id="f7cb3-108">UI Automation and Screen Scaling</span></span>](ui-automation-and-screen-scaling.md)  
+ [<span data-ttu-id="f7cb3-109">UI オートメーションによる標準コントロールのサポート</span><span class="sxs-lookup"><span data-stu-id="f7cb3-109">UI Automation Support for Standard Controls</span></span>](ui-automation-support-for-standard-controls.md)  
+ [<span data-ttu-id="f7cb3-110">クライアントの UI オートメーション イベント</span><span class="sxs-lookup"><span data-stu-id="f7cb3-110">UI Automation Events for Clients</span></span>](ui-automation-events-for-clients.md)  
+ [<span data-ttu-id="f7cb3-111">UI オートメーション クライアントにおけるキャッシュ</span><span class="sxs-lookup"><span data-stu-id="f7cb3-111">Caching in UI Automation Clients</span></span>](caching-in-ui-automation-clients.md)  
+ [<span data-ttu-id="f7cb3-112">クライアントの UI オートメーション プロパティ</span><span class="sxs-lookup"><span data-stu-id="f7cb3-112">UI Automation Properties for Clients</span></span>](ui-automation-properties-for-clients.md)  
+ [<span data-ttu-id="f7cb3-113">UI オートメーション クライアントのコントロール パターン マッピング</span><span class="sxs-lookup"><span data-stu-id="f7cb3-113">Control Pattern Mapping for UI Automation Clients</span></span>](control-pattern-mapping-for-ui-automation-clients.md)  
+ [<span data-ttu-id="f7cb3-114">クライアントの UI オートメーション コントロール パターン</span><span class="sxs-lookup"><span data-stu-id="f7cb3-114">UI Automation Control Patterns for Clients</span></span>](ui-automation-control-patterns-for-clients.md)  
+ [<span data-ttu-id="f7cb3-115">UI オートメーション要素の取得</span><span class="sxs-lookup"><span data-stu-id="f7cb3-115">Obtaining UI Automation Elements</span></span>](obtaining-ui-automation-elements.md)  
+ [<span data-ttu-id="f7cb3-116">UI オートメーション スレッド処理の問題点</span><span class="sxs-lookup"><span data-stu-id="f7cb3-116">UI Automation Threading Issues</span></span>](ui-automation-threading-issues.md)  
+ [<span data-ttu-id="f7cb3-117">方法トピック</span><span class="sxs-lookup"><span data-stu-id="f7cb3-117">How-to Topics</span></span>](ui-automation-clients-for-managed-code-how-to-topics.md)  
   
-## <a name="reference"></a><span data-ttu-id="576ef-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="576ef-118">Reference</span></span>  
+## <a name="reference"></a><span data-ttu-id="f7cb3-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="f7cb3-118">Reference</span></span>  
+
  <xref:System.Windows.Automation>
