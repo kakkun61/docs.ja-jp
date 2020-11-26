@@ -2,34 +2,36 @@
 title: クライアント
 ms.date: 03/30/2017
 ms.assetid: fabb0c70-b79b-4e58-a5d3-9705de85ee5b
-ms.openlocfilehash: 8f2d93458c2bec16b737d8bfcbd423494941dc3e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b9887d6200a0101be2185b5bc2fdcc969fc7c69e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585286"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96243301"
 ---
-# <a name="client"></a><span data-ttu-id="5cb76-102">クライアント</span><span class="sxs-lookup"><span data-stu-id="5cb76-102">Client</span></span>
-<span data-ttu-id="5cb76-103">このセクションには、Windows Communication Foundation (WCF) クライアントアプリケーションを示すサンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="5cb76-103">This section contains samples that demonstrate Windows Communication Foundation (WCF) client applications.</span></span>  
+# <a name="client"></a><span data-ttu-id="d519f-102">クライアント</span><span class="sxs-lookup"><span data-stu-id="d519f-102">Client</span></span>
+
+<span data-ttu-id="d519f-103">このセクションには、Windows Communication Foundation (WCF) クライアントアプリケーションを示すサンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d519f-103">This section contains samples that demonstrate Windows Communication Foundation (WCF) client applications.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="5cb76-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="5cb76-104">In This Section</span></span>  
- [<span data-ttu-id="5cb76-105">クライアント相互運用性</span><span class="sxs-lookup"><span data-stu-id="5cb76-105">Client Interoperability</span></span>](client-interoperability.md)  
- <span data-ttu-id="5cb76-106">WCF とその他のテクノロジとの相互運用性を示します。</span><span class="sxs-lookup"><span data-stu-id="5cb76-106">Demonstrates interoperability between WCF and other technologies.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="d519f-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="d519f-104">In This Section</span></span>  
+
+ [<span data-ttu-id="d519f-105">クライアント相互運用性</span><span class="sxs-lookup"><span data-stu-id="d519f-105">Client Interoperability</span></span>](client-interoperability.md)  
+ <span data-ttu-id="d519f-106">WCF とその他のテクノロジとの相互運用性を示します。</span><span class="sxs-lookup"><span data-stu-id="d519f-106">Demonstrates interoperability between WCF and other technologies.</span></span>  
   
- [<span data-ttu-id="5cb76-107">アドレス ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5cb76-107">Address Headers</span></span>](address-headers.md)  
- <span data-ttu-id="5cb76-108">クライアントが WCF を使用してサービスに参照パラメーターを渡す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5cb76-108">Demonstrates how clients can pass reference parameters to a service using WCF.</span></span>  
+ [<span data-ttu-id="d519f-107">アドレス ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d519f-107">Address Headers</span></span>](address-headers.md)  
+ <span data-ttu-id="d519f-108">クライアントが WCF を使用してサービスに参照パラメーターを渡す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d519f-108">Demonstrates how clients can pass reference parameters to a service using WCF.</span></span>  
   
- [<span data-ttu-id="5cb76-109">チャネル ファクトリ</span><span class="sxs-lookup"><span data-stu-id="5cb76-109">Channel Factory</span></span>](channel-factory.md)  
- <span data-ttu-id="5cb76-110">クライアント アプリケーションが、生成されたクライアントではなく <xref:System.ServiceModel.ChannelFactory> クラスを含むチャネルを作成できる方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5cb76-110">Demonstrates how a client application can create a channel with the <xref:System.ServiceModel.ChannelFactory> class instead of a generated client.</span></span>  
+ [<span data-ttu-id="d519f-109">チャネル ファクトリ</span><span class="sxs-lookup"><span data-stu-id="d519f-109">Channel Factory</span></span>](channel-factory.md)  
+ <span data-ttu-id="d519f-110">クライアント アプリケーションが、生成されたクライアントではなく <xref:System.ServiceModel.ChannelFactory> クラスを含むチャネルを作成できる方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d519f-110">Demonstrates how a client application can create a channel with the <xref:System.ServiceModel.ChannelFactory> class instead of a generated client.</span></span>  
   
- [<span data-ttu-id="5cb76-111">予期される例外</span><span class="sxs-lookup"><span data-stu-id="5cb76-111">Expected Exceptions</span></span>](expected-exceptions.md)  
- <span data-ttu-id="5cb76-112">型指定のあるクライアントを使用する際に、予期される例外をキャッチする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5cb76-112">Demonstrates how to catch expected exceptions when using a typed client.</span></span>  
+ [<span data-ttu-id="d519f-111">予期される例外</span><span class="sxs-lookup"><span data-stu-id="d519f-111">Expected Exceptions</span></span>](expected-exceptions.md)  
+ <span data-ttu-id="d519f-112">型指定のあるクライアントを使用する際に、予期される例外をキャッチする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d519f-112">Demonstrates how to catch expected exceptions when using a typed client.</span></span>  
   
- [<span data-ttu-id="5cb76-113">メタデータの抽出</span><span class="sxs-lookup"><span data-stu-id="5cb76-113">Retrieve Metadata</span></span>](retrieve-metadata.md)  
- <span data-ttu-id="5cb76-114">サービスからメタデータを動的に取得し、通信に使用するエンドポイントを選択するクライアントを実装する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5cb76-114">Demonstrates how to implement a client that dynamically retrieves metadata from a service to choose an endpoint with which to communicate.</span></span>  
+ [<span data-ttu-id="d519f-113">メタデータの抽出</span><span class="sxs-lookup"><span data-stu-id="d519f-113">Retrieve Metadata</span></span>](retrieve-metadata.md)  
+ <span data-ttu-id="d519f-114">サービスからメタデータを動的に取得し、通信に使用するエンドポイントを選択するクライアントを実装する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d519f-114">Demonstrates how to implement a client that dynamically retrieves metadata from a service to choose an endpoint with which to communicate.</span></span>  
   
- [<span data-ttu-id="5cb76-115">close と abort を使用して WCF クライアントのリソースを解放する</span><span class="sxs-lookup"><span data-stu-id="5cb76-115">Use Close and Abort to release WCF client resources</span></span>](use-close-abort-release-wcf-client-resources.md)  
- <span data-ttu-id="5cb76-116">型指定のあるクライアントを使用する際に C# の "using" ステートメントを使用せずに、リソースを自動的にクリーンアップする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5cb76-116">Demonstrates how you should not use the C# "using" statement to automatically clean up resources when using a typed client.</span></span>  
+ [<span data-ttu-id="d519f-115">close と abort を使用して WCF クライアントのリソースを解放する</span><span class="sxs-lookup"><span data-stu-id="d519f-115">Use Close and Abort to release WCF client resources</span></span>](use-close-abort-release-wcf-client-resources.md)  
+ <span data-ttu-id="d519f-116">型指定のあるクライアントを使用する際に C# の "using" ステートメントを使用せずに、リソースを自動的にクリーンアップする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d519f-116">Demonstrates how you should not use the C# "using" statement to automatically clean up resources when using a typed client.</span></span>  
   
- [<span data-ttu-id="5cb76-117">型指定のあるクライアント</span><span class="sxs-lookup"><span data-stu-id="5cb76-117">Typed Client</span></span>](typed-client.md)  
- <span data-ttu-id="5cb76-118">[ServiceModel メタデータユーティリティツール (svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)によって生成された型指定のあるクライアントから情報を取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5cb76-118">Demonstrates how to obtain information from a typed client generated by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).</span></span>
+ [<span data-ttu-id="d519f-117">型指定のあるクライアント</span><span class="sxs-lookup"><span data-stu-id="d519f-117">Typed Client</span></span>](typed-client.md)  
+ <span data-ttu-id="d519f-118">[ServiceModel メタデータユーティリティツール (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)によって生成された型指定のあるクライアントから情報を取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d519f-118">Demonstrates how to obtain information from a typed client generated by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).</span></span>
