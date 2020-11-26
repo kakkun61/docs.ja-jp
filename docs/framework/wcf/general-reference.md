@@ -6,12 +6,13 @@ helpviewer_keywords:
 - Windows Communication Foundation, general reference
 - WCF, general reference
 ms.assetid: b1a21e93-4700-46e6-88ca-bd7a50e19a16
-ms.openlocfilehash: 2cf80d9ac9c09057e2a3339161f7629d63e259ba
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: e7b6c2fb2f39c6ee322db2cf52b62a2cf7de87dc
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319836"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238304"
 ---
-# <a name="general-reference"></a><span data-ttu-id="37e10-102">一般的なリファレンス</span><span class="sxs-lookup"><span data-stu-id="37e10-102">General Reference</span></span>
-<span data-ttu-id="37e10-103">「 [@No__t-1System >](../configure-apps/file-schema/wcf/system-servicemodel.md) 」セクションでは、WINDOWS COMMUNICATION FOUNDATION (WCF) クライアントおよびサービスの構成に使用される要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="37e10-103">The section [\<system.serviceModel>](../configure-apps/file-schema/wcf/system-servicemodel.md) describes the elements that are used to configure Windows Communication Foundation (WCF) clients and services.</span></span>
+# <a name="general-reference"></a><span data-ttu-id="b5181-102">一般的なリファレンス</span><span class="sxs-lookup"><span data-stu-id="b5181-102">General Reference</span></span>
+
+<span data-ttu-id="b5181-103">ここでは、 [\<system.serviceModel>](../configure-apps/file-schema/wcf/system-servicemodel.md) Windows Communication Foundation (WCF) クライアントおよびサービスを構成するために使用される要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="b5181-103">The section [\<system.serviceModel>](../configure-apps/file-schema/wcf/system-servicemodel.md) describes the elements that are used to configure Windows Communication Foundation (WCF) clients and services.</span></span>
