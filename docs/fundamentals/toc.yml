@@ -131,21 +131,37 @@ items:
                 displayName: 'tutorials, visual studio for mac, vs for mac'
           - name: その他のチュートリアル
             href: ../core/tutorials/index.md
-  - name: 新機能
+  - name: .NET の新機能
     items:
-      - name: .NET 5.0 の新機能
-        href: ../core/dotnet-five.md
-      - name: .NET Core 3.1 の新機能
-        href: ../core/whats-new/dotnet-core-3-1.md
-      - name: .NET Core 3.0 の新機能
-        href: ../core/whats-new/dotnet-core-3-0.md
-      - name: .NET Core 2.2 の新機能
+      - name: .NET 5.0
+        items:
+          - name: 新機能
+            href: ../core/dotnet-five.md
+          - name: 互換性に影響する変更
+            href: ../core/compatibility/5.0.md
+      - name: .NET Core 3.1
+        items:
+          - name: 新機能
+            href: ../core/whats-new/dotnet-core-3-1.md
+          - name: 互換性に影響する変更
+            href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 3.0
+        items:
+          - name: 新機能
+            href: ../core/whats-new/dotnet-core-3-0.md
+          - name: 互換性に影響する変更
+            href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 2.2
         href: ../core/whats-new/dotnet-core-2-2.md
-      - name: .NET Core 2.1 の新機能
-        href: ../core/whats-new/dotnet-core-2-1.md
-      - name: .NET Core 2.0 の新機能
+      - name: .NET Core 2.1
+        items:
+          - name: 新機能
+            href: ../core/whats-new/dotnet-core-2-1.md
+          - name: 互換性に影響する変更
+            href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 2.0
         href: ../core/whats-new/dotnet-core-2-0.md
-      - name: .NET Standard の新機能
+      - name: .NET Standard
         href: ../standard/whats-new/whats-new-in-dotnet-standard.md
   - name: ツールと診断
     items:
@@ -317,9 +333,9 @@ items:
                   - name: Microsoft.NET.Sdk
                     href: ../core/project-sdk/msbuild-props.md
                   - name: Microsoft.NET.Sdk.Web
-                    href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+                    href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
                   - name: Microsoft.NET.Sdk.Razor
-                    href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+                    href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: ターゲット フレームワーク
             href: ../standard/frameworks.md
           - name: csproj 形式に追加されたもの
@@ -368,6 +384,8 @@ items:
             href: ../core/diagnostics/index.md
           - name: マネージド デバッガー
             href: ../core/diagnostics/managed-debuggers.md
+          - name: ダンプ
+            href: ../core/diagnostics/dumps.md
           - name: Linux ダンプのデバッグ
             href: ../core/diagnostics/debug-linux-dumps.md
           - name: EventCounters
