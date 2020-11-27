@@ -2,27 +2,30 @@
 title: 509 - ServiceHostOpenStart
 ms.date: 03/30/2017
 ms.assetid: e53683f9-b2c4-4a61-bd66-3956b1914d8f
-ms.openlocfilehash: 4526ced64fb59191b4f542c8ec97619fe5f59dc1
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: af4821b9783716cba3eb2c1d32a6146fcd202f50
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61608295"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287177"
 ---
-# <a name="509---servicehostopenstart"></a><span data-ttu-id="a4e79-102">509 - ServiceHostOpenStart</span><span class="sxs-lookup"><span data-stu-id="a4e79-102">509 - ServiceHostOpenStart</span></span>
-## <a name="properties"></a><span data-ttu-id="a4e79-103">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a4e79-103">Properties</span></span>  
+# <a name="509---servicehostopenstart"></a><span data-ttu-id="c3a48-102">509 - ServiceHostOpenStart</span><span class="sxs-lookup"><span data-stu-id="c3a48-102">509 - ServiceHostOpenStart</span></span>
+
+## <a name="properties"></a><span data-ttu-id="c3a48-103">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c3a48-103">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="a4e79-104">ID</span><span class="sxs-lookup"><span data-stu-id="a4e79-104">ID</span></span>|<span data-ttu-id="a4e79-105">509</span><span class="sxs-lookup"><span data-stu-id="a4e79-105">509</span></span>|  
-|<span data-ttu-id="a4e79-106">キーワード</span><span class="sxs-lookup"><span data-stu-id="a4e79-106">Keywords</span></span>|<span data-ttu-id="a4e79-107">ServiceHost</span><span class="sxs-lookup"><span data-stu-id="a4e79-107">ServiceHost</span></span>|  
-|<span data-ttu-id="a4e79-108">レベル</span><span class="sxs-lookup"><span data-stu-id="a4e79-108">Level</span></span>|<span data-ttu-id="a4e79-109">情報</span><span class="sxs-lookup"><span data-stu-id="a4e79-109">Information</span></span>|  
-|<span data-ttu-id="a4e79-110">チャネル</span><span class="sxs-lookup"><span data-stu-id="a4e79-110">Channel</span></span>|<span data-ttu-id="a4e79-111">Microsoft-Windows-Application Server-Applications/Analytic</span><span class="sxs-lookup"><span data-stu-id="a4e79-111">Microsoft-Windows-Application Server-Applications/Analytic</span></span>|  
+|<span data-ttu-id="c3a48-104">ID</span><span class="sxs-lookup"><span data-stu-id="c3a48-104">ID</span></span>|<span data-ttu-id="c3a48-105">509</span><span class="sxs-lookup"><span data-stu-id="c3a48-105">509</span></span>|  
+|<span data-ttu-id="c3a48-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="c3a48-106">Keywords</span></span>|<span data-ttu-id="c3a48-107">ServiceHost</span><span class="sxs-lookup"><span data-stu-id="c3a48-107">ServiceHost</span></span>|  
+|<span data-ttu-id="c3a48-108">Level</span><span class="sxs-lookup"><span data-stu-id="c3a48-108">Level</span></span>|<span data-ttu-id="c3a48-109">情報</span><span class="sxs-lookup"><span data-stu-id="c3a48-109">Information</span></span>|  
+|<span data-ttu-id="c3a48-110">チャネル</span><span class="sxs-lookup"><span data-stu-id="c3a48-110">Channel</span></span>|<span data-ttu-id="c3a48-111">Microsoft-Windows-Application Server-Applications/Analytic</span><span class="sxs-lookup"><span data-stu-id="c3a48-111">Microsoft-Windows-Application Server-Applications/Analytic</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="a4e79-112">説明</span><span class="sxs-lookup"><span data-stu-id="a4e79-112">Description</span></span>  
- <span data-ttu-id="a4e79-113">このイベントは、ServiceHost Open が開始されたときに生成されます。</span><span class="sxs-lookup"><span data-stu-id="a4e79-113">This event is emitted when ServiceHost Open started.</span></span>  
+## <a name="description"></a><span data-ttu-id="c3a48-112">Description</span><span class="sxs-lookup"><span data-stu-id="c3a48-112">Description</span></span>  
+
+ <span data-ttu-id="c3a48-113">このイベントは、ServiceHost Open が開始されたときに生成されます。</span><span class="sxs-lookup"><span data-stu-id="c3a48-113">This event is emitted when ServiceHost Open started.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="a4e79-114">メッセージ</span><span class="sxs-lookup"><span data-stu-id="a4e79-114">Message</span></span>  
- <span data-ttu-id="a4e79-115">ServiceHost Open を開始しました。</span><span class="sxs-lookup"><span data-stu-id="a4e79-115">ServiceHost Open started.</span></span>  
+## <a name="message"></a><span data-ttu-id="c3a48-114">Message</span><span class="sxs-lookup"><span data-stu-id="c3a48-114">Message</span></span>  
+
+ <span data-ttu-id="c3a48-115">ServiceHost Open を開始しました。</span><span class="sxs-lookup"><span data-stu-id="c3a48-115">ServiceHost Open started.</span></span>  
   
-## <a name="details"></a><span data-ttu-id="a4e79-116">説明</span><span class="sxs-lookup"><span data-stu-id="a4e79-116">Details</span></span>
+## <a name="details"></a><span data-ttu-id="c3a48-116">詳細</span><span class="sxs-lookup"><span data-stu-id="c3a48-116">Details</span></span>
