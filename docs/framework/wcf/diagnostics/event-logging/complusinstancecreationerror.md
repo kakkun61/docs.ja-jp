@@ -2,24 +2,26 @@
 title: ComPlusInstanceCreationError
 ms.date: 03/30/2017
 ms.assetid: f54078e6-7de0-4d0e-bda7-a420da110311
-ms.openlocfilehash: b41fbbbc09da1929fe703801b7469986e8c63db1
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: fc89a95db669952edf897834097e49da7c3c619c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70798053"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266585"
 ---
-# <a name="complusinstancecreationerror"></a><span data-ttu-id="2db8c-102">ComPlusInstanceCreationError</span><span class="sxs-lookup"><span data-stu-id="2db8c-102">ComPlusInstanceCreationError</span></span>
-<span data-ttu-id="2db8c-103">Id:134</span><span class="sxs-lookup"><span data-stu-id="2db8c-103">Id: 134</span></span>  
-  
- <span data-ttu-id="2db8c-104">順Error</span><span class="sxs-lookup"><span data-stu-id="2db8c-104">Severity: Error</span></span>  
-  
- <span data-ttu-id="2db8c-105">[カテゴリ]:ServiceModel</span><span class="sxs-lookup"><span data-stu-id="2db8c-105">Category: ServiceModel</span></span>  
-  
-## <a name="description"></a><span data-ttu-id="2db8c-106">説明</span><span class="sxs-lookup"><span data-stu-id="2db8c-106">Description</span></span>  
- <span data-ttu-id="2db8c-107">セートCOM インスタンスの作成中にエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="2db8c-107">COM+: An error occurred while creating a COM instance.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="2db8c-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="2db8c-108">See also</span></span>
+# <a name="complusinstancecreationerror"></a><span data-ttu-id="6bb2a-102">ComPlusInstanceCreationError</span><span class="sxs-lookup"><span data-stu-id="6bb2a-102">ComPlusInstanceCreationError</span></span>
 
-- [<span data-ttu-id="2db8c-109">イベント ログ</span><span class="sxs-lookup"><span data-stu-id="2db8c-109">Event Logging</span></span>](index.md)
-- [<span data-ttu-id="2db8c-110">イベント一覧</span><span class="sxs-lookup"><span data-stu-id="2db8c-110">Events General Reference</span></span>](events-general-reference.md)
+<span data-ttu-id="6bb2a-103">ID : 134</span><span class="sxs-lookup"><span data-stu-id="6bb2a-103">Id: 134</span></span>  
+  
+ <span data-ttu-id="6bb2a-104">重大度 : エラー</span><span class="sxs-lookup"><span data-stu-id="6bb2a-104">Severity: Error</span></span>  
+  
+ <span data-ttu-id="6bb2a-105">カテゴリ : ServiceModel</span><span class="sxs-lookup"><span data-stu-id="6bb2a-105">Category: ServiceModel</span></span>  
+  
+## <a name="description"></a><span data-ttu-id="6bb2a-106">Description</span><span class="sxs-lookup"><span data-stu-id="6bb2a-106">Description</span></span>  
+
+ <span data-ttu-id="6bb2a-107">COM+ : COM インスタンスの作成中にエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="6bb2a-107">COM+: An error occurred while creating a COM instance.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="6bb2a-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="6bb2a-108">See also</span></span>
+
+- [<span data-ttu-id="6bb2a-109">イベント ログ</span><span class="sxs-lookup"><span data-stu-id="6bb2a-109">Event Logging</span></span>](index.md)
+- [<span data-ttu-id="6bb2a-110">イベント一覧</span><span class="sxs-lookup"><span data-stu-id="6bb2a-110">Events General Reference</span></span>](events-general-reference.md)
