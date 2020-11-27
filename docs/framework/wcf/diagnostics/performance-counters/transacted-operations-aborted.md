@@ -2,15 +2,17 @@
 title: 中止されたトランザクション操作
 ms.date: 03/30/2017
 ms.assetid: d0ff844c-a33c-4ecf-8be5-b5b33635914a
-ms.openlocfilehash: f227197a5c2d1b96cc200ca598ba54641dc0bcf1
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 623eff3bc19b844aeeda31f190626b7df0a76332
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61766358"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250035"
 ---
-# <a name="transacted-operations-aborted"></a><span data-ttu-id="73730-102">中止されたトランザクション操作</span><span class="sxs-lookup"><span data-stu-id="73730-102">Transacted Operations Aborted</span></span>
-<span data-ttu-id="73730-103">カウンター名:中止されたトランザクション操作。</span><span class="sxs-lookup"><span data-stu-id="73730-103">Counter Name: Transacted Operations Aborted.</span></span>  
+# <a name="transacted-operations-aborted"></a><span data-ttu-id="0a4c8-102">中止されたトランザクション操作</span><span class="sxs-lookup"><span data-stu-id="0a4c8-102">Transacted Operations Aborted</span></span>
+
+<span data-ttu-id="0a4c8-103">カウンター名 : 中止されたトランザクション操作</span><span class="sxs-lookup"><span data-stu-id="0a4c8-103">Counter Name: Transacted Operations Aborted.</span></span>  
   
-## <a name="description"></a><span data-ttu-id="73730-104">説明</span><span class="sxs-lookup"><span data-stu-id="73730-104">Description</span></span>  
- <span data-ttu-id="73730-105">このサービスで中止されたトランザクション操作の数です。</span><span class="sxs-lookup"><span data-stu-id="73730-105">Number of transactional operations that have been aborted in this service.</span></span>
+## <a name="description"></a><span data-ttu-id="0a4c8-104">Description</span><span class="sxs-lookup"><span data-stu-id="0a4c8-104">Description</span></span>  
+
+ <span data-ttu-id="0a4c8-105">このサービスで中止されたトランザクション操作の数です。</span><span class="sxs-lookup"><span data-stu-id="0a4c8-105">Number of transactional operations that have been aborted in this service.</span></span>
