@@ -2,27 +2,30 @@
 title: 3802 - RoutingServiceCompletingOneWay
 ms.date: 03/30/2017
 ms.assetid: 34bfe6c6-b6d0-4b38-854f-4ad245e90e15
-ms.openlocfilehash: 6f31b2682b3ec39466c8f71576edccb9a1baef22
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: a5fab8f8a0e0b777ea53c3d632debf79f5b10714
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61999805"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96259039"
 ---
-# <a name="3802---routingservicecompletingoneway"></a><span data-ttu-id="2360a-102">3802 - RoutingServiceCompletingOneWay</span><span class="sxs-lookup"><span data-stu-id="2360a-102">3802 - RoutingServiceCompletingOneWay</span></span>
-## <a name="properties"></a><span data-ttu-id="2360a-103">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2360a-103">Properties</span></span>  
+# <a name="3802---routingservicecompletingoneway"></a><span data-ttu-id="e37a5-102">3802 - RoutingServiceCompletingOneWay</span><span class="sxs-lookup"><span data-stu-id="e37a5-102">3802 - RoutingServiceCompletingOneWay</span></span>
+
+## <a name="properties"></a><span data-ttu-id="e37a5-103">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e37a5-103">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="2360a-104">ID</span><span class="sxs-lookup"><span data-stu-id="2360a-104">ID</span></span>|<span data-ttu-id="2360a-105">3802</span><span class="sxs-lookup"><span data-stu-id="2360a-105">3802</span></span>|  
-|<span data-ttu-id="2360a-106">キーワード</span><span class="sxs-lookup"><span data-stu-id="2360a-106">Keywords</span></span>|<span data-ttu-id="2360a-107">RoutingServices</span><span class="sxs-lookup"><span data-stu-id="2360a-107">RoutingServices</span></span>|  
-|<span data-ttu-id="2360a-108">レベル</span><span class="sxs-lookup"><span data-stu-id="2360a-108">Level</span></span>|<span data-ttu-id="2360a-109">情報</span><span class="sxs-lookup"><span data-stu-id="2360a-109">Information</span></span>|  
-|<span data-ttu-id="2360a-110">チャネル</span><span class="sxs-lookup"><span data-stu-id="2360a-110">Channel</span></span>|<span data-ttu-id="2360a-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="2360a-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="e37a5-104">ID</span><span class="sxs-lookup"><span data-stu-id="e37a5-104">ID</span></span>|<span data-ttu-id="e37a5-105">3802</span><span class="sxs-lookup"><span data-stu-id="e37a5-105">3802</span></span>|  
+|<span data-ttu-id="e37a5-106">Keywords</span><span class="sxs-lookup"><span data-stu-id="e37a5-106">Keywords</span></span>|<span data-ttu-id="e37a5-107">RoutingServices</span><span class="sxs-lookup"><span data-stu-id="e37a5-107">RoutingServices</span></span>|  
+|<span data-ttu-id="e37a5-108">Level</span><span class="sxs-lookup"><span data-stu-id="e37a5-108">Level</span></span>|<span data-ttu-id="e37a5-109">情報</span><span class="sxs-lookup"><span data-stu-id="e37a5-109">Information</span></span>|  
+|<span data-ttu-id="e37a5-110">チャネル</span><span class="sxs-lookup"><span data-stu-id="e37a5-110">Channel</span></span>|<span data-ttu-id="e37a5-111">Microsoft-Windows-Application Server-Applications/Debug</span><span class="sxs-lookup"><span data-stu-id="e37a5-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="2360a-112">説明</span><span class="sxs-lookup"><span data-stu-id="2360a-112">Description</span></span>  
- <span data-ttu-id="2360a-113">このイベントは、ルーティング サービスの一方向メッセージを完了するときに生成されます。</span><span class="sxs-lookup"><span data-stu-id="2360a-113">This event is emitted when the Routing Service one way message is completing.</span></span>  
+## <a name="description"></a><span data-ttu-id="e37a5-112">Description</span><span class="sxs-lookup"><span data-stu-id="e37a5-112">Description</span></span>  
+
+ <span data-ttu-id="e37a5-113">このイベントは、ルーティング サービスの一方向メッセージを完了するときに生成されます。</span><span class="sxs-lookup"><span data-stu-id="e37a5-113">This event is emitted when the Routing Service one way message is completing.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="2360a-114">メッセージ</span><span class="sxs-lookup"><span data-stu-id="2360a-114">Message</span></span>  
- <span data-ttu-id="2360a-115">ルーティング サービスの一方向メッセージを完了しています。</span><span class="sxs-lookup"><span data-stu-id="2360a-115">A Routing Service one way message is completing.</span></span>  
+## <a name="message"></a><span data-ttu-id="e37a5-114">Message</span><span class="sxs-lookup"><span data-stu-id="e37a5-114">Message</span></span>  
+
+ <span data-ttu-id="e37a5-115">ルーティング サービスの一方向メッセージを完了しています。</span><span class="sxs-lookup"><span data-stu-id="e37a5-115">A Routing Service one way message is completing.</span></span>  
   
-## <a name="details"></a><span data-ttu-id="2360a-116">説明</span><span class="sxs-lookup"><span data-stu-id="2360a-116">Details</span></span>
+## <a name="details"></a><span data-ttu-id="e37a5-116">詳細</span><span class="sxs-lookup"><span data-stu-id="e37a5-116">Details</span></span>
