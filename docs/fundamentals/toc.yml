@@ -133,7 +133,7 @@ items:
             href: ../core/tutorials/index.md
   - name: 新機能
     items:
-      - name: .NET 5 の新機能
+      - name: .NET 5.0 の新機能
         href: ../core/dotnet-five.md
       - name: .NET Core 3.1 の新機能
         href: ../core/whats-new/dotnet-core-3-1.md
@@ -180,7 +180,7 @@ items:
           - name: 概要
             displayName: '.net cli,command-line interface,cli,tool'
             href: ../core/tools/index.md
-          - name: 関連項目
+          - name: リファレンス
             items:
               - name: dotnet
                 href: ../core/tools/dotnet.md
@@ -312,7 +312,7 @@ items:
             items:
               - name: 概要
                 href: ../core/project-sdk/overview.md
-              - name: 関連項目
+              - name: リファレンス
                 items:
                   - name: Microsoft.NET.Sdk
                     href: ../core/project-sdk/msbuild-props.md
