@@ -9,21 +9,23 @@ helpviewer_keywords:
 - UI Automation, custom user interface (UI) elements
 - providers, UI Automation
 ms.assetid: 5f82f731-f1b5-4c8b-b47c-d11279a02574
-ms.openlocfilehash: 5b88127aa88544e77b1516d776bdce2d9f9a9fef
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 531dff4db6fe30ee4cdff2c0b9c482e7d3536583
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163159"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96261086"
 ---
-# <a name="ui-automation-providers-for-managed-code"></a><span data-ttu-id="b519b-103">マネージド コードの UI オートメーション プロバイダー</span><span class="sxs-lookup"><span data-stu-id="b519b-103">UI Automation Providers for Managed Code</span></span>
+# <a name="ui-automation-providers-for-managed-code"></a><span data-ttu-id="f97e4-103">マネージド コードの UI オートメーション プロバイダー</span><span class="sxs-lookup"><span data-stu-id="f97e4-103">UI Automation Providers for Managed Code</span></span>
+
 > [!NOTE]
-> <span data-ttu-id="b519b-104">このドキュメントは、[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 名前空間で定義されているマネージド <xref:System.Windows.Automation> クラスを使用する .NET Framework 開発者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="b519b-104">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="b519b-105">[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]の最新情報については、「 [Windows Automation API: UI オートメーション](/windows/win32/winauto/entry-uiauto-win32)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="b519b-105">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).</span></span>  
+> <span data-ttu-id="f97e4-104">このドキュメントは、[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 名前空間で定義されているマネージド <xref:System.Windows.Automation> クラスを使用する .NET Framework 開発者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="f97e4-104">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="f97e4-105">[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]の最新情報については、「 [Windows Automation API: UI オートメーション](/windows/win32/winauto/entry-uiauto-win32)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f97e4-105">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).</span></span>  
   
- <span data-ttu-id="b519b-106">ここでは、カスタム要素のプロバイダーを記述する方法について説明し [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] ます。</span><span class="sxs-lookup"><span data-stu-id="b519b-106">This section contains overviews and how-to topics that describe how to write [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] providers for custom [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] elements.</span></span>  
+ <span data-ttu-id="f97e4-106">ここでは、カスタム要素のプロバイダーを記述する方法について説明し [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] ます。</span><span class="sxs-lookup"><span data-stu-id="f97e4-106">This section contains overviews and how-to topics that describe how to write [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] providers for custom [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] elements.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="b519b-107">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="b519b-107">In This Section</span></span>  
- [<span data-ttu-id="b519b-108">サーバー側 UI オートメーション プロバイダーの実装</span><span class="sxs-lookup"><span data-stu-id="b519b-108">Server-Side UI Automation Provider Implementation</span></span>](server-side-ui-automation-provider-implementation.md)  
- [<span data-ttu-id="b519b-109">UI オートメーション プロバイダーの概要</span><span class="sxs-lookup"><span data-stu-id="b519b-109">UI Automation Providers Overview</span></span>](ui-automation-providers-overview.md)  
- [<span data-ttu-id="b519b-110">クライアント側 UI オートメーション プロバイダーの実装</span><span class="sxs-lookup"><span data-stu-id="b519b-110">Client-Side UI Automation Provider Implementation</span></span>](client-side-ui-automation-provider-implementation.md)  
- [<span data-ttu-id="b519b-111">方法トピック</span><span class="sxs-lookup"><span data-stu-id="b519b-111">How-to Topics</span></span>](ui-automation-providers-for-managed-code-how-to-topics.md)
+## <a name="in-this-section"></a><span data-ttu-id="f97e4-107">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="f97e4-107">In This Section</span></span>  
+
+ [<span data-ttu-id="f97e4-108">サーバー側 UI オートメーション プロバイダーの実装</span><span class="sxs-lookup"><span data-stu-id="f97e4-108">Server-Side UI Automation Provider Implementation</span></span>](server-side-ui-automation-provider-implementation.md)  
+ [<span data-ttu-id="f97e4-109">UI オートメーション プロバイダーの概要</span><span class="sxs-lookup"><span data-stu-id="f97e4-109">UI Automation Providers Overview</span></span>](ui-automation-providers-overview.md)  
+ [<span data-ttu-id="f97e4-110">クライアント側 UI オートメーション プロバイダーの実装</span><span class="sxs-lookup"><span data-stu-id="f97e4-110">Client-Side UI Automation Provider Implementation</span></span>](client-side-ui-automation-provider-implementation.md)  
+ [<span data-ttu-id="f97e4-111">方法トピック</span><span class="sxs-lookup"><span data-stu-id="f97e4-111">How-to Topics</span></span>](ui-automation-providers-for-managed-code-how-to-topics.md)

@@ -2,21 +2,23 @@
 title: セキュリティ検証
 ms.date: 03/30/2017
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
-ms.openlocfilehash: ec7b7f96c1f6489f677970164f74c176b301f55b
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1260aaa756e7be33ce2aa1bcce5fc79be553c990
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557386"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262620"
 ---
-# <a name="security-validation"></a><span data-ttu-id="cae24-102">セキュリティ検証</span><span class="sxs-lookup"><span data-stu-id="cae24-102">Security validation</span></span>
-<span data-ttu-id="cae24-103">このサンプルでは、サービスが特定の条件を満たしていることを確認するカスタム動作を使用して、コンピューター上のサービスを検証する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="cae24-103">This sample demonstrates how to use a custom behavior to validate services on a computer to ensure they meet specific criteria.</span></span> <span data-ttu-id="cae24-104">このサンプルでは、サービス上の各エンドポイントをスキャンし、セキュリティ保護されたバインディング要素が含まれているかどうかを確認するカスタム動作を使用して、サービスを検証します。</span><span class="sxs-lookup"><span data-stu-id="cae24-104">In this sample, services are validated by the custom behavior by scanning through each endpoint on the service and checking to see whether they contain secure binding elements.</span></span> <span data-ttu-id="cae24-105">このサンプルは、 [はじめに](getting-started-sample.md)に基づいています。</span><span class="sxs-lookup"><span data-stu-id="cae24-105">This sample is based on the [Getting Started](getting-started-sample.md).</span></span>  
+# <a name="security-validation"></a><span data-ttu-id="f2d24-102">セキュリティ検証</span><span class="sxs-lookup"><span data-stu-id="f2d24-102">Security validation</span></span>
+
+<span data-ttu-id="f2d24-103">このサンプルでは、サービスが特定の条件を満たしていることを確認するカスタム動作を使用して、コンピューター上のサービスを検証する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f2d24-103">This sample demonstrates how to use a custom behavior to validate services on a computer to ensure they meet specific criteria.</span></span> <span data-ttu-id="f2d24-104">このサンプルでは、サービス上の各エンドポイントをスキャンし、セキュリティ保護されたバインディング要素が含まれているかどうかを確認するカスタム動作を使用して、サービスを検証します。</span><span class="sxs-lookup"><span data-stu-id="f2d24-104">In this sample, services are validated by the custom behavior by scanning through each endpoint on the service and checking to see whether they contain secure binding elements.</span></span> <span data-ttu-id="f2d24-105">このサンプルは、 [はじめに](getting-started-sample.md)に基づいています。</span><span class="sxs-lookup"><span data-stu-id="f2d24-105">This sample is based on the [Getting Started](getting-started-sample.md).</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="cae24-106">このサンプルのセットアップ手順とビルド手順については、このトピックの最後を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cae24-106">The setup procedure and build instructions for this sample are located at the end of this topic.</span></span>  
+> <span data-ttu-id="f2d24-106">このサンプルのセットアップ手順とビルド手順については、このトピックの最後を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f2d24-106">The setup procedure and build instructions for this sample are located at the end of this topic.</span></span>  
   
-## <a name="endpoint-validation-custom-behavior"></a><span data-ttu-id="cae24-107">エンドポイント検証のカスタム動作</span><span class="sxs-lookup"><span data-stu-id="cae24-107">Endpoint Validation Custom Behavior</span></span>  
- <span data-ttu-id="cae24-108">`Validate` インターフェイスに含まれる <xref:System.ServiceModel.Description.IServiceBehavior> メソッドにユーザー コードを追加することによって、サービスまたはエンドポイントにカスタム動作を与え、ユーザー定義のアクションを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="cae24-108">By adding user code to the `Validate` method contained in the <xref:System.ServiceModel.Description.IServiceBehavior> interface, custom behavior can be given to a service or endpoint to perform user-defined actions.</span></span> <span data-ttu-id="cae24-109">次のコードを使用すると、サービスに含まれる各エンドポイントをループし、バインディング コレクションからセキュリティ保護されたバインディングが検索されます。</span><span class="sxs-lookup"><span data-stu-id="cae24-109">The following code is used to loop through each endpoint contained in a service, which searches through their binding collections for secure bindings.</span></span>  
+## <a name="endpoint-validation-custom-behavior"></a><span data-ttu-id="f2d24-107">エンドポイント検証のカスタム動作</span><span class="sxs-lookup"><span data-stu-id="f2d24-107">Endpoint Validation Custom Behavior</span></span>  
+
+ <span data-ttu-id="f2d24-108">`Validate` インターフェイスに含まれる <xref:System.ServiceModel.Description.IServiceBehavior> メソッドにユーザー コードを追加することによって、サービスまたはエンドポイントにカスタム動作を与え、ユーザー定義のアクションを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-108">By adding user code to the `Validate` method contained in the <xref:System.ServiceModel.Description.IServiceBehavior> interface, custom behavior can be given to a service or endpoint to perform user-defined actions.</span></span> <span data-ttu-id="f2d24-109">次のコードを使用すると、サービスに含まれる各エンドポイントをループし、バインディング コレクションからセキュリティ保護されたバインディングが検索されます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-109">The following code is used to loop through each endpoint contained in a service, which searches through their binding collections for secure bindings.</span></span>  
   
 ```csharp
 public void Validate(ServiceDescription serviceDescription,
@@ -47,7 +49,7 @@ public void Validate(ServiceDescription serviceDescription,
 }  
 ```  
   
- <span data-ttu-id="cae24-110">次のコードを Web.config ファイルに追加すると、サービスで識別される `serviceValidate` 動作の拡張が追加されます。</span><span class="sxs-lookup"><span data-stu-id="cae24-110">Adding the following code to Web.config file adds the `serviceValidate` behavior extension for the service to recognize.</span></span>  
+ <span data-ttu-id="f2d24-110">次のコードを Web.config ファイルに追加すると、サービスで識別される `serviceValidate` 動作の拡張が追加されます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-110">Adding the following code to Web.config file adds the `serviceValidate` behavior extension for the service to recognize.</span></span>  
   
 ```xml  
 <system.serviceModel>  
@@ -60,7 +62,7 @@ public void Validate(ServiceDescription serviceDescription,
 </system.serviceModel>
 ```  
   
- <span data-ttu-id="cae24-111">動作の拡張がサービスに追加されると、`endpointValidate` の動作を Web.config ファイルの動作リストに追加でき、さらにはサービスに追加できるようになります。</span><span class="sxs-lookup"><span data-stu-id="cae24-111">Once the behavior extension is added to the service, it is now possible to add the `endpointValidate` behavior to the list of behaviors in the Web.config file and thus, to the service.</span></span>  
+ <span data-ttu-id="f2d24-111">動作の拡張がサービスに追加されると、`endpointValidate` の動作を Web.config ファイルの動作リストに追加でき、さらにはサービスに追加できるようになります。</span><span class="sxs-lookup"><span data-stu-id="f2d24-111">Once the behavior extension is added to the service, it is now possible to add the `endpointValidate` behavior to the list of behaviors in the Web.config file and thus, to the service.</span></span>  
   
 ```xml  
 <behaviors>  
@@ -73,40 +75,40 @@ public void Validate(ServiceDescription serviceDescription,
 </behaviors>  
 ```  
   
- <span data-ttu-id="cae24-112">動作とその拡張が Web.config ファイルに追加されると、動作は個別のサービスに適用されます。一方で Machine.config ファイルに追加された場合は、動作はコンピューター上でアクティブなすべてのサービスに適用されます。</span><span class="sxs-lookup"><span data-stu-id="cae24-112">Behaviors and their extensions that are added to the Web.config file apply behavior to individual services, while when added to the Machine.config file apply behavior to every service active on the computer.</span></span>  
+ <span data-ttu-id="f2d24-112">動作とその拡張が Web.config ファイルに追加されると、動作は個別のサービスに適用されます。一方で Machine.config ファイルに追加された場合は、動作はコンピューター上でアクティブなすべてのサービスに適用されます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-112">Behaviors and their extensions that are added to the Web.config file apply behavior to individual services, while when added to the Machine.config file apply behavior to every service active on the computer.</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="cae24-113">動作をすべてのサービスに追加する場合、Machine.config ファイルの変更を行う前に、このファイルのバックアップを推奨するメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cae24-113">When adding behavior to all services, it is suggested to backup the Machine.config file before making any change.</span></span>  
+> <span data-ttu-id="f2d24-113">動作をすべてのサービスに追加する場合、Machine.config ファイルの変更を行う前に、このファイルのバックアップを推奨するメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-113">When adding behavior to all services, it is suggested to backup the Machine.config file before making any change.</span></span>  
   
- <span data-ttu-id="cae24-114">ここで、このサンプルの client\bin ディレクトリに用意されたクライアントを実行します。</span><span class="sxs-lookup"><span data-stu-id="cae24-114">Now run the client provided in the client\bin directory of this sample.</span></span> <span data-ttu-id="cae24-115">例外がスローされ、"要求されたサービス ' ' を http://localhost/servicemodelsamples/service.svc アクティブにできませんでした。" というメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cae24-115">An exception is thrown with the following message: "The requested service, 'http://localhost/servicemodelsamples/service.svc' could not be activated."</span></span> <span data-ttu-id="cae24-116">これは予期される例外です。エンドポイント検証の動作により、エンドポイントがセキュリティで保護されていないと見なされ、サービスが開始されないためです。</span><span class="sxs-lookup"><span data-stu-id="cae24-116">This is expected because an endpoint is considered insecure by the endpoint validating behavior and prevents the service from being started.</span></span> <span data-ttu-id="cae24-117">さらにこの動作によって、エンドポイントがセキュリティ保護されていないという内部例外がスローされ、システム イベント ビューアで "WebHost" カテゴリの "System.ServiceModel 4.0.0.0" ソースの下にメッセージが書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="cae24-117">The behavior also throws an internal exception that describes which endpoint is insecure and writes a message to the system Event Viewer under the "System.ServiceModel 4.0.0.0" source and the "WebHost" category.</span></span> <span data-ttu-id="cae24-118">さらにこのサンプルでは、サービスのトレースを有効にできます。</span><span class="sxs-lookup"><span data-stu-id="cae24-118">It is also possible to turn on tracing on the service in this sample.</span></span> <span data-ttu-id="cae24-119">これによって、サービス トレース ビューア ツールを使用してサービス トレースの結果を開き、エンドポイント検証の動作からスローされた例外を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="cae24-119">This allows the user to view the exceptions thrown by endpoint validating behavior by opening the resulting service traces using the Service Trace Viewer tool.</span></span>  
+ <span data-ttu-id="f2d24-114">ここで、このサンプルの client\bin ディレクトリに用意されたクライアントを実行します。</span><span class="sxs-lookup"><span data-stu-id="f2d24-114">Now run the client provided in the client\bin directory of this sample.</span></span> <span data-ttu-id="f2d24-115">例外がスローされ、"要求されたサービス ' ' を http://localhost/servicemodelsamples/service.svc アクティブにできませんでした。" というメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-115">An exception is thrown with the following message: "The requested service, 'http://localhost/servicemodelsamples/service.svc' could not be activated."</span></span> <span data-ttu-id="f2d24-116">これは予期される例外です。エンドポイント検証の動作により、エンドポイントがセキュリティで保護されていないと見なされ、サービスが開始されないためです。</span><span class="sxs-lookup"><span data-stu-id="f2d24-116">This is expected because an endpoint is considered insecure by the endpoint validating behavior and prevents the service from being started.</span></span> <span data-ttu-id="f2d24-117">さらにこの動作によって、エンドポイントがセキュリティ保護されていないという内部例外がスローされ、システム イベント ビューアで "WebHost" カテゴリの "System.ServiceModel 4.0.0.0" ソースの下にメッセージが書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-117">The behavior also throws an internal exception that describes which endpoint is insecure and writes a message to the system Event Viewer under the "System.ServiceModel 4.0.0.0" source and the "WebHost" category.</span></span> <span data-ttu-id="f2d24-118">さらにこのサンプルでは、サービスのトレースを有効にできます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-118">It is also possible to turn on tracing on the service in this sample.</span></span> <span data-ttu-id="f2d24-119">これによって、サービス トレース ビューア ツールを使用してサービス トレースの結果を開き、エンドポイント検証の動作からスローされた例外を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-119">This allows the user to view the exceptions thrown by endpoint validating behavior by opening the resulting service traces using the Service Trace Viewer tool.</span></span>  
   
-### <a name="view-failed-endpoint-validation-exception-messages-in-the-event-viewer"></a><span data-ttu-id="cae24-120">イベントビューアーで失敗したエンドポイント検証例外メッセージを表示する</span><span class="sxs-lookup"><span data-stu-id="cae24-120">View failed endpoint validation exception messages in the Event Viewer</span></span>  
+### <a name="view-failed-endpoint-validation-exception-messages-in-the-event-viewer"></a><span data-ttu-id="f2d24-120">イベントビューアーで失敗したエンドポイント検証例外メッセージを表示する</span><span class="sxs-lookup"><span data-stu-id="f2d24-120">View failed endpoint validation exception messages in the Event Viewer</span></span>  
   
-1. <span data-ttu-id="cae24-121">[ **スタート** ] メニューをクリックし、[ **実行**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="cae24-121">Click the **Start** menu and select **Run…**.</span></span>  
+1. <span data-ttu-id="f2d24-121">[ **スタート** ] メニューをクリックし、[ **実行**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f2d24-121">Click the **Start** menu and select **Run…**.</span></span>  
   
-2. <span data-ttu-id="cae24-122">「 `eventvwr` 」と入力して **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cae24-122">Type `eventvwr` and click **OK**.</span></span>  
+2. <span data-ttu-id="f2d24-122">「 `eventvwr` 」と入力して **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2d24-122">Type `eventvwr` and click **OK**.</span></span>  
   
-3. <span data-ttu-id="cae24-123">[イベントビューアー] ウィンドウで、[ **アプリケーション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cae24-123">In the Event Viewer window, click **Application**.</span></span>  
+3. <span data-ttu-id="f2d24-123">[イベントビューアー] ウィンドウで、[ **アプリケーション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2d24-123">In the Event Viewer window, click **Application**.</span></span>  
   
-4. <span data-ttu-id="cae24-124">**アプリケーション**ウィンドウで、"WebHost" カテゴリの下に最近追加された "system.servicemodel 4.0.0.0" イベントをダブルクリックして、セキュリティで保護されていないエンドポイントのメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="cae24-124">Double-click the recently added "System.ServiceModel 4.0.0.0" event under the "WebHost" category in the **Application** window to view insecure endpoint messages.</span></span>  
+4. <span data-ttu-id="f2d24-124">**アプリケーション** ウィンドウで、"WebHost" カテゴリの下に最近追加された "system.servicemodel 4.0.0.0" イベントをダブルクリックして、セキュリティで保護されていないエンドポイントのメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="f2d24-124">Double-click the recently added "System.ServiceModel 4.0.0.0" event under the "WebHost" category in the **Application** window to view insecure endpoint messages.</span></span>  
   
-## <a name="set-up-build-and-run-the-sample"></a><span data-ttu-id="cae24-125">サンプルをセットアップ、ビルド、および実行する</span><span class="sxs-lookup"><span data-stu-id="cae24-125">Set up, build, and run the sample</span></span>  
+## <a name="set-up-build-and-run-the-sample"></a><span data-ttu-id="f2d24-125">サンプルをセットアップ、ビルド、および実行する</span><span class="sxs-lookup"><span data-stu-id="f2d24-125">Set up, build, and run the sample</span></span>  
   
-1. <span data-ttu-id="cae24-126">[Windows Communication Foundation サンプルの1回限りのセットアップ手順](one-time-setup-procedure-for-the-wcf-samples.md)を実行したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="cae24-126">Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).</span></span>  
+1. <span data-ttu-id="f2d24-126">[Windows Communication Foundation サンプルの1回限りのセットアップ手順](one-time-setup-procedure-for-the-wcf-samples.md)を実行したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="f2d24-126">Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).</span></span>  
   
-2. <span data-ttu-id="cae24-127">ソリューションの C# 版または Visual Basic .NET 版をビルドするには、「 [Building the Windows Communication Foundation Samples](building-the-samples.md)」の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="cae24-127">To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).</span></span>  
+2. <span data-ttu-id="f2d24-127">ソリューションの C# 版または Visual Basic .NET 版をビルドするには、「 [Building the Windows Communication Foundation Samples](building-the-samples.md)」の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f2d24-127">To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).</span></span>  
   
-3. <span data-ttu-id="cae24-128">サンプルを単一コンピューター構成または複数コンピューター構成で実行するには、「 [Windows Communication Foundation サンプルの実行](running-the-samples.md)」の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="cae24-128">To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).</span></span>  
+3. <span data-ttu-id="f2d24-128">サンプルを単一コンピューター構成または複数コンピューター構成で実行するには、「 [Windows Communication Foundation サンプルの実行](running-the-samples.md)」の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f2d24-128">To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).</span></span>  
   
 > [!IMPORTANT]
-> <span data-ttu-id="cae24-129">サンプルは、既にコンピューターにインストールされている場合があります。</span><span class="sxs-lookup"><span data-stu-id="cae24-129">The samples may already be installed on your computer.</span></span> <span data-ttu-id="cae24-130">続行する前に、次の (既定の) ディレクトリを確認してください。</span><span class="sxs-lookup"><span data-stu-id="cae24-130">Check for the following (default) directory before continuing.</span></span>  
+> <span data-ttu-id="f2d24-129">サンプルは、既にコンピューターにインストールされている場合があります。</span><span class="sxs-lookup"><span data-stu-id="f2d24-129">The samples may already be installed on your computer.</span></span> <span data-ttu-id="f2d24-130">続行する前に、次の (既定の) ディレクトリを確認してください。</span><span class="sxs-lookup"><span data-stu-id="f2d24-130">Check for the following (default) directory before continuing.</span></span>  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> <span data-ttu-id="cae24-131">このディレクトリが存在しない場合は、 [Windows Communication Foundation (wcf) および Windows Workflow Foundation (WF) のサンプルの .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) にアクセスして、すべての WINDOWS COMMUNICATION FOUNDATION (wcf) とサンプルをダウンロードして [!INCLUDE[wf1](../../../../includes/wf1-md.md)] ください。</span><span class="sxs-lookup"><span data-stu-id="cae24-131">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="cae24-132">このサンプルは、次のディレクトリに格納されます。</span><span class="sxs-lookup"><span data-stu-id="cae24-132">This sample is located in the following directory.</span></span>  
+> <span data-ttu-id="f2d24-131">このディレクトリが存在しない場合は、 [Windows Communication Foundation (wcf) および Windows Workflow Foundation (WF) のサンプルの .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) にアクセスして、すべての WINDOWS COMMUNICATION FOUNDATION (wcf) とサンプルをダウンロードして [!INCLUDE[wf1](../../../../includes/wf1-md.md)] ください。</span><span class="sxs-lookup"><span data-stu-id="f2d24-131">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="f2d24-132">このサンプルは、次のディレクトリに格納されます。</span><span class="sxs-lookup"><span data-stu-id="f2d24-132">This sample is located in the following directory.</span></span>  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ServiceValidation`  
   
-## <a name="see-also"></a><span data-ttu-id="cae24-133">関連項目</span><span class="sxs-lookup"><span data-stu-id="cae24-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f2d24-133">関連項目</span><span class="sxs-lookup"><span data-stu-id="f2d24-133">See also</span></span>
 
-- <span data-ttu-id="cae24-134">[AppFabric の監視のサンプル](/previous-versions/appfabric/ff383407(v=azure.10))</span><span class="sxs-lookup"><span data-stu-id="cae24-134">[AppFabric Monitoring Samples](/previous-versions/appfabric/ff383407(v=azure.10))</span></span>
+- <span data-ttu-id="f2d24-134">[AppFabric の監視のサンプル](/previous-versions/appfabric/ff383407(v=azure.10))</span><span class="sxs-lookup"><span data-stu-id="f2d24-134">[AppFabric Monitoring Samples](/previous-versions/appfabric/ff383407(v=azure.10))</span></span>
