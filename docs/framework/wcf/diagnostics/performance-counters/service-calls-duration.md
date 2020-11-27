@@ -2,19 +2,21 @@
 title: 'サービス: 呼び出しの期間'
 ms.date: 03/30/2017
 ms.assetid: dfe42a97-daf8-42c3-ba34-4bb8230cdebb
-ms.openlocfilehash: 4aae05791bcc0fc16ddedffff17ffcce211e9c35
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 01e2c0aed3a2552bdb94e0f36648781036d2a845
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559123"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96252986"
 ---
-# <a name="service-calls-duration"></a><span data-ttu-id="23cac-102">サービス: 呼び出しの期間</span><span class="sxs-lookup"><span data-stu-id="23cac-102">Service: Calls Duration</span></span>
-<span data-ttu-id="23cac-103">カウンター名: 呼び出しの期間</span><span class="sxs-lookup"><span data-stu-id="23cac-103">Counter Name: Calls Duration</span></span>  
-  
-## <a name="description"></a><span data-ttu-id="23cac-104">説明</span><span class="sxs-lookup"><span data-stu-id="23cac-104">Description</span></span>  
- <span data-ttu-id="23cac-105">このサービスの呼び出しの平均期間です。</span><span class="sxs-lookup"><span data-stu-id="23cac-105">The average duration of calls to this service.</span></span> <span data-ttu-id="23cac-106">平均期間は、(N1-N0)/(D1-D0) という数式に基づいて計算されます。</span><span class="sxs-lookup"><span data-stu-id="23cac-106">The average duration is calculated based on this equation: (N1-N0)/(D1-D0).</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="23cac-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="23cac-107">See also</span></span>
+# <a name="service-calls-duration"></a><span data-ttu-id="fa093-102">サービス: 呼び出しの期間</span><span class="sxs-lookup"><span data-stu-id="fa093-102">Service: Calls Duration</span></span>
 
-- <span data-ttu-id="23cac-108">[PERF_AVERAGE_TIMER](/previous-versions/windows/embedded/ms938538(v=msdn.10))</span><span class="sxs-lookup"><span data-stu-id="23cac-108">[PERF_AVERAGE_TIMER](/previous-versions/windows/embedded/ms938538(v=msdn.10))</span></span>
+<span data-ttu-id="fa093-103">カウンター名: 呼び出しの期間</span><span class="sxs-lookup"><span data-stu-id="fa093-103">Counter Name: Calls Duration</span></span>  
+  
+## <a name="description"></a><span data-ttu-id="fa093-104">Description</span><span class="sxs-lookup"><span data-stu-id="fa093-104">Description</span></span>  
+
+ <span data-ttu-id="fa093-105">このサービスの呼び出しの平均期間です。</span><span class="sxs-lookup"><span data-stu-id="fa093-105">The average duration of calls to this service.</span></span> <span data-ttu-id="fa093-106">平均期間は、(N1-N0)/(D1-D0) という数式に基づいて計算されます。</span><span class="sxs-lookup"><span data-stu-id="fa093-106">The average duration is calculated based on this equation: (N1-N0)/(D1-D0).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="fa093-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="fa093-107">See also</span></span>
+
+- <span data-ttu-id="fa093-108">[PERF_AVERAGE_TIMER](/previous-versions/windows/embedded/ms938538(v=msdn.10))</span><span class="sxs-lookup"><span data-stu-id="fa093-108">[PERF_AVERAGE_TIMER](/previous-versions/windows/embedded/ms938538(v=msdn.10))</span></span>
