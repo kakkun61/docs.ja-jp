@@ -13,38 +13,40 @@ helpviewer_keywords:
 - reading data, strings
 - streams, reading characters from string
 ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
-ms.openlocfilehash: ef545ddd1bebf993db32b1ec450b38defd567f65
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: beb3f4f38a5c28d19eff6fece5a6bb3c4e7a9c48
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830689"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734570"
 ---
-# <a name="how-to-read-characters-from-a-string"></a><span data-ttu-id="d04b8-104">方法: 文字列からの文字の読み取り</span><span class="sxs-lookup"><span data-stu-id="d04b8-104">How to: Read characters from a string</span></span>
+# <a name="how-to-read-characters-from-a-string"></a><span data-ttu-id="d8477-104">方法: 文字列からの文字の読み取り</span><span class="sxs-lookup"><span data-stu-id="d8477-104">How to: Read characters from a string</span></span>
 
-<span data-ttu-id="d04b8-105">次のコード例は、文字列から同期的または非同期的に文字を読み取る方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="d04b8-105">The following code examples show how to read characters synchronously or asynchronously from a string.</span></span>  
+<span data-ttu-id="d8477-105">次のコード例は、文字列から同期的または非同期的に文字を読み取る方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="d8477-105">The following code examples show how to read characters synchronously or asynchronously from a string.</span></span>  
   
-## <a name="example-read-characters-synchronously"></a><span data-ttu-id="d04b8-106">例:同期的に文字を読み取る</span><span class="sxs-lookup"><span data-stu-id="d04b8-106">Example: Read characters synchronously</span></span>
- <span data-ttu-id="d04b8-107">この例では、文字列から同期的に 13 文字を読み取り、配列に格納し、これらを表示します。</span><span class="sxs-lookup"><span data-stu-id="d04b8-107">This example reads 13 characters synchronously from a string, stores them in an array, and displays them.</span></span> <span data-ttu-id="d04b8-108">次に、この例では、文字列の残りの文字を読み取り、6 番目の要素で始まる配列に格納し、配列の内容を表示します。</span><span class="sxs-lookup"><span data-stu-id="d04b8-108">The example then reads the rest of the characters in the string, stores them in the array starting at the sixth element, and displays the contents of the array.</span></span>  
+## <a name="example-read-characters-synchronously"></a><span data-ttu-id="d8477-106">例:同期的に文字を読み取る</span><span class="sxs-lookup"><span data-stu-id="d8477-106">Example: Read characters synchronously</span></span>
+
+ <span data-ttu-id="d8477-107">この例では、文字列から同期的に 13 文字を読み取り、配列に格納し、これらを表示します。</span><span class="sxs-lookup"><span data-stu-id="d8477-107">This example reads 13 characters synchronously from a string, stores them in an array, and displays them.</span></span> <span data-ttu-id="d8477-108">次に、この例では、文字列の残りの文字を読み取り、6 番目の要素で始まる配列に格納し、配列の内容を表示します。</span><span class="sxs-lookup"><span data-stu-id="d8477-108">The example then reads the rest of the characters in the string, stores them in the array starting at the sixth element, and displays the contents of the array.</span></span>  
   
  [!code-csharp[Conceptual.StringReader#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source.cs#1)]
  [!code-vb[Conceptual.StringReader#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.stringreader/vb/source.vb#1)]  
   
-## <a name="example-read-characters-asynchronously"></a><span data-ttu-id="d04b8-109">例:非同期的に文字を読み取る</span><span class="sxs-lookup"><span data-stu-id="d04b8-109">Example: Read characters asynchronously</span></span>  
- <span data-ttu-id="d04b8-110">次の例は WPF アプリの裏側にあるコードです。</span><span class="sxs-lookup"><span data-stu-id="d04b8-110">The next example is the code behind a WPF app.</span></span> <span data-ttu-id="d04b8-111">ウィンドウを読み込むと、<xref:System.Windows.Controls.TextBox> コントロールから非同期的にすべての文字を読み取り、配列に格納します。</span><span class="sxs-lookup"><span data-stu-id="d04b8-111">On window load, the example asynchronously reads all characters from a <xref:System.Windows.Controls.TextBox> control and stores them in an array.</span></span> <span data-ttu-id="d04b8-112">次に、<xref:System.Windows.Controls.TextBlock> コントロールの個別の行に各文字または空白文字が非同期で書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="d04b8-112">It then asynchronously writes each letter or white-space character to a separate line of a <xref:System.Windows.Controls.TextBlock> control.</span></span>  
+## <a name="example-read-characters-asynchronously"></a><span data-ttu-id="d8477-109">例:非同期的に文字を読み取る</span><span class="sxs-lookup"><span data-stu-id="d8477-109">Example: Read characters asynchronously</span></span>  
+
+ <span data-ttu-id="d8477-110">次の例は WPF アプリの裏側にあるコードです。</span><span class="sxs-lookup"><span data-stu-id="d8477-110">The next example is the code behind a WPF app.</span></span> <span data-ttu-id="d8477-111">ウィンドウを読み込むと、<xref:System.Windows.Controls.TextBox> コントロールから非同期的にすべての文字を読み取り、配列に格納します。</span><span class="sxs-lookup"><span data-stu-id="d8477-111">On window load, the example asynchronously reads all characters from a <xref:System.Windows.Controls.TextBox> control and stores them in an array.</span></span> <span data-ttu-id="d8477-112">次に、<xref:System.Windows.Controls.TextBlock> コントロールの個別の行に各文字または空白文字が非同期で書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="d8477-112">It then asynchronously writes each letter or white-space character to a separate line of a <xref:System.Windows.Controls.TextBlock> control.</span></span>  
   
  [!code-csharp[Conceptual.StringReader#2](../../../samples/snippets/csharp/VS_Snippets_Wpf/StringReaderWriter/MainWindow.xaml.cs)]
  [!code-vb[Conceptual.StringReader#2](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StringReaderWriter/MainWindow.xaml.vb)]  
   
-## <a name="see-also"></a><span data-ttu-id="d04b8-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="d04b8-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d8477-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="d8477-113">See also</span></span>
 
 - <xref:System.IO.StringReader>  
 - <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>  
-- [<span data-ttu-id="d04b8-114">非同期ファイル I/O</span><span class="sxs-lookup"><span data-stu-id="d04b8-114">Asynchronous file I/O</span></span>](asynchronous-file-i-o.md)  
-- <span data-ttu-id="d04b8-115">[方法: ディレクトリ一覧を作成する](/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="d04b8-115">[How to: Create a directory listing](/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100))</span></span>  
-- [<span data-ttu-id="d04b8-116">方法: 新しく作成されたデータ ファイルに対して読み書きする</span><span class="sxs-lookup"><span data-stu-id="d04b8-116">How to: Read and write to a newly created data file</span></span>](how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [<span data-ttu-id="d04b8-117">方法: ログ ファイルを開いて情報を追加する</span><span class="sxs-lookup"><span data-stu-id="d04b8-117">How to: Open and append to a log file</span></span>](how-to-open-and-append-to-a-log-file.md)  
-- [<span data-ttu-id="d04b8-118">方法: ファイルからテキストを読み取る</span><span class="sxs-lookup"><span data-stu-id="d04b8-118">How to: Read text from a file</span></span>](how-to-read-text-from-a-file.md)  
-- [<span data-ttu-id="d04b8-119">方法: テキストのファイルへの書き込み</span><span class="sxs-lookup"><span data-stu-id="d04b8-119">How to: Write text to a file</span></span>](how-to-write-text-to-a-file.md)  
-- [<span data-ttu-id="d04b8-120">方法: 文字列への文字の書き込み</span><span class="sxs-lookup"><span data-stu-id="d04b8-120">How to: Write characters to a string</span></span>](how-to-write-characters-to-a-string.md)  
-- [<span data-ttu-id="d04b8-121">ファイルおよびストリーム入出力</span><span class="sxs-lookup"><span data-stu-id="d04b8-121">File and stream I/O</span></span>](index.md)
+- [<span data-ttu-id="d8477-114">非同期ファイル I/O</span><span class="sxs-lookup"><span data-stu-id="d8477-114">Asynchronous file I/O</span></span>](asynchronous-file-i-o.md)  
+- <span data-ttu-id="d8477-115">[方法: ディレクトリ一覧を作成する](/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="d8477-115">[How to: Create a directory listing](/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100))</span></span>  
+- [<span data-ttu-id="d8477-116">方法: 新しく作成されたデータ ファイルに対して読み書きする</span><span class="sxs-lookup"><span data-stu-id="d8477-116">How to: Read and write to a newly created data file</span></span>](how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [<span data-ttu-id="d8477-117">方法: ログ ファイルを開いて情報を追加する</span><span class="sxs-lookup"><span data-stu-id="d8477-117">How to: Open and append to a log file</span></span>](how-to-open-and-append-to-a-log-file.md)  
+- [<span data-ttu-id="d8477-118">方法: ファイルからテキストを読み取る</span><span class="sxs-lookup"><span data-stu-id="d8477-118">How to: Read text from a file</span></span>](how-to-read-text-from-a-file.md)  
+- [<span data-ttu-id="d8477-119">方法: テキストのファイルへの書き込み</span><span class="sxs-lookup"><span data-stu-id="d8477-119">How to: Write text to a file</span></span>](how-to-write-text-to-a-file.md)  
+- [<span data-ttu-id="d8477-120">方法: 文字列への文字の書き込み</span><span class="sxs-lookup"><span data-stu-id="d8477-120">How to: Write characters to a string</span></span>](how-to-write-characters-to-a-string.md)  
+- [<span data-ttu-id="d8477-121">ファイルおよびストリーム入出力</span><span class="sxs-lookup"><span data-stu-id="d8477-121">File and stream I/O</span></span>](index.md)

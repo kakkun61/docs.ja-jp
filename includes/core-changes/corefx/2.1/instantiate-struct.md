@@ -1,20 +1,20 @@
 ---
 ms.openlocfilehash: b55de00188d92623c493dfc5f9aca915890ae5df
-ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82021467"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032086"
 ---
-### <a name="private-fields-added-to-built-in-struct-types"></a><span data-ttu-id="5f515-101">組み込みの構造体型に追加されたプライベート フィールド</span><span class="sxs-lookup"><span data-stu-id="5f515-101">Private fields added to built-in struct types</span></span>
+### <a name="private-fields-added-to-built-in-struct-types"></a><span data-ttu-id="97dc8-101">組み込みの構造体型に追加されたプライベート フィールド</span><span class="sxs-lookup"><span data-stu-id="97dc8-101">Private fields added to built-in struct types</span></span>
 
-<span data-ttu-id="5f515-102">プライベート フィールドが[参照アセンブリ](#affected-apis)の[特定の構造体型](../../../../docs/standard/assembly/reference-assemblies.md)に追加されました。</span><span class="sxs-lookup"><span data-stu-id="5f515-102">Private fields were added to [certain struct types](#affected-apis) in [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md).</span></span> <span data-ttu-id="5f515-103">その結果、C# では、それらの構造体型は常に、[new 演算子](../../../../docs/csharp/language-reference/operators/new-operator.md)または [default リテラル](../../../../docs/csharp/language-reference/operators/default.md#default-literal)を使用してインスタンス化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5f515-103">As a result, in C#, those struct types must always be instantiated by using the [new operator](../../../../docs/csharp/language-reference/operators/new-operator.md) or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span></span>
+<span data-ttu-id="97dc8-102">プライベート フィールドが[参照アセンブリ](#affected-apis)の[特定の構造体型](../../../../docs/standard/assembly/reference-assemblies.md)に追加されました。</span><span class="sxs-lookup"><span data-stu-id="97dc8-102">Private fields were added to [certain struct types](#affected-apis) in [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md).</span></span> <span data-ttu-id="97dc8-103">その結果、C# では、それらの構造体型は常に、[new 演算子](../../../../docs/csharp/language-reference/operators/new-operator.md)または [default リテラル](../../../../docs/csharp/language-reference/operators/default.md#default-literal)を使用してインスタンス化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="97dc8-103">As a result, in C#, those struct types must always be instantiated by using the [new operator](../../../../docs/csharp/language-reference/operators/new-operator.md) or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span></span>
 
-#### <a name="change-description"></a><span data-ttu-id="5f515-104">変更の説明</span><span class="sxs-lookup"><span data-stu-id="5f515-104">Change description</span></span>
+#### <a name="change-description"></a><span data-ttu-id="97dc8-104">変更の説明</span><span class="sxs-lookup"><span data-stu-id="97dc8-104">Change description</span></span>
 
-<span data-ttu-id="5f515-105">.NET Core 2.0 およびそれ以前のバージョンでは、一部の提供されている構造体型 (たとえば、<xref:System.ConsoleKeyInfo>) を、C# で `new` 演算子や [default リテラル](../../../../docs/csharp/language-reference/operators/default.md#default-literal)を使用せずにインスタンス化できました。</span><span class="sxs-lookup"><span data-stu-id="5f515-105">In .NET Core 2.0 and previous versions, some provided struct types, for example, <xref:System.ConsoleKeyInfo>, could be instantiated without using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal) in C#.</span></span> <span data-ttu-id="5f515-106">これは、C# コンパイラーによって使用される[参照アセンブリ](../../../../docs/standard/assembly/reference-assemblies.md)に、構造体のプライベート フィールドが含まれていなかったためです。</span><span class="sxs-lookup"><span data-stu-id="5f515-106">This was because the [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md) used by the C# compiler didn't contain the private fields for the structs.</span></span> <span data-ttu-id="5f515-107">.NET Core 2.1 以降、.NET 構造体型のすべてのプライベート フィールドが参照アセンブリに追加されます。</span><span class="sxs-lookup"><span data-stu-id="5f515-107">All private fields for .NET struct types are added to the reference assemblies starting in .NET Core 2.1.</span></span>
+<span data-ttu-id="97dc8-105">.NET Core 2.0 およびそれ以前のバージョンでは、一部の提供されている構造体型 (たとえば、<xref:System.ConsoleKeyInfo>) を、C# で `new` 演算子や [default リテラル](../../../../docs/csharp/language-reference/operators/default.md#default-literal)を使用せずにインスタンス化できました。</span><span class="sxs-lookup"><span data-stu-id="97dc8-105">In .NET Core 2.0 and previous versions, some provided struct types, for example, <xref:System.ConsoleKeyInfo>, could be instantiated without using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal) in C#.</span></span> <span data-ttu-id="97dc8-106">これは、C# コンパイラーによって使用される[参照アセンブリ](../../../../docs/standard/assembly/reference-assemblies.md)に、構造体のプライベート フィールドが含まれていなかったためです。</span><span class="sxs-lookup"><span data-stu-id="97dc8-106">This was because the [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md) used by the C# compiler didn't contain the private fields for the structs.</span></span> <span data-ttu-id="97dc8-107">.NET Core 2.1 以降、.NET 構造体型のすべてのプライベート フィールドが参照アセンブリに追加されます。</span><span class="sxs-lookup"><span data-stu-id="97dc8-107">All private fields for .NET struct types are added to the reference assemblies starting in .NET Core 2.1.</span></span>
 
-<span data-ttu-id="5f515-108">たとえば、次の C# コードは .NET Core 2.0 ではコンパイルされますが、.NET Core 2.1 ではされません。</span><span class="sxs-lookup"><span data-stu-id="5f515-108">For example, the following C# code compiles in .NET Core 2.0, but not in .NET Core 2.1:</span></span>
+<span data-ttu-id="97dc8-108">たとえば、次の C# コードは .NET Core 2.0 ではコンパイルされますが、.NET Core 2.1 ではされません。</span><span class="sxs-lookup"><span data-stu-id="97dc8-108">For example, the following C# code compiles in .NET Core 2.0, but not in .NET Core 2.1:</span></span>
 
 ```csharp
 ConsoleKeyInfo key;    // Struct type
@@ -25,17 +25,17 @@ if (key.ToString() == "y")
 }
 ```
 
-<span data-ttu-id="5f515-109">.NET Core 2.1 では、以前のコードを使用すると、次のコンパイラー エラーが発生します。**CS0165 - 未割り当てのローカル変数 'key' が使用されました**</span><span class="sxs-lookup"><span data-stu-id="5f515-109">In .NET Core 2.1, the previous code results in the following compiler error: **CS0165 - Use of unassigned local variable 'key'**</span></span>
+<span data-ttu-id="97dc8-109">.NET Core 2.1 では、以前のコードを使用すると、次のコンパイラー エラーが発生します。**CS0165 - 未割り当てのローカル変数 'key' が使用されました**</span><span class="sxs-lookup"><span data-stu-id="97dc8-109">In .NET Core 2.1, the previous code results in the following compiler error: **CS0165 - Use of unassigned local variable 'key'**</span></span>
 
-#### <a name="version-introduced"></a><span data-ttu-id="5f515-110">導入されたバージョン</span><span class="sxs-lookup"><span data-stu-id="5f515-110">Version introduced</span></span>
+#### <a name="version-introduced"></a><span data-ttu-id="97dc8-110">導入されたバージョン</span><span class="sxs-lookup"><span data-stu-id="97dc8-110">Version introduced</span></span>
 
-<span data-ttu-id="5f515-111">2.1</span><span class="sxs-lookup"><span data-stu-id="5f515-111">2.1</span></span>
+<span data-ttu-id="97dc8-111">2.1</span><span class="sxs-lookup"><span data-stu-id="97dc8-111">2.1</span></span>
 
-#### <a name="recommended-action"></a><span data-ttu-id="5f515-112">推奨アクション</span><span class="sxs-lookup"><span data-stu-id="5f515-112">Recommended action</span></span>
+#### <a name="recommended-action"></a><span data-ttu-id="97dc8-112">推奨アクション</span><span class="sxs-lookup"><span data-stu-id="97dc8-112">Recommended action</span></span>
 
-<span data-ttu-id="5f515-113">`new` 演算子または [default リテラル](../../../../docs/csharp/language-reference/operators/default.md#default-literal)を使用して構造体型をインスタンス化します。</span><span class="sxs-lookup"><span data-stu-id="5f515-113">Instantiate struct types by using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span></span>
+<span data-ttu-id="97dc8-113">`new` 演算子または [default リテラル](../../../../docs/csharp/language-reference/operators/default.md#default-literal)を使用して構造体型をインスタンス化します。</span><span class="sxs-lookup"><span data-stu-id="97dc8-113">Instantiate struct types by using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).</span></span>
 
-<span data-ttu-id="5f515-114">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="5f515-114">For example:</span></span>
+<span data-ttu-id="97dc8-114">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="97dc8-114">For example:</span></span>
 
 ```csharp
 ConsoleKeyInfo key = new ConsoleKeyInfo();    // Struct type.
@@ -51,11 +51,11 @@ if (key.ToString() == "y")
     Console.WriteLine("Yes!");
 ```
 
-#### <a name="category"></a><span data-ttu-id="5f515-115">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="5f515-115">Category</span></span>
+#### <a name="category"></a><span data-ttu-id="97dc8-115">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="97dc8-115">Category</span></span>
 
-<span data-ttu-id="5f515-116">Core .NET ライブラリ</span><span class="sxs-lookup"><span data-stu-id="5f515-116">Core .NET libraries</span></span>
+<span data-ttu-id="97dc8-116">Core .NET ライブラリ</span><span class="sxs-lookup"><span data-stu-id="97dc8-116">Core .NET libraries</span></span>
 
-#### <a name="affected-apis"></a><span data-ttu-id="5f515-117">影響を受ける API</span><span class="sxs-lookup"><span data-stu-id="5f515-117">Affected APIs</span></span>
+#### <a name="affected-apis"></a><span data-ttu-id="97dc8-117">影響を受ける API</span><span class="sxs-lookup"><span data-stu-id="97dc8-117">Affected APIs</span></span>
 
 - <xref:System.ArraySegment%601.Enumerator?displayProperty=fullName>
 - <xref:System.ArraySegment%601?displayProperty=fullName>
