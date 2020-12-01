@@ -9,17 +9,20 @@ helpviewer_keywords:
 - interoperation with unmanaged code, samples
 - COM interop, samples
 ms.assetid: a219cb2c-9fa2-4c90-9b26-939e0788f178
-ms.openlocfilehash: 1a9c17cda6a6d129327b296e5d7d851902f78d35
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 91c908153592eb8ae55ecd341b32b82a232ee473
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620886"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96282926"
 ---
-# <a name="com-interop-sample-com-client-and-net-server"></a><span data-ttu-id="16e59-103">COM 相互運用の例: COM クライアントと .NET サーバー</span><span class="sxs-lookup"><span data-stu-id="16e59-103">COM Interop Sample: COM Client and .NET Server</span></span>
-<span data-ttu-id="16e59-104">[COM クライアント](#cpconcominteropsamplecomclientnetserveranchor1)と [.NET サーバー](#cpconcominteropsamplecomclientnetserveranchor2)を相互運用して、住宅ローンの計算を行うサンプルを次に示します。</span><span class="sxs-lookup"><span data-stu-id="16e59-104">This sample demonstrates the interoperation of a [COM Client](#cpconcominteropsamplecomclientnetserveranchor1) and a [.NET Server](#cpconcominteropsamplecomclientnetserveranchor2) that performs mortgage calculations.</span></span> <span data-ttu-id="16e59-105">この例では、クライアントはマネージド `Loan` クラスのインスタンスを作成して呼び出し、4 つの引数 (そのうち 1 つは 0) をこのインスタンスに渡し、計算結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="16e59-105">In this example, the client creates and calls an instance of the managed `Loan` class, passes four arguments (one of those four being equal to zero) to the instance, and displays the computations.</span></span> <span data-ttu-id="16e59-106">このセクション全体で、このサンプルのコード例を使用します。</span><span class="sxs-lookup"><span data-stu-id="16e59-106">Code examples from this sample appear throughout this section.</span></span>  
+# <a name="com-interop-sample-com-client-and-net-server"></a><span data-ttu-id="76804-103">COM 相互運用の例: COM クライアントと .NET サーバー</span><span class="sxs-lookup"><span data-stu-id="76804-103">COM Interop Sample: COM Client and .NET Server</span></span>
+
+<span data-ttu-id="76804-104">[COM クライアント](#cpconcominteropsamplecomclientnetserveranchor1)と [.NET サーバー](#cpconcominteropsamplecomclientnetserveranchor2)を相互運用して、住宅ローンの計算を行うサンプルを次に示します。</span><span class="sxs-lookup"><span data-stu-id="76804-104">This sample demonstrates the interoperation of a [COM Client](#cpconcominteropsamplecomclientnetserveranchor1) and a [.NET Server](#cpconcominteropsamplecomclientnetserveranchor2) that performs mortgage calculations.</span></span> <span data-ttu-id="76804-105">この例では、クライアントはマネージド `Loan` クラスのインスタンスを作成して呼び出し、4 つの引数 (そのうち 1 つは 0) をこのインスタンスに渡し、計算結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="76804-105">In this example, the client creates and calls an instance of the managed `Loan` class, passes four arguments (one of those four being equal to zero) to the instance, and displays the computations.</span></span> <span data-ttu-id="76804-106">このセクション全体で、このサンプルのコード例を使用します。</span><span class="sxs-lookup"><span data-stu-id="76804-106">Code examples from this sample appear throughout this section.</span></span>  
   
 <a name="cpconcominteropsamplecomclientnetserveranchor1"></a>
-## <a name="com-client"></a><span data-ttu-id="16e59-107">COM クライアント</span><span class="sxs-lookup"><span data-stu-id="16e59-107">COM Client</span></span>  
+
+## <a name="com-client"></a><span data-ttu-id="76804-107">COM クライアント</span><span class="sxs-lookup"><span data-stu-id="76804-107">COM Client</span></span>  
   
 ```cpp  
 // ConLoan.cpp : Defines the entry point for the console application.  
@@ -86,7 +89,8 @@ int main(int argc, char* argv[])
 ```  
   
 <a name="cpconcominteropsamplecomclientnetserveranchor2"></a>
-## <a name="net-server"></a><span data-ttu-id="16e59-108">.NET サーバー</span><span class="sxs-lookup"><span data-stu-id="16e59-108">.NET Server</span></span>  
+
+## <a name="net-server"></a><span data-ttu-id="76804-108">.NET サーバー</span><span class="sxs-lookup"><span data-stu-id="76804-108">.NET Server</span></span>  
   
 ```vb  
 Imports System  
@@ -387,6 +391,6 @@ namespace LoanLib {
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="16e59-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="16e59-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="76804-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="76804-109">See also</span></span>
 
-- [<span data-ttu-id="16e59-110">COM への .NET Framework コンポーネントの公開</span><span class="sxs-lookup"><span data-stu-id="16e59-110">Exposing .NET Framework Components to COM</span></span>](exposing-dotnet-components-to-com.md)
+- [<span data-ttu-id="76804-110">COM への .NET Framework コンポーネントの公開</span><span class="sxs-lookup"><span data-stu-id="76804-110">Exposing .NET Framework Components to COM</span></span>](exposing-dotnet-components-to-com.md)

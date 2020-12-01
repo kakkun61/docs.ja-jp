@@ -10,15 +10,16 @@ helpviewer_keywords:
 - synchronous client sockets
 - sockets, synchronous client sockets
 ms.assetid: 2c7d5be7-2221-467c-a839-5744ec4d576d
-ms.openlocfilehash: 7455307441045360bc62cee50f13d106df4d005e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d2595f3a6cb5e1ced17697def33e35ce8912ea90
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502120"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279247"
 ---
-# <a name="synchronous-client-socket-example"></a><span data-ttu-id="c2210-104">同期クライアント ソケットの例</span><span class="sxs-lookup"><span data-stu-id="c2210-104">Synchronous Client Socket Example</span></span>
-<span data-ttu-id="c2210-105">次のプログラム例では、サーバーに接続するクライアントを作成します。</span><span class="sxs-lookup"><span data-stu-id="c2210-105">The following example program creates a client that connects to a server.</span></span> <span data-ttu-id="c2210-106">このクライアントは同期ソケットで構築されます。そのため、クライアント アプリケーションの実行は、サーバーが応答を返すまで一時停止となります。</span><span class="sxs-lookup"><span data-stu-id="c2210-106">The client is built with a synchronous socket, so execution of the client application is suspended until the server returns a response.</span></span> <span data-ttu-id="c2210-107">このアプリケーションは文字列をサーバーに送信し、サーバーが返した文字列をコンソールに表示します。</span><span class="sxs-lookup"><span data-stu-id="c2210-107">The application sends a string to the server and then displays the string returned by the server on the console.</span></span>  
+# <a name="synchronous-client-socket-example"></a><span data-ttu-id="72db1-104">同期クライアント ソケットの例</span><span class="sxs-lookup"><span data-stu-id="72db1-104">Synchronous Client Socket Example</span></span>
+
+<span data-ttu-id="72db1-105">次のプログラム例では、サーバーに接続するクライアントを作成します。</span><span class="sxs-lookup"><span data-stu-id="72db1-105">The following example program creates a client that connects to a server.</span></span> <span data-ttu-id="72db1-106">このクライアントは同期ソケットで構築されます。そのため、クライアント アプリケーションの実行は、サーバーが応答を返すまで一時停止となります。</span><span class="sxs-lookup"><span data-stu-id="72db1-106">The client is built with a synchronous socket, so execution of the client application is suspended until the server returns a response.</span></span> <span data-ttu-id="72db1-107">このアプリケーションは文字列をサーバーに送信し、サーバーが返した文字列をコンソールに表示します。</span><span class="sxs-lookup"><span data-stu-id="72db1-107">The application sends a string to the server and then displays the string returned by the server on the console.</span></span>  
   
 ```vb  
 Imports System  
@@ -136,8 +137,8 @@ public class SynchronousSocketClient {
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="c2210-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="c2210-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="72db1-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="72db1-108">See also</span></span>
 
-- [<span data-ttu-id="c2210-109">同期サーバー ソケットの例</span><span class="sxs-lookup"><span data-stu-id="c2210-109">Synchronous Server Socket Example</span></span>](synchronous-server-socket-example.md)
-- [<span data-ttu-id="c2210-110">同期クライアント ソケットの使用</span><span class="sxs-lookup"><span data-stu-id="c2210-110">Using a Synchronous Client Socket</span></span>](using-a-synchronous-client-socket.md)
-- [<span data-ttu-id="c2210-111">ソケットのコード例</span><span class="sxs-lookup"><span data-stu-id="c2210-111">Socket Code Examples</span></span>](socket-code-examples.md)
+- [<span data-ttu-id="72db1-109">同期サーバー ソケットの例</span><span class="sxs-lookup"><span data-stu-id="72db1-109">Synchronous Server Socket Example</span></span>](synchronous-server-socket-example.md)
+- [<span data-ttu-id="72db1-110">同期クライアント ソケットの使用</span><span class="sxs-lookup"><span data-stu-id="72db1-110">Using a Synchronous Client Socket</span></span>](using-a-synchronous-client-socket.md)
+- [<span data-ttu-id="72db1-111">ソケットのコード例</span><span class="sxs-lookup"><span data-stu-id="72db1-111">Socket Code Examples</span></span>](socket-code-examples.md)
