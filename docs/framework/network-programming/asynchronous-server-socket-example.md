@@ -10,15 +10,16 @@ helpviewer_keywords:
 - sockets, code examples
 - asynchronous server sockets
 ms.assetid: 13624cd3-f5c5-4950-8cda-31273b1fa6d1
-ms.openlocfilehash: e30b9694a07d1551163f5d80e7874fe5c7d29050
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: 2afcd0cbfc26146c09326057037347cc9f3d7ce7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359053"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287632"
 ---
-# <a name="asynchronous-server-socket-example"></a><span data-ttu-id="99b01-104">非同期サーバー ソケットの例</span><span class="sxs-lookup"><span data-stu-id="99b01-104">Asynchronous Server Socket Example</span></span>
-<span data-ttu-id="99b01-105">次のプログラム例では、クライアントからの接続要求を受け取るサーバーを作成します。</span><span class="sxs-lookup"><span data-stu-id="99b01-105">The following example program creates a server that receives connection requests from clients.</span></span> <span data-ttu-id="99b01-106">このサーバーは非同期ソケットで構築されます。そのため、クライアントからの接続を待機している間に、サーバー アプリケーションの実行が中断されることはありません。</span><span class="sxs-lookup"><span data-stu-id="99b01-106">The server is built with an asynchronous socket, so execution of the server application is not suspended while it waits for a connection from a client.</span></span> <span data-ttu-id="99b01-107">このアプリケーションはクライアントから文字列を受信し、それをコンソールに表示し、クライアントにエコー バックします。</span><span class="sxs-lookup"><span data-stu-id="99b01-107">The application receives a string from the client, displays the string on the console, and then echoes the string back to the client.</span></span> <span data-ttu-id="99b01-108">クライアントからの文字列には、メッセージの終わりを伝えるための文字列 "\<EOF>" が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="99b01-108">The string from the client must contain the string "\<EOF>" to signal the end of the message.</span></span>  
+# <a name="asynchronous-server-socket-example"></a><span data-ttu-id="e543d-104">非同期サーバー ソケットの例</span><span class="sxs-lookup"><span data-stu-id="e543d-104">Asynchronous Server Socket Example</span></span>
+
+<span data-ttu-id="e543d-105">次のプログラム例では、クライアントからの接続要求を受け取るサーバーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e543d-105">The following example program creates a server that receives connection requests from clients.</span></span> <span data-ttu-id="e543d-106">このサーバーは非同期ソケットで構築されます。そのため、クライアントからの接続を待機している間に、サーバー アプリケーションの実行が中断されることはありません。</span><span class="sxs-lookup"><span data-stu-id="e543d-106">The server is built with an asynchronous socket, so execution of the server application is not suspended while it waits for a connection from a client.</span></span> <span data-ttu-id="e543d-107">このアプリケーションはクライアントから文字列を受信し、それをコンソールに表示し、クライアントにエコー バックします。</span><span class="sxs-lookup"><span data-stu-id="e543d-107">The application receives a string from the client, displays the string on the console, and then echoes the string back to the client.</span></span> <span data-ttu-id="e543d-108">クライアントからの文字列には、メッセージの終わりを伝えるための文字列 "\<EOF>" が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e543d-108">The string from the client must contain the string "\<EOF>" to signal the end of the message.</span></span>  
   
 ```vb  
 Imports System  
@@ -305,8 +306,8 @@ public class AsynchronousSocketListener
 }
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="99b01-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="99b01-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e543d-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="e543d-109">See also</span></span>
 
-- [<span data-ttu-id="99b01-110">非同期クライアント ソケットの例</span><span class="sxs-lookup"><span data-stu-id="99b01-110">Asynchronous Client Socket Example</span></span>](asynchronous-client-socket-example.md)
-- [<span data-ttu-id="99b01-111">非同期サーバー ソケットの使用</span><span class="sxs-lookup"><span data-stu-id="99b01-111">Using an Asynchronous Server Socket</span></span>](using-an-asynchronous-server-socket.md)
-- [<span data-ttu-id="99b01-112">ソケットのコード例</span><span class="sxs-lookup"><span data-stu-id="99b01-112">Socket Code Examples</span></span>](socket-code-examples.md)
+- [<span data-ttu-id="e543d-110">非同期クライアント ソケットの例</span><span class="sxs-lookup"><span data-stu-id="e543d-110">Asynchronous Client Socket Example</span></span>](asynchronous-client-socket-example.md)
+- [<span data-ttu-id="e543d-111">非同期サーバー ソケットの使用</span><span class="sxs-lookup"><span data-stu-id="e543d-111">Using an Asynchronous Server Socket</span></span>](using-an-asynchronous-server-socket.md)
+- [<span data-ttu-id="e543d-112">ソケットのコード例</span><span class="sxs-lookup"><span data-stu-id="e543d-112">Socket Code Examples</span></span>](socket-code-examples.md)
