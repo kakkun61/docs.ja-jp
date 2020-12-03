@@ -138,7 +138,7 @@ items:
           - name: 新機能
             href: ../core/dotnet-five.md
           - name: 互換性に影響する変更
-            href: ../core/compatibility/5.0.md
+            href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET Core 3.1
         items:
           - name: 新機能
@@ -367,6 +367,8 @@ items:
             href: ../core/additional-tools/index.md
           - name: .NET アンインストール ツール
             href: ../core/additional-tools/uninstall-tool.md
+          - name: 自己署名証明書の生成
+            href: ../core/additional-tools/self-signed-certificates-guide.md
           - name: WCF Web サービス リファレンス プロバイダー
             href: ../core/additional-tools/wcf-web-service-reference-guide.md
           - name: WCF サービス ユーティリティ
@@ -385,9 +387,12 @@ items:
           - name: マネージド デバッガー
             href: ../core/diagnostics/managed-debuggers.md
           - name: ダンプ
-            href: ../core/diagnostics/dumps.md
-          - name: Linux ダンプのデバッグ
-            href: ../core/diagnostics/debug-linux-dumps.md
+            items:
+              - name: 概要
+                displayName: dumps
+                href: ../core/diagnostics/dumps.md
+              - name: Linux ダンプ
+                href: ../core/diagnostics/debug-linux-dumps.md
           - name: EventCounters
             href: ../core/diagnostics/event-counters.md
           - name: EventPipe
@@ -1603,10 +1608,36 @@ items:
                 displayName: json serialization
               - name: JSON をシリアル化および逆シリアル化する方法
                 href: ../standard/serialization/system-text-json-how-to.md
-              - name: カスタム コンバーターを記述する方法
-                href: ../standard/serialization/system-text-json-converters-how-to.md
+              - name: シリアル化の動作を制御する
+                items:
+                  - name: JsonSerializerOptions をインスタンス化する
+                    href: ../standard/serialization/system-text-json-configure-options.md
+                  - name: 大文字と小文字を区別しない一致を有効にする
+                    href: ../standard/serialization/system-text-json-character-casing.md
+                  - name: プロパティの名前と値をカスタマイズする
+                    href: ../standard/serialization/system-text-json-customize-properties.md
+                  - name: プロパティを無視する
+                    href: ../standard/serialization/system-text-json-ignore-properties.md
+                  - name: 無効な JSON を許可する
+                    href: ../standard/serialization/system-text-json-invalid-json.md
+                  - name: オーバーフロー JSON の処理
+                    href: ../standard/serialization/system-text-json-handle-overflow.md
+                  - name: 参照を保持する
+                    href: ../standard/serialization/system-text-json-preserve-references.md
+                  - name: 変更できない型と非パブリック アクセサー
+                    href: ../standard/serialization/system-text-json-immutability.md
+                  - name: ポリモーフィックなシリアル化
+                    href: ../standard/serialization/system-text-json-polymorphism.md
               - name: Newtonsoft. Json から移行する方法
                 href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+              - name: 詳細設定
+                items:
+                  - name: 文字エンコードをカスタマイズする
+                    href: ../standard/serialization/system-text-json-character-encoding.md
+                  - name: カスタム シリアライザーと逆シリアライザー
+                    href: ../standard/serialization/write-custom-serializer-deserializer.md
+                  - name: カスタム コンバーター
+                    href: ../standard/serialization/system-text-json-converters-how-to.md
           - name: バイナリ シリアル化
             items:
               - name: 概要
@@ -2249,7 +2280,7 @@ items:
           - name: Windows 互換機能パックを使用する
             href: ../core/porting/windows-compat-pack.md
           - name: Windows フォーム プロジェクトを移植する
-            href: ../core/porting/winforms.md
+            href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
           - name: WPF プロジェクトを移植する
             href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
           - name: C++/CLI プロジェクトを移植する
