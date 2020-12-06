@@ -142,6 +142,8 @@
       href: language-reference/classes.md
     - name: 構造体
       href: language-reference/structures.md
+    - name: null 許容値型
+      href: language-reference/nullable-value-types.md
     - name: 継承
       href: language-reference/inheritance.md
     - name: インターフェイス
