@@ -367,6 +367,8 @@ items:
             href: ../core/additional-tools/index.md
           - name: .NET アンインストール ツール
             href: ../core/additional-tools/uninstall-tool.md
+          - name: 拡張機能作成者用の .NET インストール ツール
+            href: ../core/additional-tools/vscode-dotnet-runtime.md
           - name: 自己署名証明書の生成
             href: ../core/additional-tools/self-signed-certificates-guide.md
           - name: WCF Web サービス リファレンス プロバイダー
@@ -1645,6 +1647,8 @@ items:
                 displayName: binary serialization
               - name: BinaryFormatter セキュリティ ガイド
                 href: ../standard/serialization/binaryformatter-security-guide.md
+              - name: BinaryFormatter イベント ソース
+                href: ../standard/serialization/binaryformatter-event-source.md
               - name: シリアル化の概念
                 href: ../standard/serialization/serialization-concepts.md
               - name: 基本的なシリアル化
