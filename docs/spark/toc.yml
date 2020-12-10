@@ -59,7 +59,7 @@
           href: how-to-guides/dotnet-interactive-udf-issue.md
         - name: ワーカーおよび UDF のバイナリを展開する
           href: how-to-guides/deploy-worker-udf-binaries.md
-    - name: Jupyter Notebook の使用
+    - name: Jupyter Notebook を使用する
       href: how-to-guides/dotnet-spark-jupyter-notebooks.md
     - name: 配信ガイド
       href: how-to-guides/broadcast-guide.md
