@@ -7,20 +7,21 @@ helpviewer_keywords:
 - appSettings Element
 - <appSettings> Element
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
-ms.openlocfilehash: ea341d562f4b163a3a1771da0f20903b7d64bcdf
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 66260d15768781b7fa3d9397b8e8a7d9ad68ab95
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155532"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009795"
 ---
-# <a name="appsettings-element-for-configuration"></a><span data-ttu-id="7eeb5-102">\<configuration> の \<appSettings> 要素</span><span class="sxs-lookup"><span data-stu-id="7eeb5-102">\<appSettings> element for \<configuration></span></span>
+# <a name="appsettings-element-for-configuration"></a><span data-ttu-id="f9e48-102">\<configuration> の \<appSettings> 要素</span><span class="sxs-lookup"><span data-stu-id="f9e48-102">\<appSettings> element for \<configuration></span></span>
 
-<span data-ttu-id="7eeb5-103">カスタムアプリケーション設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-103">Contains custom application settings.</span></span> <span data-ttu-id="7eeb5-104">これは、.NET Framework によって提供される定義済みの構成セクションです。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-104">This is a predefined configuration section provided by the .NET Framework.</span></span>
+<span data-ttu-id="f9e48-103">カスタムアプリケーション設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-103">Contains custom application settings.</span></span> <span data-ttu-id="f9e48-104">これは、.NET Framework によって提供される定義済みの構成セクションです。</span><span class="sxs-lookup"><span data-stu-id="f9e48-104">This is a predefined configuration section provided by the .NET Framework.</span></span>
 
-<span data-ttu-id="7eeb5-105">[**\<configuration>**](../configuration-element.md) &nbsp;&nbsp;**\<appSettings>**</span><span class="sxs-lookup"><span data-stu-id="7eeb5-105">[**\<configuration>**](../configuration-element.md) &nbsp;&nbsp;**\<appSettings>**</span></span>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<appSettings>**
 
-## <a name="syntax"></a><span data-ttu-id="7eeb5-106">構文</span><span class="sxs-lookup"><span data-stu-id="7eeb5-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f9e48-105">構文</span><span class="sxs-lookup"><span data-stu-id="f9e48-105">Syntax</span></span>
 
 ```xml
 <appSettings>
@@ -28,37 +29,37 @@ ms.locfileid: "79155532"
 </appSettings>
 ```
 
-## <a name="attribute"></a><span data-ttu-id="7eeb5-107">属性</span><span class="sxs-lookup"><span data-stu-id="7eeb5-107">Attribute</span></span>
+## <a name="attribute"></a><span data-ttu-id="f9e48-106">属性</span><span class="sxs-lookup"><span data-stu-id="f9e48-106">Attribute</span></span>
 
-|           | <span data-ttu-id="7eeb5-108">[説明]</span><span class="sxs-lookup"><span data-stu-id="7eeb5-108">Description</span></span> |
+|           | <span data-ttu-id="f9e48-107">説明</span><span class="sxs-lookup"><span data-stu-id="f9e48-107">Description</span></span> |
 | --------- | ----------- |
-| <span data-ttu-id="7eeb5-109">**拡張子**</span><span class="sxs-lookup"><span data-stu-id="7eeb5-109">**file**</span></span>  | <span data-ttu-id="7eeb5-110">省略可能な属性です。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-110">Optional attribute.</span></span><br><br><span data-ttu-id="7eeb5-111">カスタムアプリケーション構成設定を含む外部ファイルへの相対パスを指定します。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-111">Specifies a relative path to an external file containing custom application configuration settings.</span></span> <span data-ttu-id="7eeb5-112">指定したファイルには、、、およびの各要素で指定したものと同じ種類の設定が含まれて **\<add>** **\<remove>** おり、これらの **\<clear>** 要素と同じキー/値ペアの形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-112">The specified file contains the same kind of settings that are specified in the **\<add>**, **\<remove>**, and **\<clear>** elements and uses the same key/value pair format as those elements.</span></span><br><br><span data-ttu-id="7eeb5-113">指定されたパスは、メイン構成ファイルに対する相対パスです。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-113">The path specified is relative to the main configuration file.</span></span> <span data-ttu-id="7eeb5-114">Windows フォームアプリケーションの場合、これはアプリケーション構成ファイルの場所ではなく、バイナリフォルダー ( */bin/debug*など) です。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-114">For a Windows Forms application, this is the binary folder (such as */bin/debug*), not the location of the application configuration file.</span></span> <span data-ttu-id="7eeb5-115">Web フォームアプリケーションの場合、パスは、web.config ファイルが配置さ*れている*アプリケーションルートに対する相対パスです。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-115">For Web Forms applications, the path is relative to the application root, where the *web.config* file is located.</span></span><br><br><span data-ttu-id="7eeb5-116">指定されたファイルが見つからない場合、ランタイムは属性を無視します。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-116">The runtime ignores the attribute if the specified file can't be found.</span></span> |
+| <span data-ttu-id="f9e48-108">**file**</span><span class="sxs-lookup"><span data-stu-id="f9e48-108">**file**</span></span>  | <span data-ttu-id="f9e48-109">省略可能な属性です。</span><span class="sxs-lookup"><span data-stu-id="f9e48-109">Optional attribute.</span></span><br><br><span data-ttu-id="f9e48-110">カスタムアプリケーション構成設定を含む外部ファイルへの相対パスを指定します。</span><span class="sxs-lookup"><span data-stu-id="f9e48-110">Specifies a relative path to an external file containing custom application configuration settings.</span></span> <span data-ttu-id="f9e48-111">指定したファイルには、、、およびの各要素で指定したものと同じ種類の設定が含まれて **\<add>** **\<remove>** おり、これらの **\<clear>** 要素と同じキー/値ペアの形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="f9e48-111">The specified file contains the same kind of settings that are specified in the **\<add>**, **\<remove>**, and **\<clear>** elements and uses the same key/value pair format as those elements.</span></span><br><br><span data-ttu-id="f9e48-112">指定されたパスは、メイン構成ファイルに対する相対パスです。</span><span class="sxs-lookup"><span data-stu-id="f9e48-112">The path specified is relative to the main configuration file.</span></span> <span data-ttu-id="f9e48-113">Windows フォームアプリケーションの場合、これはアプリケーション構成ファイルの場所ではなく、バイナリフォルダー ( */bin/debug* など) です。</span><span class="sxs-lookup"><span data-stu-id="f9e48-113">For a Windows Forms application, this is the binary folder (such as */bin/debug*), not the location of the application configuration file.</span></span> <span data-ttu-id="f9e48-114">Web フォームアプリケーションの場合、パスはアプリケーションルートに対して相対的で、 *web.config* ファイルが配置されます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-114">For Web Forms applications, the path is relative to the application root, where the *web.config* file is located.</span></span><br><br><span data-ttu-id="f9e48-115">指定されたファイルが見つからない場合、ランタイムは属性を無視します。</span><span class="sxs-lookup"><span data-stu-id="f9e48-115">The runtime ignores the attribute if the specified file can't be found.</span></span> |
 
-## <a name="parent-element"></a><span data-ttu-id="7eeb5-117">親要素</span><span class="sxs-lookup"><span data-stu-id="7eeb5-117">Parent element</span></span>
+## <a name="parent-element"></a><span data-ttu-id="f9e48-116">親要素</span><span class="sxs-lookup"><span data-stu-id="f9e48-116">Parent element</span></span>
 
-|     | <span data-ttu-id="7eeb5-118">説明</span><span class="sxs-lookup"><span data-stu-id="7eeb5-118">Description</span></span> |
+|     | <span data-ttu-id="f9e48-117">説明</span><span class="sxs-lookup"><span data-stu-id="f9e48-117">Description</span></span> |
 | --- | ----------- |
-| [<span data-ttu-id="7eeb5-119">**\<configuration>** Element</span><span class="sxs-lookup"><span data-stu-id="7eeb5-119">**\<configuration>** Element</span></span>](../configuration-element.md) | <span data-ttu-id="7eeb5-120">共通言語ランタイムおよび .NET Framework アプリケーションで使用されるすべての構成ファイルのルート要素です。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-120">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span> |
+| [<span data-ttu-id="f9e48-118">**\<configuration>** 要素</span><span class="sxs-lookup"><span data-stu-id="f9e48-118">**\<configuration>** Element</span></span>](../configuration-element.md) | <span data-ttu-id="f9e48-119">共通言語ランタイムおよび .NET Framework アプリケーションで使用されるすべての構成ファイルのルート要素です。</span><span class="sxs-lookup"><span data-stu-id="f9e48-119">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span> |
 
-## <a name="child-elements"></a><span data-ttu-id="7eeb5-121">子要素</span><span class="sxs-lookup"><span data-stu-id="7eeb5-121">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="f9e48-120">子要素</span><span class="sxs-lookup"><span data-stu-id="f9e48-120">Child elements</span></span>
 
-|     | <span data-ttu-id="7eeb5-122">Description</span><span class="sxs-lookup"><span data-stu-id="7eeb5-122">Description</span></span> |
+|     | <span data-ttu-id="f9e48-121">説明</span><span class="sxs-lookup"><span data-stu-id="f9e48-121">Description</span></span> |
 | --- | ----------- |
-| [**\<add>**](add-element-for-appsettings.md) | <span data-ttu-id="7eeb5-123">カスタムアプリケーション設定を追加します。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-123">Adds a custom application setting.</span></span> |
-| [**\<clear>**](clear-element-for-appsettings.md) | <span data-ttu-id="7eeb5-124">以前に定義したアプリケーション設定をすべてクリアします。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-124">Clears all previously defined application settings.</span></span> |
-| [**\<remove>**](remove-element-for-appsettings.md) | <span data-ttu-id="7eeb5-125">以前に定義したアプリケーション設定を削除します。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-125">Removes a previously defined application setting.</span></span> |
+| [**\<add>**](add-element-for-appsettings.md) | <span data-ttu-id="f9e48-122">カスタムアプリケーション設定を追加します。</span><span class="sxs-lookup"><span data-stu-id="f9e48-122">Adds a custom application setting.</span></span> |
+| [**\<clear>**](clear-element-for-appsettings.md) | <span data-ttu-id="f9e48-123">以前に定義したアプリケーション設定をすべてクリアします。</span><span class="sxs-lookup"><span data-stu-id="f9e48-123">Clears all previously defined application settings.</span></span> |
+| [**\<remove>**](remove-element-for-appsettings.md) | <span data-ttu-id="f9e48-124">以前に定義したアプリケーション設定を削除します。</span><span class="sxs-lookup"><span data-stu-id="f9e48-124">Removes a previously defined application setting.</span></span> |
 
-## <a name="remarks"></a><span data-ttu-id="7eeb5-126">解説</span><span class="sxs-lookup"><span data-stu-id="7eeb5-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f9e48-125">注釈</span><span class="sxs-lookup"><span data-stu-id="f9e48-125">Remarks</span></span>
 
-<span data-ttu-id="7eeb5-127">要素には、 **\<appSettings>** データベース接続文字列、ファイルパス、XML Web サービス url などのカスタムアプリケーション構成情報、またはアプリケーションのその他のカスタム構成情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-127">The **\<appSettings>** element stores custom application configuration information, such as database connection strings, file paths, XML Web service URLs, or any other custom configuration information for an application.</span></span> <span data-ttu-id="7eeb5-128">要素で指定されたキーと値のペア **\<appSettings>** は、クラスを使用してコードでアクセスされ <xref:System.Configuration.ConfigurationSettings> ます。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-128">The key/value pairs specified in the **\<appSettings>** element are accessed in code using the <xref:System.Configuration.ConfigurationSettings> class.</span></span>
+<span data-ttu-id="f9e48-126">要素には、 **\<appSettings>** データベース接続文字列、ファイルパス、XML Web サービス url などのカスタムアプリケーション構成情報、またはアプリケーションのその他のカスタム構成情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-126">The **\<appSettings>** element stores custom application configuration information, such as database connection strings, file paths, XML Web service URLs, or any other custom configuration information for an application.</span></span> <span data-ttu-id="f9e48-127">要素で指定されたキーと値のペア **\<appSettings>** は、クラスを使用してコードでアクセスされ <xref:System.Configuration.ConfigurationSettings> ます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-127">The key/value pairs specified in the **\<appSettings>** element are accessed in code using the <xref:System.Configuration.ConfigurationSettings> class.</span></span>
 
-<span data-ttu-id="7eeb5-129">Web.config**ファイル** **\<appSettings>** とアプリケーション構成ファイルの要素で file 属性*Web.config*を使用できます。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-129">You can use the **file** attribute in the **\<appSettings>** element of the *Web.config* and application configuration files.</span></span> <span data-ttu-id="7eeb5-130">この属性は、追加設定を提供するか、要素で指定された設定をオーバーライドする構成ファイルを指定し **\<appSettings>** ます。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-130">This attribute specifies a configuration file that provides additional settings or overrides the settings specified in the **\<appSettings>** element.</span></span> <span data-ttu-id="7eeb5-131">**ファイル**属性は、アプリケーション構成ファイルで指定されたプロジェクト設定をユーザーがオーバーライドする必要がある場合など、ソース管理チームの開発シナリオで使用できます。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-131">The **file** attribute can be used in source control team development scenarios, such as when a user wants to override the project settings specified in an application configuration file.</span></span>
+<span data-ttu-id="f9e48-128">**ファイル** 属性は、 **\<appSettings>** *Web.config* とアプリケーション構成ファイルの要素で使用できます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-128">You can use the **file** attribute in the **\<appSettings>** element of the *Web.config* and application configuration files.</span></span> <span data-ttu-id="f9e48-129">この属性は、追加設定を提供するか、要素で指定された設定をオーバーライドする構成ファイルを指定し **\<appSettings>** ます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-129">This attribute specifies a configuration file that provides additional settings or overrides the settings specified in the **\<appSettings>** element.</span></span> <span data-ttu-id="f9e48-130">**ファイル** 属性は、アプリケーション構成ファイルで指定されたプロジェクト設定をユーザーがオーバーライドする必要がある場合など、ソース管理チームの開発シナリオで使用できます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-130">The **file** attribute can be used in source control team development scenarios, such as when a user wants to override the project settings specified in an application configuration file.</span></span>
 
-<span data-ttu-id="7eeb5-132">**File**属性で指定される構成ファイルは、ではなく、のルートノードである必要があり **\<appSettings>** **\<configuration>** ます。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-132">Configuration files specified by the **file** attribute must have a root node of **\<appSettings>** rather than **\<configuration>**.</span></span>
+<span data-ttu-id="f9e48-131">**File** 属性で指定される構成ファイルは、ではなく、のルートノードである必要があり **\<appSettings>** **\<configuration>** ます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-131">Configuration files specified by the **file** attribute must have a root node of **\<appSettings>** rather than **\<configuration>**.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7eeb5-133">例</span><span class="sxs-lookup"><span data-stu-id="7eeb5-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f9e48-132">例</span><span class="sxs-lookup"><span data-stu-id="f9e48-132">Example</span></span>
 
-<span data-ttu-id="7eeb5-134">次の例は、カスタム アプリケーション設定を定義する外部アプリケーション設定ファイル (*custom.config*) を示しています。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-134">The following example shows an external application settings file (*custom.config*) that defines a custom application setting:</span></span>
+<span data-ttu-id="f9e48-133">次の例は、カスタム アプリケーション設定を定義する外部アプリケーション設定ファイル (*custom.config*) を示しています。</span><span class="sxs-lookup"><span data-stu-id="f9e48-133">The following example shows an external application settings file (*custom.config*) that defines a custom application setting:</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -67,7 +68,7 @@ ms.locfileid: "79155532"
 </appSettings>
 ```
 
-<span data-ttu-id="7eeb5-135">次の例は、外部設定ファイルで設定を使用して、独自のアプリケーション設定を設定するアプリケーション構成ファイルを示しています。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-135">The following example shows an application configuration file that consumes the setting in the external settings file and sets an application setting of its own:</span></span>
+<span data-ttu-id="f9e48-134">次の例は、外部設定ファイルで設定を使用して、独自のアプリケーション設定を設定するアプリケーション構成ファイルを示しています。</span><span class="sxs-lookup"><span data-stu-id="f9e48-134">The following example shows an application configuration file that consumes the setting in the external settings file and sets an application setting of its own:</span></span>
 
 ```xml
 <configuration>
@@ -77,10 +78,10 @@ ms.locfileid: "79155532"
 </configuration>
 ```
 
-## <a name="configuration-file"></a><span data-ttu-id="7eeb5-136">構成ファイル</span><span class="sxs-lookup"><span data-stu-id="7eeb5-136">Configuration file</span></span>
+## <a name="configuration-file"></a><span data-ttu-id="f9e48-135">構成ファイル</span><span class="sxs-lookup"><span data-stu-id="f9e48-135">Configuration file</span></span>
 
-<span data-ttu-id="7eeb5-137">この要素は、アプリケーション構成ファイル *、コンピューター構成*ファイル (machine.config)、およびアプリケーションディレクトリレベルでは*ない web.config ファイル*で使用できます。</span><span class="sxs-lookup"><span data-stu-id="7eeb5-137">This element can be used in the application configuration file, machine configuration file (*Machine.config*), and *Web.config* files that are not at the application directory level.</span></span>
+<span data-ttu-id="f9e48-136">この要素は、アプリケーション構成ファイル、マシン構成ファイル (*Machine.config*)、およびアプリケーションディレクトリレベルではないファイル *Web.config* で使用できます。</span><span class="sxs-lookup"><span data-stu-id="f9e48-136">This element can be used in the application configuration file, machine configuration file (*Machine.config*), and *Web.config* files that are not at the application directory level.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="7eeb5-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="7eeb5-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f9e48-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="f9e48-137">See also</span></span>
 
-- [<span data-ttu-id="7eeb5-139">.NET Framework の構成ファイルスキーマ</span><span class="sxs-lookup"><span data-stu-id="7eeb5-139">Configuration file schema for the .NET Framework</span></span>](../index.md)
+- [<span data-ttu-id="f9e48-138">.NET Framework の構成ファイルスキーマ</span><span class="sxs-lookup"><span data-stu-id="f9e48-138">Configuration file schema for the .NET Framework</span></span>](../index.md)
