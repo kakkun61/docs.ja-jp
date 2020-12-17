@@ -6,12 +6,12 @@ metadata:
   description: C# プログラミングを学ぶ - ビギナー開発者、C# を初めて使用する開発者、および C# / .NET の上級開発者向け
   ms.topic: landing-page
   ms.date: 11/19/2019
-  ms.openlocfilehash: bc75503b565020fb9966fd756d87890263f63533
-  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+  ms.openlocfilehash: 584db55455af54bcf7e91771e3598a7349091bee
+  ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "96599448"
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "97512152"
 landingContent:
 - title: C# によるプログラミングの学習
   linkLists:
@@ -71,38 +71,20 @@ landingContent:
     links:
     - text: C# 9.0 の新機能
       url: whats-new/csharp-9.md
-- title: C# 8.0 の新機能
+- title: C# 9.0 の新機能
   linkLists:
   - linkListType: whats-new
     links:
-    - text: C# 8.0 の新機能
-      url: whats-new/csharp-8.md
-  - linkListType: overview
-    links:
-    - text: パターン マッチング
-      url: pattern-matching.md
-    - text: null 許容参照型
-      url: nullable-references.md
-  - linkListType: concept
-    links:
-    - text: null 許容移行の方法を選択する
-      url: nullable-migration-strategies.md
+    - text: C# 9.0 の新機能
+      url: whats-new/csharp-9.md
   - linkListType: tutorial
     links:
-    - text: 非同期ストリームの使用と生成
-      url: tutorials/generate-consume-asynchronous-stream.md
-    - text: null 許容参照型を使用して開発する
-      url: tutorials/nullable-reference-types.md
-    - text: null 許容参照型を使用するように既存のコードをアップグレードする
-      url: tutorials/upgrade-to-nullable-references.md
-    - text: アルゴリズムの表現力を高めるためにパターン マッチングを使用する
-      url: tutorials/pattern-matching.md
-    - text: 既定のインターフェイス メンバーでインターフェイスを安全にバージョン管理する
-      url: tutorials/default-interface-methods-versions.md
-    - text: 既定のインターフェイス メンバーを使用した機能の混合
-      url: tutorials/mixins-with-default-interface-methods.md
-    - text: 範囲とインデックスを使用したサブセットの操作
-      url: tutorials/ranges-indexes.md
+    - text: レコード型を調べる
+      url: tutorials/exploration/records.md
+    - text: 最上位レベルのステートメントを調べる
+      url: tutorials/exploration/top-level-statements.md
+    - text: 新しいパターンを調べる
+      url: tutorials/exploration/patterns-objects.md
   - linkListType: reference
     links:
     - text: C# コンパイラでの破壊的変更

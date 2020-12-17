@@ -34,6 +34,8 @@
                   href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
                 - name: Microsoft というプレフィックスが付いた Azure 統合パッケージが削除された
                   href: aspnet-core/5.0/azure-integration-packages-removed.md
+                - name: 'Blazor: Blazor アプリにおけるルート優先順位のロジックの変更'
+                  href: aspnet-core/5.0/blazor-routing-logic-changed.md
                 - name: 'Blazor: ブラウザー サポートの更新'
                   href: aspnet-core/5.0/blazor-browser-support-updated.md
                 - name: 'Blazor: 意味のない空白文字がコンパイラによって切り捨てられる'
@@ -292,6 +294,8 @@
                   href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
                 - name: Microsoft というプレフィックスが付いた Azure 統合パッケージが削除された
                   href: aspnet-core/5.0/azure-integration-packages-removed.md
+                - name: 'Blazor: Blazor アプリにおけるルート優先順位のロジックの変更'
+                  href: aspnet-core/5.0/blazor-routing-logic-changed.md
                 - name: 'Blazor: ブラウザー サポートの更新'
                   href: aspnet-core/5.0/blazor-browser-support-updated.md
                 - name: 'Blazor: 意味のない空白文字がコンパイラによって切り捨てられる'
