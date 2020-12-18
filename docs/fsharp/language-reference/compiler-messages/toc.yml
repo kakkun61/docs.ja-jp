@@ -15,3 +15,5 @@
       href: ./fs0009.md
     - name: FS0025 - 不完全なパターン マッチング
       href: ./fs0025.md
+    - name: FS0052 - 防御用のコピー
+      href: ./fs0052.md
