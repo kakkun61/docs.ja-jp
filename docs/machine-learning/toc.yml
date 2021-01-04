@@ -45,6 +45,8 @@
           href: tutorials/image-classification.md
         - name: 自転車レンタル需要の予測 (時系列)
           href: tutorials/time-series-demand-forecasting.md
+        - name: 呼び出しボリュームのスパイク (異常検出)
+          href: tutorials/phone-calls-anomaly-detection.md
         - name: 製品売上分析 (異常検出)
           href: tutorials/sales-anomaly-detection.md
         - name: 画像内のオブジェクトを検出 (オブジェクト検出)
