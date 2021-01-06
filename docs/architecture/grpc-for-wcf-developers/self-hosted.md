@@ -1,23 +1,23 @@
 ---
-title: 自己ホスト型 gRPC アプリケーション - WCF 開発者向け gRPC
-description: コア gRPC アプリケーションASP.NET自己ホスト型サービスとして展開します。
-ms.date: 09/02/2019
-ms.openlocfilehash: 69f70e4077247fd07eba7abeee82f257dd1f4f90
-ms.sourcegitcommit: 267d092663aba36b6b2ea853034470aea493bfae
+title: 自己ホスト型 gRPC アプリケーション-WCF 開発者向け gRPC
+description: ASP.NET Core gRPC アプリケーションを自己ホスト型サービスとして展開する。
+ms.date: 12/15/2020
+ms.openlocfilehash: a5e2316b8d76593f4eb53760d2609b5bbbc9d2c5
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80110907"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938534"
 ---
-# <a name="self-hosted-grpc-applications"></a><span data-ttu-id="a8464-103">自己ホスト型 gRPC アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a8464-103">Self-hosted gRPC applications</span></span>
+# <a name="self-hosted-grpc-applications"></a><span data-ttu-id="b42cc-103">自己ホスト型 gRPC アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b42cc-103">Self-hosted gRPC applications</span></span>
 
-<span data-ttu-id="a8464-104">ASP.NET Core 3.0 アプリケーションは Windows Server 上の IIS でホストできますが、HTTP/2 の機能の一部がサポートされていないため、現在 IIS で gRPC アプリケーションをホストすることはできません。</span><span class="sxs-lookup"><span data-stu-id="a8464-104">Although ASP.NET Core 3.0 applications can be hosted in IIS on Windows Server, currently it isn't possible to host a gRPC application in IIS because some of the HTTP/2 functionality isn't supported.</span></span> <span data-ttu-id="a8464-105">この機能は、Windows サーバーの将来の更新の目標です。</span><span class="sxs-lookup"><span data-stu-id="a8464-105">This functionality is a goal for a future update to Windows Server.</span></span>
+<span data-ttu-id="b42cc-104">ASP.NET Core 5.0 アプリケーションは Windows Server の IIS でホストできますが、HTTP/2 機能の一部がサポートされていないため、現在、IIS で gRPC アプリケーションをホストすることはできません。</span><span class="sxs-lookup"><span data-stu-id="b42cc-104">Although ASP.NET Core 5.0 applications can be hosted in IIS on Windows Server, currently it isn't possible to host a gRPC application in IIS because some of the HTTP/2 functionality isn't supported.</span></span> <span data-ttu-id="b42cc-105">この機能は、Windows Server の今後の更新プログラムの目的です。</span><span class="sxs-lookup"><span data-stu-id="b42cc-105">This functionality is a goal for a future update to Windows Server.</span></span>
 
-<span data-ttu-id="a8464-106">アプリケーションは、Windows サービスとして実行できます。</span><span class="sxs-lookup"><span data-stu-id="a8464-106">You can run your application as a Windows service.</span></span> <span data-ttu-id="a8464-107">または、.NET Core 3.0 ホスティング拡張機能の新機能により[、 systemd](https://en.wikipedia.org/wiki/Systemd)によって制御される Linux サービスとして実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="a8464-107">Or you can run it as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), because of new features in the .NET Core 3.0 hosting extensions.</span></span>
+<span data-ttu-id="b42cc-106">アプリケーションを Windows サービスとして実行できます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-106">You can run your application as a Windows service.</span></span> <span data-ttu-id="b42cc-107">または、.NET 5.0 ホスト拡張機能の新機能により、 [systemd](https://en.wikipedia.org/wiki/Systemd)によって制御される Linux サービスとして実行できます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-107">Or you can run it as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), because of new features in the .NET 5.0 hosting extensions.</span></span>
 
-## <a name="run-your-app-as-a-windows-service"></a><span data-ttu-id="a8464-108">アプリを Windows サービスとして実行する</span><span class="sxs-lookup"><span data-stu-id="a8464-108">Run your app as a Windows service</span></span>
+## <a name="run-your-app-as-a-windows-service"></a><span data-ttu-id="b42cc-108">Windows サービスとしてのアプリの実行</span><span class="sxs-lookup"><span data-stu-id="b42cc-108">Run your app as a Windows service</span></span>
 
-<span data-ttu-id="a8464-109">Windows サービスとして実行するようにASP.NETコア アプリケーションを構成するには、NuGet から[Microsoft.Extensions.Hosting.WindowsServices](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices)パッケージをインストールします。</span><span class="sxs-lookup"><span data-stu-id="a8464-109">To configure your ASP.NET Core application to run as a Windows service, install the [Microsoft.Extensions.Hosting.WindowsServices](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices) package from NuGet.</span></span> <span data-ttu-id="a8464-110">次に、 の`UseWindowsService`メソッドへの`CreateHostBuilder`呼び`Program.cs`出しを追加します。</span><span class="sxs-lookup"><span data-stu-id="a8464-110">Then add a call to `UseWindowsService` to the `CreateHostBuilder` method in `Program.cs`.</span></span>
+<span data-ttu-id="b42cc-109">Windows サービスとして実行するように ASP.NET Core アプリケーションを構成する [には、NuGet からパッケージを](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices) インストールします。</span><span class="sxs-lookup"><span data-stu-id="b42cc-109">To configure your ASP.NET Core application to run as a Windows service, install the [Microsoft.Extensions.Hosting.WindowsServices](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices) package from NuGet.</span></span> <span data-ttu-id="b42cc-110">次に、 `UseWindowsService` のメソッドにの呼び出しを追加し `CreateHostBuilder` `Program.cs` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-110">Then add a call to `UseWindowsService` to the `CreateHostBuilder` method in `Program.cs`.</span></span>
 
 ```csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -30,44 +30,44 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 ```
 
 > [!NOTE]
-> <span data-ttu-id="a8464-111">アプリケーションが Windows サービスとして実行されていない場合、`UseWindowsService`メソッドは何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="a8464-111">If the application isn't running as a Windows service, the `UseWindowsService` method doesn't do anything.</span></span>
+> <span data-ttu-id="b42cc-111">アプリケーションが Windows サービスとして実行されていない場合、 `UseWindowsService` メソッドは何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="b42cc-111">If the application isn't running as a Windows service, the `UseWindowsService` method doesn't do anything.</span></span>
 
-<span data-ttu-id="a8464-112">次のいずれかの方法を使用してアプリケーションを公開します。</span><span class="sxs-lookup"><span data-stu-id="a8464-112">Now publish your application by using one of these methods:</span></span>
+<span data-ttu-id="b42cc-112">ここで、次のいずれかの方法を使用してアプリケーションを発行します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-112">Now publish your application by using one of these methods:</span></span>
 
-* <span data-ttu-id="a8464-113">プロジェクトを右クリックし、ショートカット メニューの **[発行**] を選択して、Visual Studio から。</span><span class="sxs-lookup"><span data-stu-id="a8464-113">From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.</span></span>
-* <span data-ttu-id="a8464-114">NET コア CLI から。</span><span class="sxs-lookup"><span data-stu-id="a8464-114">From the .NET Core CLI.</span></span>
+* <span data-ttu-id="b42cc-113">Visual Studio で、プロジェクトを右クリックし、ショートカットメニューの [ **発行** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-113">From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.</span></span>
+* <span data-ttu-id="b42cc-114">.NET CLI から。</span><span class="sxs-lookup"><span data-stu-id="b42cc-114">From the .NET CLI.</span></span>
 
-<span data-ttu-id="a8464-115">NET Core アプリケーションを発行する場合は、*フレームワークに依存*する展開または*自己完結型*の展開を作成できます。</span><span class="sxs-lookup"><span data-stu-id="a8464-115">When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment.</span></span> <span data-ttu-id="a8464-116">フレームワークに依存する展開では、.NET Core 共有ランタイムを実行するホストにインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a8464-116">Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run.</span></span> <span data-ttu-id="a8464-117">自己完結型の展開は、.NET Core ランタイムとフレームワークの完全なコピーと共に公開され、任意のホストで実行できます。</span><span class="sxs-lookup"><span data-stu-id="a8464-117">Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host.</span></span> <span data-ttu-id="a8464-118">各方法の長所と短所など、詳細については[、.NET Core アプリケーションの展開](../../core/deploying/index.md)に関するドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a8464-118">For more information, including the advantages and disadvantages of each approach, see the [.NET Core application deployment](../../core/deploying/index.md) documentation.</span></span>
+<span data-ttu-id="b42cc-115">.NET アプリケーションを発行するときに、 *フレームワークに依存* する展開と *自己完結* 型の展開のどちらを作成するかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-115">When you publish a .NET application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment.</span></span> <span data-ttu-id="b42cc-116">フレームワークに依存する展開では、.NET 共有ランタイムが実行されているホストにインストールされている必要があります。</span><span class="sxs-lookup"><span data-stu-id="b42cc-116">Framework-dependent deployments require the .NET Shared Runtime to be installed on the host where they are run.</span></span> <span data-ttu-id="b42cc-117">自己完結型の展開は、.NET ランタイムとフレームワークの完全なコピーを使用して発行され、任意のホストで実行できます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-117">Self-contained deployments are published with a complete copy of the .NET runtime and framework and can be run on any host.</span></span> <span data-ttu-id="b42cc-118">各方法の長所と短所を含む詳細については、 [.net アプリケーションのデプロイ](../../core/deploying/index.md) に関するドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b42cc-118">For more information, including the advantages and disadvantages of each approach, see the [.NET application deployment](../../core/deploying/index.md) documentation.</span></span>
 
-<span data-ttu-id="a8464-119">NET Core 3.0 ランタイムをホストにインストールする必要のない、アプリケーションの自己完結型ビルドを発行するには、アプリケーションに含めるランタイムを指定します。</span><span class="sxs-lookup"><span data-stu-id="a8464-119">To publish a self-contained build of the application that does not require the .NET Core 3.0 runtime to be installed on the host, specify the runtime to be included with the application.</span></span> <span data-ttu-id="a8464-120">(または`-r``--runtime`) フラグを使用します。</span><span class="sxs-lookup"><span data-stu-id="a8464-120">Use the `-r` (or `--runtime`) flag.</span></span>
+<span data-ttu-id="b42cc-119">.NET 5.0 ランタイムをホストにインストールする必要がないアプリケーションの自己完結型のビルドを発行するには、アプリケーションに含めるランタイムを指定します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-119">To publish a self-contained build of the application that does not require the .NET 5.0 runtime to be installed on the host, specify the runtime to be included with the application.</span></span> <span data-ttu-id="b42cc-120">`-r`(または) フラグを使用し `--runtime` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-120">Use the `-r` (or `--runtime`) flag.</span></span>
 
 ```dotnetcli
 dotnet publish -c Release -r win-x64 -o ./publish
 ```
 
-<span data-ttu-id="a8464-121">フレームワークに依存するビルドを発行するには、フラグ`-r`を省略します。</span><span class="sxs-lookup"><span data-stu-id="a8464-121">To publish a framework-dependent build, omit the `-r` flag.</span></span>
+<span data-ttu-id="b42cc-121">フレームワークに依存するビルドを発行するには、フラグを省略し `-r` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-121">To publish a framework-dependent build, omit the `-r` flag.</span></span>
 
 ```dotnetcli
 dotnet publish -c Release -o ./publish
 ```
 
-<span data-ttu-id="a8464-122">ディレクトリの完全な内容を`publish`インストール フォルダにコピーします。</span><span class="sxs-lookup"><span data-stu-id="a8464-122">Copy the complete contents of the `publish` directory to an installation folder.</span></span> <span data-ttu-id="a8464-123">次に[、sc ツール](/windows/desktop/services/controlling-a-service-using-sc)を使用して、実行可能ファイル用の Windows サービスを作成します。</span><span class="sxs-lookup"><span data-stu-id="a8464-123">Then, use the [sc tool](/windows/desktop/services/controlling-a-service-using-sc) to create a Windows service for the executable file.</span></span>
+<span data-ttu-id="b42cc-122">ディレクトリの完全な内容 `publish` をインストールフォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="b42cc-122">Copy the complete contents of the `publish` directory to an installation folder.</span></span> <span data-ttu-id="b42cc-123">次に、 [sc ツール](/windows/desktop/services/controlling-a-service-using-sc) を使用して、実行可能ファイルの Windows サービスを作成します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-123">Then, use the [sc tool](/windows/desktop/services/controlling-a-service-using-sc) to create a Windows service for the executable file.</span></span>
 
 ```console
 sc create MyService binPath=C:\MyService\MyService.exe
 ```
 
-### <a name="log-to-the-windows-event-log"></a><span data-ttu-id="a8464-124">Windows イベント ログにログを記録する</span><span class="sxs-lookup"><span data-stu-id="a8464-124">Log to the Windows event log</span></span>
+### <a name="log-to-the-windows-event-log"></a><span data-ttu-id="b42cc-124">Windows イベントログにログを記録する</span><span class="sxs-lookup"><span data-stu-id="b42cc-124">Log to the Windows event log</span></span>
 
-<span data-ttu-id="a8464-125">この`UseWindowsService`メソッドは、ログ メッセージを Windows イベント ログに書き込む[ログ](/aspnet/core/fundamentals/logging/)プロバイダを自動的に追加します。</span><span class="sxs-lookup"><span data-stu-id="a8464-125">The `UseWindowsService` method automatically adds a [logging](/aspnet/core/fundamentals/logging/) provider that writes log messages to the Windows event log.</span></span> <span data-ttu-id="a8464-126">このプロバイダのログ記録は、エントリを`EventLog`セクションまたは別の`Logging``appsettings.json`構成ソースに追加することで構成できます。</span><span class="sxs-lookup"><span data-stu-id="a8464-126">You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or another configuration source.</span></span>
+<span data-ttu-id="b42cc-125">メソッドは、 `UseWindowsService` ログメッセージを Windows イベントログに書き込むログ [記録](/aspnet/core/fundamentals/logging/) プロバイダーを自動的に追加します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-125">The `UseWindowsService` method automatically adds a [logging](/aspnet/core/fundamentals/logging/) provider that writes log messages to the Windows event log.</span></span> <span data-ttu-id="b42cc-126">このプロバイダーのログ記録を構成するに `EventLog` `Logging` は、のセクション `appsettings.json` または別の構成ソースにエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-126">You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or another configuration source.</span></span>
 
-<span data-ttu-id="a8464-127">これらの設定でプロパティを設定することで、イベント ログで使用される`SourceName`ソース名を上書きできます。</span><span class="sxs-lookup"><span data-stu-id="a8464-127">You can override the source name used in the event log by setting a `SourceName` property in these settings.</span></span> <span data-ttu-id="a8464-128">名前を指定しない場合は、既定のアプリケーション名 (通常は実行可能アセンブリ名) が使用されます。</span><span class="sxs-lookup"><span data-stu-id="a8464-128">If you don't specify a name, the default application name (normally the executable assembly name) will be used.</span></span>
+<span data-ttu-id="b42cc-127">イベントログで使用されるソース名を上書きするには、 `SourceName` これらの設定でプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-127">You can override the source name used in the event log by setting a `SourceName` property in these settings.</span></span> <span data-ttu-id="b42cc-128">名前を指定しない場合は、既定のアプリケーション名 (通常は実行可能アセンブリ名) が使用されます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-128">If you don't specify a name, the default application name (normally the executable assembly name) will be used.</span></span>
 
-<span data-ttu-id="a8464-129">ログの詳細については、この章の最後に説明します。</span><span class="sxs-lookup"><span data-stu-id="a8464-129">More information on logging is at the end of this chapter.</span></span>
+<span data-ttu-id="b42cc-129">ログ記録の詳細については、この章の最後を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b42cc-129">More information on logging is at the end of this chapter.</span></span>
 
-## <a name="run-your-app-as-a-linux-service-with-systemd"></a><span data-ttu-id="a8464-130">システムを使用して Linux サービスとしてアプリを実行する</span><span class="sxs-lookup"><span data-stu-id="a8464-130">Run your app as a Linux service with systemd</span></span>
+## <a name="run-your-app-as-a-linux-service-with-systemd"></a><span data-ttu-id="b42cc-130">Systemd を使用してアプリを Linux サービスとして実行する</span><span class="sxs-lookup"><span data-stu-id="b42cc-130">Run your app as a Linux service with systemd</span></span>
 
-<span data-ttu-id="a8464-131">ASP.NETコア アプリケーションを Linux サービス (または Linux パーランスの*デーモン*) として実行するように構成するには、NuGet から[Microsoft.Extensions.Hosting.Systemd](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.Systemd)パッケージをインストールします。</span><span class="sxs-lookup"><span data-stu-id="a8464-131">To configure your ASP.NET Core application to run as a Linux service (or *daemon* in Linux parlance), install the [Microsoft.Extensions.Hosting.Systemd](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.Systemd) package from NuGet.</span></span> <span data-ttu-id="a8464-132">次に、 の`UseSystemd`メソッドへの`CreateHostBuilder`呼び`Program.cs`出しを追加します。</span><span class="sxs-lookup"><span data-stu-id="a8464-132">Then add a call to `UseSystemd` to the `CreateHostBuilder` method in `Program.cs`.</span></span>
+<span data-ttu-id="b42cc-131">Linux サービス (Linux 用語の *デーモン* ) として実行するように ASP.NET Core アプリケーションを構成するには、NuGet から [Microsoft.Extensions.Hosting.Systemd](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.Systemd) パッケージをインストールします。</span><span class="sxs-lookup"><span data-stu-id="b42cc-131">To configure your ASP.NET Core application to run as a Linux service (or *daemon* in Linux parlance), install the [Microsoft.Extensions.Hosting.Systemd](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.Systemd) package from NuGet.</span></span> <span data-ttu-id="b42cc-132">次に、 `UseSystemd` のメソッドにの呼び出しを追加し `CreateHostBuilder` `Program.cs` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-132">Then add a call to `UseSystemd` to the `CreateHostBuilder` method in `Program.cs`.</span></span>
 
 ```csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -80,20 +80,20 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 ```
 
 > [!NOTE]
-> <span data-ttu-id="a8464-133">アプリケーションが Linux サービスとして実行されていない場合、メソッド`UseSystemd`は何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="a8464-133">If the application isn't running as a Linux service, the `UseSystemd` method doesn't do anything.</span></span>
+> <span data-ttu-id="b42cc-133">アプリケーションが Linux サービスとして実行されていない場合、 `UseSystemd` メソッドは何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="b42cc-133">If the application isn't running as a Linux service, the `UseSystemd` method doesn't do anything.</span></span>
 
-<span data-ttu-id="a8464-134">次に、アプリケーションを公開します。</span><span class="sxs-lookup"><span data-stu-id="a8464-134">Now publish your application.</span></span> <span data-ttu-id="a8464-135">アプリケーションは、関連する Linux ランタイム (たとえば) に応じてフレームワークに依存`linux-x64`するか、自己完結型にすることができます。</span><span class="sxs-lookup"><span data-stu-id="a8464-135">The application can be either framework dependent or self-contained for the relevant Linux runtime (for example, `linux-x64`).</span></span> <span data-ttu-id="a8464-136">次のいずれかの方法を使用して発行できます。</span><span class="sxs-lookup"><span data-stu-id="a8464-136">You can publish by using one of these methods:</span></span>
+<span data-ttu-id="b42cc-134">次に、アプリケーションを発行します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-134">Now publish your application.</span></span> <span data-ttu-id="b42cc-135">アプリケーションは、フレームワークに依存するか、関連する Linux ランタイムに自己完結します (たとえば、 `linux-x64` )。</span><span class="sxs-lookup"><span data-stu-id="b42cc-135">The application can be either framework dependent or self-contained for the relevant Linux runtime (for example, `linux-x64`).</span></span> <span data-ttu-id="b42cc-136">次のいずれかの方法を使用して発行できます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-136">You can publish by using one of these methods:</span></span>
 
-* <span data-ttu-id="a8464-137">プロジェクトを右クリックし、ショートカット メニューの **[発行**] を選択して、Visual Studio から。</span><span class="sxs-lookup"><span data-stu-id="a8464-137">From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.</span></span>
-* <span data-ttu-id="a8464-138">NET コア CLI から、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="a8464-138">From the .NET Core CLI, by using the following command:</span></span>
+* <span data-ttu-id="b42cc-137">Visual Studio で、プロジェクトを右クリックし、ショートカットメニューの [ **発行** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-137">From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.</span></span>
+* <span data-ttu-id="b42cc-138">.NET CLI から、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-138">From the .NET CLI, by using the following command:</span></span>
 
   ```dotnetcli
   dotnet publish -c Release -r linux-x64 -o ./publish
   ```
   
-<span data-ttu-id="a8464-139">ディレクトリの完全な内容を`publish`Linux ホストのインストールフォルダにコピーします。</span><span class="sxs-lookup"><span data-stu-id="a8464-139">Copy the complete contents of the `publish` directory to an installation folder on the Linux host.</span></span> <span data-ttu-id="a8464-140">サービスを登録するには、`/etc/systemd/system`ユニットファイルと呼ばれる特別な*ファイル*をディレクトリに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a8464-140">Registering the service requires a special file, called a *unit file*, to be added to the `/etc/systemd/system` directory.</span></span> <span data-ttu-id="a8464-141">このフォルダにファイルを作成するには、ルートアクセス権が必要です。</span><span class="sxs-lookup"><span data-stu-id="a8464-141">You'll need root permission to create a file in this folder.</span></span> <span data-ttu-id="a8464-142">使用する識別子と拡張子を持つファイル`systemd`に名前を付`.service`けます。</span><span class="sxs-lookup"><span data-stu-id="a8464-142">Name the file with the identifier that you want `systemd` to use and the `.service` extension.</span></span> <span data-ttu-id="a8464-143">たとえば、 `/etc/systemd/system/myapp.service`を使用します。</span><span class="sxs-lookup"><span data-stu-id="a8464-143">For example, use `/etc/systemd/system/myapp.service`.</span></span>
+<span data-ttu-id="b42cc-139">ディレクトリの完全な内容 `publish` を、Linux ホストのインストールフォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="b42cc-139">Copy the complete contents of the `publish` directory to an installation folder on the Linux host.</span></span> <span data-ttu-id="b42cc-140">サービスを登録するには、 *ユニットファイル* と呼ばれる特殊なファイルをディレクトリに追加する必要があり `/etc/systemd/system` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-140">Registering the service requires a special file, called a *unit file*, to be added to the `/etc/systemd/system` directory.</span></span> <span data-ttu-id="b42cc-141">このフォルダーにファイルを作成するには、ルートアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="b42cc-141">You'll need root permission to create a file in this folder.</span></span> <span data-ttu-id="b42cc-142">使用する識別子と拡張子をファイルに付け `systemd` `.service` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-142">Name the file with the identifier that you want `systemd` to use and the `.service` extension.</span></span> <span data-ttu-id="b42cc-143">たとえば、 `/etc/systemd/system/myapp.service`を使用します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-143">For example, use `/etc/systemd/system/myapp.service`.</span></span>
 
-<span data-ttu-id="a8464-144">サービス ファイルは、次の例に示すように INI 形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="a8464-144">The service file uses INI format, as shown in this example:</span></span>
+<span data-ttu-id="b42cc-144">次の例に示すように、サービスファイルは INI 形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-144">The service file uses INI format, as shown in this example:</span></span>
 
 ```ini
 [Unit]
@@ -107,16 +107,16 @@ ExecStart=/usr/sbin/myapp
 WantedBy=multi-user.target
 ```
 
-<span data-ttu-id="a8464-145">この`Type=notify`プロパティは`systemd`、アプリケーションが起動時とシャットダウン時に通知することを示します。</span><span class="sxs-lookup"><span data-stu-id="a8464-145">The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown.</span></span> <span data-ttu-id="a8464-146">この`WantedBy=multi-user.target`設定では、Linux システムが "runlevel 2" に達するとサービスが開始されます。</span><span class="sxs-lookup"><span data-stu-id="a8464-146">The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2," which means a non-graphical, multi-user shell is active.</span></span>
+<span data-ttu-id="b42cc-145">`Type=notify`プロパティは、 `systemd` アプリケーションが起動時およびシャットダウン時に通知することを示します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-145">The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown.</span></span> <span data-ttu-id="b42cc-146">この設定により、 `WantedBy=multi-user.target` Linux システムが "ランダウン 2" に達したときにサービスが開始されます。これは、グラフィカルでないマルチユーザーシェルがアクティブであることを意味します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-146">The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2," which means a non-graphical, multi-user shell is active.</span></span>
 
-<span data-ttu-id="a8464-147">前`systemd`にサービスを認識し、その構成を再読み込みする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a8464-147">Before `systemd` will recognize the service, it needs to reload its configuration.</span></span> <span data-ttu-id="a8464-148">コマンドを`systemd`使用して制御します。 `systemctl`</span><span class="sxs-lookup"><span data-stu-id="a8464-148">You control `systemd` by using the `systemctl` command.</span></span> <span data-ttu-id="a8464-149">再ロード後、サブコマンド`status`を使用して、アプリケーションが正常に登録されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="a8464-149">After reloading, use the `status` subcommand to confirm that the application has registered successfully.</span></span>
+<span data-ttu-id="b42cc-147">はサービスを認識する前に、 `systemd` 構成を再読み込みする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b42cc-147">Before `systemd` will recognize the service, it needs to reload its configuration.</span></span> <span data-ttu-id="b42cc-148">を制御する `systemd` には、コマンドを使用し `systemctl` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-148">You control `systemd` by using the `systemctl` command.</span></span> <span data-ttu-id="b42cc-149">再読み込みが完了したら、サブコマンドを使用して、 `status` アプリケーションが正常に登録されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-149">After reloading, use the `status` subcommand to confirm that the application has registered successfully.</span></span>
 
 ```console
 sudo systemctl daemon-reload
 sudo systemctl status myapp
 ```
 
-<span data-ttu-id="a8464-150">サービスを正しく構成すると、次の出力が得られます。</span><span class="sxs-lookup"><span data-stu-id="a8464-150">If you've configured the service correctly, you'll get the following output:</span></span>
+<span data-ttu-id="b42cc-150">サービスが正しく構成されている場合は、次の出力が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-150">If you've configured the service correctly, you'll get the following output:</span></span>
 
 ```text
 myapp.service - My gRPC Application
@@ -124,52 +124,52 @@ myapp.service - My gRPC Application
  Active: inactive (dead)
 ```
 
-<span data-ttu-id="a8464-151">このコマンド`start`を使用して、サービスを開始します。</span><span class="sxs-lookup"><span data-stu-id="a8464-151">Use the `start` command to start the service.</span></span>
+<span data-ttu-id="b42cc-151">`start`コマンドを使用してサービスを開始します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-151">Use the `start` command to start the service.</span></span>
 
 ```console
 sudo systemctl start myapp.service
 ```
 
 > [!TIP]
-> <span data-ttu-id="a8464-152">を`.service`使用`systemctl start`している場合、この拡張子はオプションです。</span><span class="sxs-lookup"><span data-stu-id="a8464-152">The `.service` extension is optional when you're using `systemctl start`.</span></span>
+> <span data-ttu-id="b42cc-152">`.service`拡張機能は、を使用している場合は省略可能です `systemctl start` 。</span><span class="sxs-lookup"><span data-stu-id="b42cc-152">The `.service` extension is optional when you're using `systemctl start`.</span></span>
 
-<span data-ttu-id="a8464-153">システムの`systemd`起動時にサービスを自動的に開始するように指示するには、`enable`コマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="a8464-153">To tell `systemd` to start the service automatically on system startup, use the `enable` command.</span></span>
+<span data-ttu-id="b42cc-153">システムの起動時にサービスを自動的に開始するように指定するには、 `systemd` コマンドを使用し `enable` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-153">To tell `systemd` to start the service automatically on system startup, use the `enable` command.</span></span>
 
 ```console
 sudo systemctl enable myapp
 ```
 
-### <a name="log-to-journald"></a><span data-ttu-id="a8464-154">ジャーナル処理にログ記録</span><span class="sxs-lookup"><span data-stu-id="a8464-154">Log to journald</span></span>
+### <a name="log-to-journald"></a><span data-ttu-id="b42cc-154">Journald にログを記録する</span><span class="sxs-lookup"><span data-stu-id="b42cc-154">Log to journald</span></span>
 
-<span data-ttu-id="a8464-155">Windows イベント ログに相当する`journald`Linux は、 の一部である構造化ログ`systemd`システム サービスです。</span><span class="sxs-lookup"><span data-stu-id="a8464-155">The Linux equivalent of the Windows event log is `journald`, a structured logging system service that's part of `systemd`.</span></span> <span data-ttu-id="a8464-156">Linux デーモンによって標準出力に書き込まれたログメッセージは自動的`journald`に に に書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="a8464-156">Log messages written to the standard output by a Linux daemon are automatically written to `journald`.</span></span> <span data-ttu-id="a8464-157">ログレベルを設定するには、ログ`Console`設定のセクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="a8464-157">To configure logging levels, use the `Console` section of the logging configuration.</span></span> <span data-ttu-id="a8464-158">ホスト`UseSystemd`・ビルダー方式では、ジャーナルに合わせてコンソール出力形式が自動的に構成されます。</span><span class="sxs-lookup"><span data-stu-id="a8464-158">The `UseSystemd` host builder method automatically configures the console output format to suit the journal.</span></span>
+<span data-ttu-id="b42cc-155">Linux と同等の Windows イベントログは `journald` 、の一部である構造化されたログ記録システムサービスです `systemd` 。</span><span class="sxs-lookup"><span data-stu-id="b42cc-155">The Linux equivalent of the Windows event log is `journald`, a structured logging system service that's part of `systemd`.</span></span> <span data-ttu-id="b42cc-156">Linux デーモンによって標準出力に書き込まれたログメッセージは、自動的にに書き込まれ `journald` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-156">Log messages written to the standard output by a Linux daemon are automatically written to `journald`.</span></span> <span data-ttu-id="b42cc-157">ログ記録レベルを構成するには、 `Console` ログ構成のセクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-157">To configure logging levels, use the `Console` section of the logging configuration.</span></span> <span data-ttu-id="b42cc-158">`UseSystemd`Host builder メソッドは、journal に合わせてコンソールの出力形式を自動的に構成します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-158">The `UseSystemd` host builder method automatically configures the console output format to suit the journal.</span></span>
 
-<span data-ttu-id="a8464-159">Linux`journald`ログの標準であるため、さまざまなツールが統合されています。</span><span class="sxs-lookup"><span data-stu-id="a8464-159">Because `journald` is the standard for Linux logs, a variety of tools integrate with it.</span></span> <span data-ttu-id="a8464-160">ログは、外部ログ`journald`システムに簡単にルーティングできます。</span><span class="sxs-lookup"><span data-stu-id="a8464-160">You can easily route logs from `journald` to an external logging system.</span></span> <span data-ttu-id="a8464-161">ホスト上でローカルに作業する場合は、`journalctl`コマンドラインからログを表示できます。</span><span class="sxs-lookup"><span data-stu-id="a8464-161">Working locally on the host, you can use the `journalctl` command to view logs from the command line.</span></span>
+<span data-ttu-id="b42cc-159">`journald`は Linux ログの標準であるため、さまざまなツールが統合されています。</span><span class="sxs-lookup"><span data-stu-id="b42cc-159">Because `journald` is the standard for Linux logs, a variety of tools integrate with it.</span></span> <span data-ttu-id="b42cc-160">から外部ログシステムにログを簡単にルーティングでき `journald` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-160">You can easily route logs from `journald` to an external logging system.</span></span> <span data-ttu-id="b42cc-161">ホストでローカルに作業している場合は、コマンドを使用して `journalctl` コマンドラインからのログを表示できます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-161">Working locally on the host, you can use the `journalctl` command to view logs from the command line.</span></span>
 
 ```console
 sudo journalctl -u myapp
 ```
 
 > [!TIP]
-> <span data-ttu-id="a8464-162">ホストで GUI 環境を使用できる場合は、Linux で*QJournalctl*や*gnome-logs*などのいくつかのグラフィカルログビューアを利用できます。</span><span class="sxs-lookup"><span data-stu-id="a8464-162">If you have a GUI environment available on your host, a few graphical log viewers are available for Linux, such as *QJournalctl* and *gnome-logs*.</span></span>
+> <span data-ttu-id="b42cc-162">ホストで使用できる GUI 環境がある場合は、 *QJournalctl* や *gnome ログ* など、Linux で使用できるグラフィカルなログビューアーがいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="b42cc-162">If you have a GUI environment available on your host, a few graphical log viewers are available for Linux, such as *QJournalctl* and *gnome-logs*.</span></span>
 
-<span data-ttu-id="a8464-163">を使用`journalctl`してコマンド ラインから`systemd`ジャーナルを照会する方法の詳細については、[のマニュアルを参照してください](https://manpages.debian.org/buster/systemd/journalctl.1)。</span><span class="sxs-lookup"><span data-stu-id="a8464-163">To learn more about querying the `systemd` journal from the command line by using `journalctl`, see [the manpages](https://manpages.debian.org/buster/systemd/journalctl.1).</span></span>
+<span data-ttu-id="b42cc-163">を使用してコマンドラインからジャーナルにクエリを実行する方法の詳細については `systemd` `journalctl` 、 [manpages](https://manpages.debian.org/buster/systemd/journalctl.1)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b42cc-163">To learn more about querying the `systemd` journal from the command line by using `journalctl`, see [the manpages](https://manpages.debian.org/buster/systemd/journalctl.1).</span></span>
 
-## <a name="https-certificates-for-self-hosted-applications"></a><span data-ttu-id="a8464-164">自己ホスト型アプリケーションの HTTPS 証明書</span><span class="sxs-lookup"><span data-stu-id="a8464-164">HTTPS certificates for self-hosted applications</span></span>
+## <a name="https-certificates-for-self-hosted-applications"></a><span data-ttu-id="b42cc-164">自己ホスト型アプリケーションの HTTPS 証明書</span><span class="sxs-lookup"><span data-stu-id="b42cc-164">HTTPS certificates for self-hosted applications</span></span>
 
-<span data-ttu-id="a8464-165">実稼働環境で gRPC アプリケーションを実行する場合は、信頼された認証局 (CA) の TLS 証明書を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a8464-165">When you're running a gRPC application in production, you should use a TLS certificate from a trusted certificate authority (CA).</span></span> <span data-ttu-id="a8464-166">この CA は、パブリック CA または組織の内部 CA である可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a8464-166">This CA might be a public CA, or an internal one for your organization.</span></span>
+<span data-ttu-id="b42cc-165">運用環境で gRPC アプリケーションを実行している場合は、信頼された証明機関 (CA) からの TLS 証明書を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b42cc-165">When you're running a gRPC application in production, you should use a TLS certificate from a trusted certificate authority (CA).</span></span> <span data-ttu-id="b42cc-166">この CA は、パブリック CA である場合もあれば、組織の内部の ca である場合もあります。</span><span class="sxs-lookup"><span data-stu-id="b42cc-166">This CA might be a public CA, or an internal one for your organization.</span></span>
 
-<span data-ttu-id="a8464-167">Windows ホストでは、クラスを使用して、セキュリティで保護された[証明書ストア](/windows/win32/seccrypto/managing-certificates-with-certificate-stores)から<xref:System.Security.Cryptography.X509Certificates.X509Store>証明書を読み込むことができます。</span><span class="sxs-lookup"><span data-stu-id="a8464-167">On Windows hosts, you can load the certificate from a secure [certificate store](/windows/win32/seccrypto/managing-certificates-with-certificate-stores) by using the <xref:System.Security.Cryptography.X509Certificates.X509Store> class.</span></span> <span data-ttu-id="a8464-168">一部の Linux`X509Store`ホストでは OpenSSL キー ストアでクラスを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="a8464-168">You can also use the `X509Store` class with the OpenSSL key store on some Linux hosts.</span></span>
+<span data-ttu-id="b42cc-167">Windows ホストでは、クラスを使用して、セキュリティで保護された [証明書ストア](/windows/win32/seccrypto/managing-certificates-with-certificate-stores) から証明書を読み込むことができ <xref:System.Security.Cryptography.X509Certificates.X509Store> ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-167">On Windows hosts, you can load the certificate from a secure [certificate store](/windows/win32/seccrypto/managing-certificates-with-certificate-stores) by using the <xref:System.Security.Cryptography.X509Certificates.X509Store> class.</span></span> <span data-ttu-id="b42cc-168">また、 `X509Store` 一部の Linux ホストでは、OpenSSL キーストアでクラスを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-168">You can also use the `X509Store` class with the OpenSSL key store on some Linux hosts.</span></span>
 
-<span data-ttu-id="a8464-169">また、次のいずれかの方法で[、X509Certificate2 コンストラクタ](xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor%2A)のいずれかを使用して証明書を作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="a8464-169">You can also create certificates by using one of the [X509Certificate2 constructors](xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor%2A), from either:</span></span>
+<span data-ttu-id="b42cc-169">また、いずれかの [X509Certificate2 コンストラクター](xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor%2A)を使用して証明書を作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-169">You can also create certificates by using one of the [X509Certificate2 constructors](xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor%2A), from either:</span></span>
 
-* <span data-ttu-id="a8464-170">強力なパスワードで保護された`.pfx`ファイルなどのファイル</span><span class="sxs-lookup"><span data-stu-id="a8464-170">A file, such as a `.pfx` file protected by a strong password</span></span>
-* <span data-ttu-id="a8464-171">[Azure Key Vault](https://azure.microsoft.com/services/key-vault/)などのセキュリティで保護されたストレージ サービスから取得されたバイナリ データ</span><span class="sxs-lookup"><span data-stu-id="a8464-171">Binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)</span></span>
+* <span data-ttu-id="b42cc-170">ファイル ( `.pfx` 強力なパスワードで保護されたファイルなど)</span><span class="sxs-lookup"><span data-stu-id="b42cc-170">A file, such as a `.pfx` file protected by a strong password</span></span>
+* <span data-ttu-id="b42cc-171">[Azure Key Vault](https://azure.microsoft.com/services/key-vault/)などのセキュリティで保護されたストレージサービスから取得したバイナリデータ</span><span class="sxs-lookup"><span data-stu-id="b42cc-171">Binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)</span></span>
 
-<span data-ttu-id="a8464-172">証明書を使用するように Kestrel を構成するには、構成とコードの 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="a8464-172">You can configure Kestrel to use a certificate in two ways: from configuration or in code.</span></span>
+<span data-ttu-id="b42cc-172">証明書を使用するように Kestrel を構成するには、構成とコードの2つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="b42cc-172">You can configure Kestrel to use a certificate in two ways: from configuration or in code.</span></span>
 
-### <a name="set-https-certificates-by-using-configuration"></a><span data-ttu-id="a8464-173">構成を使用して HTTPS 証明書を設定する</span><span class="sxs-lookup"><span data-stu-id="a8464-173">Set HTTPS certificates by using configuration</span></span>
+### <a name="set-https-certificates-by-using-configuration"></a><span data-ttu-id="b42cc-173">構成を使用して HTTPS 証明書を設定する</span><span class="sxs-lookup"><span data-stu-id="b42cc-173">Set HTTPS certificates by using configuration</span></span>
 
-<span data-ttu-id="a8464-174">構成方法では、証明書`.pfx`ファイルへのパスと Kestrel 構成セクションのパスワードを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a8464-174">The configuration approach requires setting the path to the certificate `.pfx` file and the password in the Kestrel configuration section.</span></span> <span data-ttu-id="a8464-175">では`appsettings.json`、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="a8464-175">In `appsettings.json`, that would look like this:</span></span>
+<span data-ttu-id="b42cc-174">構成方法では、 `.pfx` Kestrel 構成セクションで証明書ファイルへのパスとパスワードを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b42cc-174">The configuration approach requires setting the path to the certificate `.pfx` file and the password in the Kestrel configuration section.</span></span> <span data-ttu-id="b42cc-175">で `appsettings.json` は、これは次のようになります。</span><span class="sxs-lookup"><span data-stu-id="b42cc-175">In `appsettings.json`, that would look like this:</span></span>
 
 ```json
 {
@@ -184,14 +184,14 @@ sudo journalctl -u myapp
 }
 ```
 
-<span data-ttu-id="a8464-176">Azure Key Vault やハシコープ Vault などのセキュリティで保護された構成ソースを使用してパスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="a8464-176">Provide the password by using a secure configuration source such as Azure Key Vault or Hashicorp Vault.</span></span>
+<span data-ttu-id="b42cc-176">Azure Key Vault または Hashicorp Vault などのセキュリティで保護された構成ソースを使用して、パスワードを指定します。</span><span class="sxs-lookup"><span data-stu-id="b42cc-176">Provide the password by using a secure configuration source such as Azure Key Vault or Hashicorp Vault.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a8464-177">暗号化されていないパスワードを設定ファイルに保存しないでください。</span><span class="sxs-lookup"><span data-stu-id="a8464-177">Don't store unencrypted passwords in configuration files.</span></span>
+> <span data-ttu-id="b42cc-177">暗号化されていないパスワードを構成ファイルに保存しないでください。</span><span class="sxs-lookup"><span data-stu-id="b42cc-177">Don't store unencrypted passwords in configuration files.</span></span>
 
-### <a name="set-https-certificates-in-code"></a><span data-ttu-id="a8464-178">コードで HTTPS 証明書を設定する</span><span class="sxs-lookup"><span data-stu-id="a8464-178">Set HTTPS certificates in code</span></span>
+### <a name="set-https-certificates-in-code"></a><span data-ttu-id="b42cc-178">コードでの HTTPS 証明書の設定</span><span class="sxs-lookup"><span data-stu-id="b42cc-178">Set HTTPS certificates in code</span></span>
 
-<span data-ttu-id="a8464-179">コード内の Kestrel で HTTPS`ConfigureKestrel`を設定`IWebHostBuilder`するには、`Program`クラスでメソッドを on を使用します。</span><span class="sxs-lookup"><span data-stu-id="a8464-179">To configure HTTPS on Kestrel in code, use the `ConfigureKestrel` method on `IWebHostBuilder` in the `Program` class.</span></span>
+<span data-ttu-id="b42cc-179">コードで Kestrel の HTTPS を構成するには、クラスのでメソッドを使用し `ConfigureKestrel` `IWebHostBuilder` `Program` ます。</span><span class="sxs-lookup"><span data-stu-id="b42cc-179">To configure HTTPS on Kestrel in code, use the `ConfigureKestrel` method on `IWebHostBuilder` in the `Program` class.</span></span>
 
 ```csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -209,9 +209,9 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
         });
 ```
 
-<span data-ttu-id="a8464-180">ここでも、ファイルのパスワードを`.pfx`安全な構成ソースに保存し、そのパスワードを取得してください。</span><span class="sxs-lookup"><span data-stu-id="a8464-180">Again, be sure to store the password for the `.pfx` file in, and retrieve it from, a secure configuration source.</span></span>
+<span data-ttu-id="b42cc-180">ここでも、ファイルのパスワードをに保存 `.pfx` し、セキュリティで保護された構成ソースから取得するようにしてください。</span><span class="sxs-lookup"><span data-stu-id="b42cc-180">Again, be sure to store the password for the `.pfx` file in, and retrieve it from, a secure configuration source.</span></span>
 
 >[!div class="step-by-step"]
-><span data-ttu-id="a8464-181">[前次](grpc-in-production.md)
->[Next](docker.md)</span><span class="sxs-lookup"><span data-stu-id="a8464-181">[Previous](grpc-in-production.md)
+><span data-ttu-id="b42cc-181">[前へ](grpc-in-production.md)
+>[次へ](docker.md)</span><span class="sxs-lookup"><span data-stu-id="b42cc-181">[Previous](grpc-in-production.md)
 [Next](docker.md)</span></span>
