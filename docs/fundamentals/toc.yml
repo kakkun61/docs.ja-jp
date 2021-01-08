@@ -393,14 +393,28 @@ items:
               - name: 概要
                 displayName: dumps
                 href: ../core/diagnostics/dumps.md
+              - name: スタック オーバーフローのデバッグ
+                href: ../core/diagnostics/debug-stackoverflow.md
               - name: Linux ダンプ
                 href: ../core/diagnostics/debug-linux-dumps.md
+              - name: SOS デバッガー拡張機能
+                href: ../core/diagnostics/sos-debugging-extension.md
           - name: EventCounters
-            href: ../core/diagnostics/event-counters.md
+            items:
+              - name: 概要
+                displayName: EventCounters
+                href: ../core/diagnostics/event-counters.md
+              - name: .NET の既知のカウンター
+                href: ../core/diagnostics/available-counters.md
           - name: EventPipe
             href: ../core/diagnostics/eventpipe.md
           - name: ログとトレース
-            href: ../core/diagnostics/logging-tracing.md
+            items:
+              - name: 概要
+                displayName: logging and tracing
+                href: ../core/diagnostics/logging-tracing.md
+              - name: 既知のイベント プロバイダー
+                href: ../core/diagnostics/well-known-event-providers.md
           - name: ランタイム イベント
             items:
               - name: 概要
@@ -579,8 +593,6 @@ items:
                         href: code-analysis/quality-rules/ca1069.md
                       - name: CA1070
                         href: code-analysis/quality-rules/ca1070.md
-                      - name: CA1071
-                        href: code-analysis/quality-rules/ca1071.md
                   - name: ドキュメント規則
                     items:
                       - name: 概要
@@ -1549,7 +1561,7 @@ items:
           - name: 概要
             href: ../standard/base-types/regular-expressions.md
             displayName: regular expressions
-          - name: 言語のリファレンス
+          - name: 言語リファレンス
             items:
               - name: 概要
                 href: ../standard/base-types/regular-expression-language-quick-reference.md
