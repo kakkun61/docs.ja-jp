@@ -1,7 +1,7 @@
 items:
   - name: .NET のドキュメント
     href: index.yml
-  - name: はじめに
+  - name: 開始
     items:
       - name: Hello World
         href: ../core/get-started.md
@@ -37,6 +37,10 @@ items:
                 href: ../core/install/linux-rhel.md
               - name: SLES
                 href: ../core/install/linux-sles.md
+              - name: Snap を使用してインストールする
+                href: ../core/install/linux-snap.md
+              - name: スクリプト、バイナリをインストールする
+                href: ../core/install/linux-scripted-manual.md
           - name: 期限切れのランタイムと SDK の削除
             href: ../core/install/remove-runtime-sdk-versions.md
           - name: .NET テンプレートの管理
@@ -196,7 +200,7 @@ items:
           - name: 概要
             displayName: '.net cli,command-line interface,cli,tool'
             href: ../core/tools/index.md
-          - name: リファレンス
+          - name: 関連項目
             items:
               - name: dotnet
                 href: ../core/tools/dotnet.md
@@ -328,7 +332,7 @@ items:
             items:
               - name: 概要
                 href: ../core/project-sdk/overview.md
-              - name: リファレンス
+              - name: 関連項目
                 items:
                   - name: Microsoft.NET.Sdk
                     href: ../core/project-sdk/msbuild-props.md
@@ -1644,6 +1648,8 @@ items:
                     href: ../standard/serialization/system-text-json-polymorphism.md
               - name: Newtonsoft. Json から移行する方法
                 href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+              - name: サポートされているコレクション型
+                href: ../standard/serialization/system-text-json-supported-collection-types.md
               - name: 詳細設定
                 items:
                   - name: 文字エンコードをカスタマイズする
@@ -2050,7 +2056,7 @@ items:
         href: ../core/testing/unit-testing-published-output.md
       - name: Visual Studio での .NET Core プロジェクトのライブ単体テスト
         href: /visualstudio/test/live-unit-testing-start
-  - name: セキュリティ
+  - name: Security
     href: ../standard/security/
   - name: 高度なトピック
     items:
@@ -2290,7 +2296,7 @@ items:
           - name: .NET Core のプロジェクトを整理する
             href: ../core/porting/project-structure.md
           - name: 利用できないテクノロジ
-            href: ../core/porting/net-framework-tech-unavailable.md
+            href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: ツール
             href: ../core/porting/tools.md
           - name: Windows 互換機能パックを使用する
