@@ -17,6 +17,10 @@
           href: configure-vs-code.md
         - name: Azure CLI のインストール
           href: install-azure-cli.md
+        - name: 追加のツールをインストールする
+          href: azure-tools.md
+        - name: 開発の設定のチェックリスト
+          href: dotnet-dev-env-checklist.md
 - name: Azure への移行
   items:
     - name: 適切な Azure ホスティング オプションの選択
