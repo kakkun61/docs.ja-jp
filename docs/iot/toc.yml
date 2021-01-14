@@ -23,4 +23,4 @@
     - name: デバッグ
       href: debugging.md
 - name: API リファレンス
-  href: /dotnet/api?view=iot-dotnet-1.1
+  href: ../../api/index.md?view=iot-dotnet-1.1
